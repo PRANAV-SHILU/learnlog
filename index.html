@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LearnLog — My Learning Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="nav-logo">&lt;LL&gt;</span>
+      <span class="nav-title">LearnLog</span>
+    </div>
+
+    <div class="nav-search">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="globalSearch" placeholder="Search anything…" autocomplete="off" />
+      <button class="search-clear" id="searchClear" title="Clear">✕</button>
+    </div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#section-about"     class="nav-link"><i class="fas fa-user"></i> About</a>
+      <a href="#section-skills"    class="nav-link"><i class="fas fa-star"></i> Skills</a>
+      <a href="#section-languages" class="nav-link"><i class="fas fa-code"></i> Languages</a>
+      <a href="#section-projects"  class="nav-link"><i class="fas fa-folder-open"></i> Projects</a>
+      <a href="#section-platforms" class="nav-link"><i class="fas fa-globe"></i> Platforms</a>
+      <a href="#section-courses"   class="nav-link"><i class="fas fa-book"></i> Courses</a>
+      <a href="#section-certificates" class="nav-link"><i class="fas fa-certificate"></i> Certs</a>
+      <a href="#section-tools"     class="nav-link"><i class="fas fa-wrench"></i> Tools</a>
+      <a href="#section-roadmap"   class="nav-link"><i class="fas fa-map"></i> Roadmap</a>
+    </nav>
+
+    <button class="nav-hamburger" id="navHamburger" aria-label="Toggle nav">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="hero-label">Personal Learning Dashboard</p>
+      <h1 class="hero-title">&lt;<span class="accent">Learn</span>Log /&gt;</h1>
+      <p class="hero-tagline">Tracking every resource, tool, and skill — one commit at a time.</p>
+
+      <!-- Social Links -->
+      <div class="hero-social" id="heroSocial">
+        <!-- Populated by JS from data/about.js -->
+      </div>
+
+      <!-- Stats -->
+      <div class="hero-stats" id="heroStats">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </header>
+
+  <!-- ── SEARCH RESULTS BANNER ── -->
+  <div class="search-banner" id="searchBanner">
+    <i class="fas fa-search"></i>
+    <span id="searchResultsText">Searching…</span>
+    <button id="clearSearchBtn" class="clear-btn">Clear Search</button>
+  </div>
+
+  <!-- ── MAIN CONTENT ── -->
+  <main class="container" id="mainContent">
+    <div id="section-about"        class="section-anchor"></div>
+    <div id="section-skills"       class="section-anchor"></div>
+    <div id="section-languages"    class="section-anchor"></div>
+    <div id="section-projects"     class="section-anchor"></div>
+    <div id="section-platforms"    class="section-anchor"></div>
+    <div id="section-courses"      class="section-anchor"></div>
+    <div id="section-certificates" class="section-anchor"></div>
+    <div id="section-tools"        class="section-anchor"></div>
+    <div id="section-roadmap"      class="section-anchor"></div>
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#section-about">About</a>
+      <a href="#section-skills">Skills</a>
+      <a href="#section-languages">Languages</a>
+      <a href="#section-projects">Projects</a>
+      <a href="#section-platforms">Platforms</a>
+      <a href="#section-courses">Courses</a>
+      <a href="#section-certificates">Certificates</a>
+      <a href="#section-tools">Tools</a>
+      <a href="#section-roadmap">Roadmap</a>
+    </div>
+    <p class="footer-quote">"Keep learning, keep growing — every line of code is a step forward."</p>
+    <p class="footer-meta">
+      LearnLog &nbsp;·&nbsp; Last updated: <span id="lastUpdated"></span>
+    </p>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
