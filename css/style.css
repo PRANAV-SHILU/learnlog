@@ -1852,3 +1852,37 @@ mark {
     font-size: 1.6rem;
   }
 }
+
+/* accordian open all and close all buttons */
+
+.accordion-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 24px;
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.accordion-controls button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 18px;
+  border-radius: 99px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+  background: var(--accent-glow);
+  border: 1px solid var(--accent-border);
+  color: var(--accent);
+  font-family: var(--font-sans);
+}
+
+.accordion-controls button:hover {
+  background: var(--accent);
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-accent);
+}
