@@ -62,7 +62,7 @@ export const platforms = [
       "Python",
     ],
     notes:
-      "Free courses in Hindi/English jointly certified with GTU. Used for SQL and Spoken English courses.",
+      "Free courses in Hindi/English with many other languages jointly certified with GTU. Good for structured learning with a local language focus.",
     rating: 4,
   },
   {

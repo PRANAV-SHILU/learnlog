@@ -601,7 +601,9 @@ a:hover {
 .source-chip.github i {
   color: var(--text-secondary);
 }
-.source-chip.college i { color: #22c55e; }
+.source-chip.college i {
+  color: #22c55e;
+}
 
 /* ══════════════════════════════
    TOOLS
@@ -775,6 +777,13 @@ a:hover {
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   color: var(--text-muted);
+  transition: all var(--transition);
+  cursor: context-menu;
+}
+.topic-tag:hover {
+  background: var(--accent-glow);
+  border-color: var(--accent-border);
+  color: var(--accent);
 }
 
 .platform-notes {
