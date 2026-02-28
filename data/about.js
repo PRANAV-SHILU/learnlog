@@ -2,27 +2,41 @@
 
 export const about = {
   name: "Pranav Shilu",
-  tagline: "Aspiring Full Stack Developer",
-  bio: `Hi there! I’m Pranav Shilu 👨‍💻, an enthusiastic IT student with a passion for software development, web development, and exploring the world of AI-powered technologies. This dashboard is my personal learning tracker — every course, tool, project, and resource I've explored is logged here. I believe in learning by doing, building real things, and keeping track of every step forward.`,
+  tagline: "Frontend Web Developer | HTML, CSS, JS | React.js | Bootstrap & Tailwind | Git & GitHub",
+  bio: `Hi there! I'm Pranav Shilu 👨‍💻, an enthusiastic IT student with a passion for software development, web development, and exploring the world of AI-powered technologies.
+
+I'm currently pursuing BCA at SSCCS, Bhavnagar and building a strong foundation through academic learning and practical exposure.
+
+💡 I focus on practical learning, enjoy working on hands-on projects, collaborating with peers, and constantly upgrading my skills through online courses, internship trainings and workshops.
+
+With a strong logical thinking and a problem-solving mindset along with quick and active learning ability, I aim to work with innovative teams and build impactful, scalable solutions. 🚀`,
+
+  currentFocus: "Deepening React.js skills — React Router v7, hooks, REST API integration, and scalable frontend architecture.",
 
   social: [
     {
       label: "LinkedIn",
       icon: "fab fa-linkedin",
-      url: "https://www.linkedin.com/in/pranavshilu/",
+      url: "https://www.linkedin.com/in/pranav-shilu",
       color: "#0a66c2",
     },
     {
       label: "GitHub",
       icon: "fab fa-github",
-      url: "https://github.com/PRANAV-SHILU",
+      url: "https://github.com/pranav-shilu",
       color: "#e0e0e0",
     },
     {
       label: "Email",
       icon: "fas fa-envelope",
-      url: "mailto:pranavshilu@zohomail.in",
+      url: "mailto:youremail@example.com",
       color: "#f59e0b",
     },
   ],
+
+  stats: {
+    startedLearning: "2023",
+    hoursLogged: "500+",
+    favTech: "JavaScript",
+  },
 };

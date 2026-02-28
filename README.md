@@ -9,24 +9,19 @@ LearnLog uses **ES Modules** (`import`/`export`) which **cannot run via `file://
 ### Quick Start Options
 
 **Option 1 — VS Code Live Server (easiest):**
-
 1. Install the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 2. Right-click `index.html` → **Open with Live Server**
 
 **Option 2 — Node.js serve:**
-
 ```bash
 npx serve .
 ```
-
 Then open `http://localhost:3000`
 
 **Option 3 — Python:**
-
 ```bash
 python -m http.server 8000
 ```
-
 Then open `http://localhost:8000`
 
 ---
@@ -68,16 +63,15 @@ Each data file exports a plain JS array/object. Just edit the values:
 ---
 
 ## 🔗 Source Types (for courses)
-
-| Type key    | Icon shown              |
-| ----------- | ----------------------- |
-| `youtube`   | YouTube icon (red)      |
-| `linkedin`  | LinkedIn icon (blue)    |
+| Type key | Icon shown |
+|---|---|
+| `youtube` | YouTube icon (red) |
+| `linkedin` | LinkedIn icon (blue) |
 | `learnvern` | Graduation cap (purple) |
-| `udemy`     | Play circle (purple)    |
-| `web`       | Globe (teal)            |
-| `github`    | GitHub icon             |
+| `udemy` | Play circle (purple) |
+| `web` | Globe (teal) |
+| `github` | GitHub icon |
 
 ---
 
-_Built with vanilla HTML, CSS, and JavaScript — no frameworks, no build step._
+*Built with vanilla HTML, CSS, and JavaScript — no frameworks, no build step.*

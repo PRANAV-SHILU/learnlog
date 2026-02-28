@@ -1092,7 +1092,9 @@ mark {
 
   /* About */
   .about-bio-block { flex-direction: column; align-items: center; text-align: center; }
+  .about-focus { justify-content: center; }
   .about-social-row { justify-content: center; }
+  .about-meta-row { justify-content: center; }
 
   /* Language sources: stack vertically */
   .lang-sources { flex-direction: column; align-items: flex-start; }
@@ -1189,6 +1191,38 @@ mark {
   margin-bottom: 10px;
 }
 
+.about-focus {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.about-focus i { color: var(--accent); }
+
+.about-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.about-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  padding: 6px 14px;
+}
+
+.about-meta-item i { color: var(--accent); }
+.about-meta-item strong { color: var(--text-primary); }
+
 .about-social-row {
   display: flex;
   flex-wrap: wrap;
@@ -1226,6 +1260,8 @@ mark {
   gap: 22px;
   padding-top: 18px;
 }
+
+.skill-category {}
 
 .skill-cat-label {
   font-family: var(--font-mono);
@@ -1527,6 +1563,7 @@ mark {
   .about-name { font-size: 1.1rem; }
   .about-social-row { flex-direction: column; align-items: center; }
   .social-btn { width: 100%; max-width: 240px; justify-content: center; }
+  .about-meta-row { flex-direction: column; align-items: center; gap: 6px; }
 
   /* Certs */
   .cert-card { flex-direction: column; gap: 8px; }
