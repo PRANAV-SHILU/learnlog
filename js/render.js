@@ -2,7 +2,7 @@
 // All render functions — builds HTML from data and injects into the DOM.
 
 import { about } from "../data/about.js";
-import { skillCategories, levelColors } from "../data/skills.js";
+import { skillCategories } from "../data/skills.js";
 import { languages } from "../data/languages.js";
 import { learningItems } from "../data/courses.js";
 import { toolCategories } from "../data/tools.js";
@@ -135,14 +135,10 @@ export function renderSkills(targetEl) {
     .map((cat) => {
       const skillsHtml = cat.skills
         .map((skill) => {
-          const lv = levelColors[skill.level] || levelColors.beginner;
           return `
         <div class="skill-item" data-search="${skill.name} ${skill.level} ${cat.category}">
           <span class="skill-icon">${skill.icon}</span>
           <span class="skill-name">${skill.name}</span>
-          <span class="skill-level" style="background:${lv.bg};border-color:${lv.border};color:${lv.text}">
-            ${skill.level}
-          </span>
         </div>`;
         })
         .join("");

@@ -1469,7 +1469,7 @@ mark {
   flex: 1;
 }
 
-.skill-level {
+/* .skill-level {
   font-size: 0.65rem;
   font-weight: 600;
   padding: 2px 9px;
@@ -1478,7 +1478,7 @@ mark {
   text-transform: capitalize;
   white-space: nowrap;
   flex-shrink: 0;
-}
+} */
 
 /* ══════════════════════════════
    LANGUAGE SOURCES
