@@ -79,6 +79,13 @@ export const languages = [
     ],
   },
   {
+    name: "C++",
+    icon: "⚙️",
+    description: "OOP, STL, memory management — university level",
+    learned: true,
+    sources: [{ type: "college", label: "MKBU University", link: "#" }],
+  },
+  {
     name: "Python",
     icon: "🐍",
     description: "Syntax, functions, OOP, file I/O, scripting basics",

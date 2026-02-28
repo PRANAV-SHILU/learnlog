@@ -4,6 +4,30 @@
 
 export const projects = [
   {
+    name: "SecureAuth",
+    description:
+      "Web app with REST API integration and CRUD operations. Built during work at VeyondTech.",
+    stack: ["React.js", "REST API", "CRUD", "JavaScript"],
+    githubLink: null,
+    liveLink: null,
+  },
+  {
+    name: "AppLab — Responsive Frontend",
+    description:
+      "Responsive frontend web application. Built with modern CSS and component-based design.",
+    stack: ["HTML", "CSS", "Responsive Design", "Tailwind CSS"],
+    githubLink: null,
+    liveLink: null,
+  },
+  {
+    name: "ELE-X",
+    description:
+      "Project built during frontend development work — responsive design focused.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    githubLink: null,
+    liveLink: null,
+  },
+  {
     name: "Calculator App",
     description:
       "A fully functional calculator with keyboard support, history log, and dark/light mode toggle built with vanilla JS.",

@@ -13,6 +13,10 @@ export const skillCategories = [
       { name: "CSS Animations", level: "beginner", icon: "✨" },
       { name: "DOM Manipulation", level: "intermediate", icon: "🌐" },
       { name: "Fetch API / AJAX", level: "beginner", icon: "🔄" },
+      { name: "Bootstrap", level: "intermediate", icon: "🅱️" },
+      { name: "Tailwind CSS", level: "intermediate", icon: "🌊" },
+      { name: "Redux.js", level: "beginner", icon: "🔄" },
+      { name: "CRUD Operations", level: "intermediate", icon: "🗂️" },
     ],
   },
   {
@@ -47,6 +51,16 @@ export const skillCategories = [
       { name: "TypeScript", level: "beginner", icon: "🟦" },
       { name: "React.js", level: "beginner", icon: "⚛️" },
       { name: "ES Modules", level: "intermediate", icon: "📦" },
+    ],
+  },
+  {
+    category: "AI & Productivity",
+    icon: "🤖",
+    skills: [
+      { name: "Prompt Engineering", level: "intermediate", icon: "✍️" },
+      { name: "AI Prompting", level: "intermediate", icon: "💬" },
+      { name: "Microsoft Copilot", level: "intermediate", icon: "🪟" },
+      { name: "ChatGPT for Dev", level: "intermediate", icon: "🧠" },
     ],
   },
 ];

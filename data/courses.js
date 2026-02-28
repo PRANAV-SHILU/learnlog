@@ -6,6 +6,38 @@
 export const learningItems = [
   // ── COURSES ──
   {
+  type: "course",
+  name: "JavaScript - Full Course for Beginners",
+  description: "Complete JavaScript course from basics to advanced — DOM, ES6+, async, OOP.",
+  sources: [
+    { type: "youtube", label: "freeCodeCamp YT", link: "https://www.youtube.com/@freecodecamp" },
+  ],
+},
+{
+  type: "course",
+  name: "C Language Basic to Advance",
+  description: "Full C programming from syntax and pointers to data structures and competitive prep.",
+  sources: [
+    { type: "youtube", label: "YouTube Course", link: "#" },
+  ],
+},
+{
+  type: "course",
+  name: "Git and GitHub for Beginners - Crash Course",
+  description: "Version control fundamentals, branching, merging, and GitHub workflow.",
+  sources: [
+    { type: "youtube", label: "freeCodeCamp YT", link: "https://www.youtube.com/@freecodecamp" },
+  ],
+},
+{
+  type: "course",
+  name: "Bootstrap - On-the-Job Training (30 days)",
+  description: "Hands-on Bootstrap during OJT — responsive grids, components, utility classes.",
+  sources: [
+    { type: "web", label: "OJT Program", link: "#" },
+  ],
+},
+  {
     type: "course",
     name: "The Complete Web Development Bootcamp",
     description:
@@ -164,6 +196,67 @@ export const learningItems = [
   },
 
   // ── CERTIFICATES ──
+  // type: "certificate"
+  {
+    type: "certificate",
+    name: "Career Essentials in Software Development",
+    description:
+      "3-course path by Microsoft and LinkedIn covering software dev fundamentals including Python basics.",
+    issuer: "Microsoft & LinkedIn Learning",
+    issuerIcon: "🪟",
+    sources: [
+      {
+        type: "linkedin",
+        label: "LinkedIn Learning",
+        link: "https://www.linkedin.com/learning",
+      },
+    ],
+  },
+  {
+    type: "certificate",
+    name: "Microsoft Copilot for Productivity",
+    description:
+      "7-course series covering AI productivity tools, Copilot features, and prompt writing.",
+    issuer: "Microsoft & LinkedIn Learning",
+    issuerIcon: "🪟",
+    sources: [
+      {
+        type: "linkedin",
+        label: "LinkedIn Learning",
+        link: "https://www.linkedin.com/learning",
+      },
+    ],
+  },
+  {
+    type: "certificate",
+    name: "Microsoft Copilot: The Art of Prompt Writing",
+    description:
+      "Focused course on writing effective prompts for Microsoft Copilot in real workflows.",
+    issuer: "LinkedIn Learning",
+    issuerIcon: "💼",
+    sources: [
+      {
+        type: "linkedin",
+        label: "LinkedIn Learning",
+        link: "https://www.linkedin.com/learning",
+      },
+    ],
+  },
+  {
+    type: "certificate",
+    name: "ChatGPT Prompt Engineering for Developers",
+    description:
+      "Prompt engineering techniques for developers — zero-shot, few-shot, chain-of-thought prompting.",
+    issuer: "DeepLearning.AI",
+    issuerIcon: "🧠",
+    sources: [
+      {
+        type: "web",
+        label: "DeepLearning.AI",
+        link: "https://www.deeplearning.ai",
+      },
+    ],
+  },
   {
     type: "certificate",
     name: "Responsive Web Design Certificate",
