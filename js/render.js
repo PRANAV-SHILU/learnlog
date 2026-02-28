@@ -94,23 +94,7 @@ export function renderAbout(targetEl) {
         <div class="about-text">
           <h2 class="about-name">${about.name}</h2>
           <p class="about-tagline-text">${about.tagline}</p>
-          <p class="about-bio">${about.bio.replace(/\n/g, "<br>")}</p>
-          <p class="about-focus"><i class="fas fa-crosshairs"></i> ${about.currentFocus}</p>
-        </div>
-      </div>
-
-      <div class="about-meta-row">
-        <div class="about-meta-item">
-          <i class="fas fa-calendar-alt"></i>
-          <span>Learning since <strong>${about.stats.startedLearning}</strong></span>
-        </div>
-        <div class="about-meta-item">
-          <i class="fas fa-clock"></i>
-          <span><strong>${about.stats.hoursLogged}</strong> hours logged</span>
-        </div>
-        <div class="about-meta-item">
-          <i class="fas fa-heart"></i>
-          <span>Fav tech: <strong>${about.stats.favTech}</strong></span>
+          <p class="about-bio">${about.bio}</p>
         </div>
       </div>
 
