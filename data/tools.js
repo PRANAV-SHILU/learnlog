@@ -9,8 +9,7 @@ export const toolCategories = [
       {
         name: "Git",
         icon: "🌿",
-        usage:
-          "Local version control — commit, branch, merge, rebase, conflict resolution",
+        usage: "version control — commit, branch, merge, push, pull",
         docsLink: "https://git-scm.com/doc",
         learnLink: {
           label: "Pro Git Book",
@@ -20,8 +19,7 @@ export const toolCategories = [
       {
         name: "GitHub",
         icon: "🐙",
-        usage:
-          "Remote repos, pull requests, GitHub Pages, GitHub Actions CI/CD",
+        usage: "Remote repos, pull requests, GitHub Pages",
         docsLink: "https://docs.github.com",
         learnLink: { label: "GitHub Skills", url: "https://skills.github.com" },
       },
@@ -31,10 +29,7 @@ export const toolCategories = [
         usage:
           "GUI client for Git — visual diffs, easy branching, commit management",
         docsLink: "https://docs.github.com/en/desktop",
-        learnLink: {
-          label: "GitHub Desktop Docs",
-          url: "https://docs.github.com/en/desktop",
-        },
+        learnLink: null,
       },
     ],
   },
@@ -48,22 +43,16 @@ export const toolCategories = [
         usage:
           "Primary code editor — extensions, IntelliSense, live server, debugging",
         docsLink: "https://code.visualstudio.com/docs",
-        learnLink: {
-          label: "VS Code Tips",
-          url: "https://code.visualstudio.com/learn",
-        },
+        learnLink: null,
       },
       {
-        name: "Google Gravity",
+        name: "Google Antigravity",
         icon: "🌍",
         usage:
-          "Fun Google easter egg — page elements fall with gravity. Good for understanding DOM physics concepts.",
+          "An IDE for the web — code, run, and debug in the browser with AI assistance",
         docsLink:
           "https://mrdoob.com/projects/chromeexperiments/google-gravity/",
-        learnLink: {
-          label: "Try It Live",
-          url: "https://mrdoob.com/projects/chromeexperiments/google-gravity/",
-        },
+        learnLink: null,
       },
     ],
   },
@@ -85,31 +74,13 @@ export const toolCategories = [
     ],
   },
   {
-    category: "Design & Mockups",
-    icon: "🎨",
-    tools: [
-      {
-        name: "Figma",
-        icon: "✏️",
-        usage:
-          "UI wireframing, component design, layout planning, prototype flows",
-        docsLink: "https://help.figma.com",
-        learnLink: {
-          label: "Figma Learn",
-          url: "https://help.figma.com/hc/en-us/categories/360002051613",
-        },
-      },
-    ],
-  },
-  {
     category: "Office & Productivity",
     icon: "📊",
     tools: [
       {
         name: "MS Office Suite",
         icon: "🪟",
-        usage:
-          "Word, Excel, PowerPoint — documents, spreadsheets, presentations",
+        usage: "Word, Excel, PowerPoint, Copilot, Teams, Outlook, etc... ",
         docsLink: "https://support.microsoft.com/en-us/office",
         learnLink: {
           label: "Microsoft Learn",
@@ -119,8 +90,7 @@ export const toolCategories = [
       {
         name: "Zoho Suite",
         icon: "🟠",
-        usage:
-          "Zoho CRM, Zoho Mail, and collaboration tools used during work at VeyondTech",
+        usage: "Zoho Writer, Sheets, Show, Mail, Cliq, Notebook, etc...",
         docsLink: "https://www.zoho.com/docs",
         learnLink: { label: "Zoho Learn", url: "https://learn.zoho.com" },
       },
@@ -131,26 +101,20 @@ export const toolCategories = [
     icon: "🤖",
     tools: [
       {
-        name: "Microsoft Copilot",
+        name: "AI Chatbots",
         icon: "🪟",
         usage:
-          "AI productivity — Word, Excel, PowerPoint, Outlook, Teams assistance and prompt workflows",
-        docsLink: "https://learn.microsoft.com/en-us/copilot/",
-        learnLink: {
-          label: "Copilot Learning",
-          url: "https://adoption.microsoft.com/en-us/copilot/",
-        },
+          "AI productivity tools for coding, debugging, research, and content generation",
+        docsLink: null,
+        learnLink: null,
       },
       {
-        name: "ChatGPT",
+        name: "Replit AI",
         icon: "🧠",
         usage:
-          "AI-assisted coding, debugging, prompt engineering, research, and content generation",
-        docsLink: "https://platform.openai.com/docs",
-        learnLink: {
-          label: "OpenAI Docs",
-          url: "https://platform.openai.com/docs",
-        },
+          "AI-assisted coding, debugging, prompt engineering, and learning within the Replit IDE",
+        docsLink: "https://docs.replit.com/getting-started/intro-replit",
+        learnLink: null,
       },
     ],
   },

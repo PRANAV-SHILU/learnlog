@@ -286,12 +286,22 @@ export function renderTools(targetEl) {
           </div>
         </div>
         <div class="tool-links">
-          <a href="${tool.docsLink}" target="_blank" rel="noopener" class="tool-link">
+        ${
+          tool.docsLink
+            ? `<a href="${tool.docsLink}" target="_blank" rel="noopener" class="tool-link">
             <i class="fas fa-book"></i> Official Docs
-          </a>
-          <a href="${tool.learnLink.url}" target="_blank" rel="noopener" class="tool-link">
+          </a>`
+            : ""
+        }
+         
+          ${
+            tool.learnLink
+              ? `<a href="${tool.learnLink.url}" target="_blank" rel="noopener" class="tool-link">
             <i class="fas fa-graduation-cap"></i> ${tool.learnLink.label}
-          </a>
+          </a>`
+              : ""
+          }
+          
         </div>
       </div>`,
         )
