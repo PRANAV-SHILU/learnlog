@@ -68,7 +68,6 @@ Each data file exports a plain JS array/object. Just edit the values:
 | `youtube` | YouTube icon (red) |
 | `linkedin` | LinkedIn icon (blue) |
 | `learnvern` | Graduation cap (purple) |
-| `udemy` | Play circle (purple) |
 | `web` | Globe (teal) |
 | `github` | GitHub icon |
 

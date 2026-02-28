@@ -56,9 +56,9 @@ const sourceMap = {
   youtube: { icon: "fab fa-youtube", cls: "youtube" },
   linkedin: { icon: "fab fa-linkedin", cls: "linkedin" },
   learnvern: { icon: "fas fa-graduation-cap", cls: "learnvern" },
-  udemy: { icon: "fas fa-play-circle", cls: "udemy" },
   web: { icon: "fas fa-globe", cls: "web" },
   github: { icon: "fab fa-github", cls: "github" },
+  college: { icon: "fas fa-university", cls: "college" },
 };
 
 /** Build source chips HTML */

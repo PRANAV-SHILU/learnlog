@@ -598,12 +598,10 @@ a:hover {
 .source-chip.learnvern i {
   color: var(--purple);
 }
-.source-chip.udemy i {
-  color: #a435f0;
-}
 .source-chip.github i {
   color: var(--text-secondary);
 }
+.source-chip.college i { color: #22c55e; }
 
 /* ══════════════════════════════
    TOOLS
