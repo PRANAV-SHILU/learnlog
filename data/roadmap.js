@@ -4,25 +4,25 @@
 export const roadmap = [
   // ── DONE ──
   {
+    topic: "C & C++ Programming",
+    description:
+      "Pointers, memory management, OOP, STL — 1st Rank in University C Competition",
+    status: "done",
+    order: 1,
+    targetDate: null,
+  },
+  {
     topic: "HTML & CSS Foundations",
     description:
       "Semantic HTML5, CSS3, Flexbox, Grid, animations, responsive layouts, custom properties",
     status: "done",
-    order: 1,
+    order: 2,
     targetDate: null,
   },
   {
     topic: "JavaScript Fundamentals",
     description:
       "ES6+, DOM manipulation, events, async/await, fetch API, localStorage",
-    status: "done",
-    order: 2,
-    targetDate: null,
-  },
-  {
-    topic: "C & C++ Programming",
-    description:
-      "Pointers, memory management, OOP, STL — 1st Rank in University C Competition",
     status: "done",
     order: 3,
     targetDate: null,
@@ -44,16 +44,16 @@ export const roadmap = [
     targetDate: null,
   },
   {
-    topic: "REST API Integration",
-    description:
-      "Fetch & Axios, HTTP methods, CRUD operations — applied in SecureAuth project",
+    topic: "Prompt Engineering & AI Tools",
+    description: "Zero-shot, few-shot, chain-of-thought prompting. AI for dev",
     status: "done",
     order: 6,
     targetDate: null,
   },
   {
-    topic: "Prompt Engineering & AI Tools",
-    description: "Zero-shot, few-shot, chain-of-thought prompting. AI for dev",
+    topic: "REST API Integration",
+    description:
+      "Fetch & Axios, HTTP methods, CRUD operations — applied in SecureAuth project",
     status: "done",
     order: 7,
     targetDate: null,
@@ -79,16 +79,17 @@ export const roadmap = [
 
   // status: "learning",
   // targetDate: "Q3 2026",
-
-  // ── PLANNED ──
   {
     topic: "Node.js & Express",
     description:
       "Backend APIs, middleware, authentication, REST API server, JWT",
-    status: "planned",
+    status: "learning",
     order: 10,
     targetDate: null,
   },
+
+  // ── PLANNED ──
+
   {
     topic: "MongoDB",
     description:

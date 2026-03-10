@@ -1,0 +1,3 @@
+update readme and github description
+
+no link on blank if there is # in src of anchor tag
