@@ -80,11 +80,19 @@ export const roadmap = [
   // status: "learning",
   // targetDate: "Q3 2026",
   {
-    topic: "Node.js & Express",
+    topic: "Node.js",
     description:
-      "Backend APIs, middleware, authentication, REST API server, JWT",
+      "Backend runtime, package management, building REST APIs, middleware, JWT",
     status: "learning",
     order: 10,
+    targetDate: null,
+  },
+  {
+    topic: "Express.js",
+    description:
+      "Express middleware, routing, request handling, authentication, REST API servers",
+    status: "learning",
+    order: 11,
     targetDate: null,
   },
 
@@ -95,7 +103,7 @@ export const roadmap = [
     description:
       "NoSQL databases, Mongoose ODM, CRUD operations, schema design",
     status: "planned",
-    order: 11,
+    order: 12,
     targetDate: null,
   },
   {
@@ -103,7 +111,7 @@ export const roadmap = [
     description:
       "Server-side scripting, functions, sessions, cookies, PDO, MySQL integration",
     status: "planned",
-    order: 12,
+    order: 13,
     targetDate: null,
   },
   {
@@ -111,7 +119,7 @@ export const roadmap = [
     description:
       "Advanced queries, joins, normalization, stored procedures, MySQL with PHP",
     status: "planned",
-    order: 13,
+    order: 14,
     targetDate: null,
   },
   {
@@ -119,7 +127,7 @@ export const roadmap = [
     description:
       "OOP, collections, exception handling, data structures, Spring Boot basics",
     status: "planned",
-    order: 14,
+    order: 15,
     targetDate: null,
   },
 ];
