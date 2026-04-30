@@ -25,7 +25,7 @@ export const platforms = [
     rating: 5,
   },
   {
-    name: "CodeStepByStep",
+    name: "Code Step By Step",
     type: "youtube",
     icon: "🪜",
     channel: "CodeStepByStep",
@@ -42,6 +42,25 @@ export const platforms = [
     notes:
       "Practice platform with step-by-step programming problems. Great for strengthening DSA fundamentals.",
     rating: 4,
+  },
+  {
+    name: "Complete Coding By Prashant Sir",
+    type: "youtube",
+    icon: "▶️",
+    channel: "Complete Coding By Prashant Sir",
+    link: "https://www.youtube.com/@CompleteCodingByPrashantSir",
+    topics: [
+      "Backend",
+      "Database",
+      "Node.js",
+      "Express.js",
+      "C",
+      "Java",
+      "HTML",
+    ],
+    notes:
+      "Hindi programming tutorials covering  Backend, Database, Node.js, Express.js, C, Java, HTML.",
+    rating: 3,
   },
   {
     name: "LearnVern",
@@ -74,7 +93,6 @@ export const platforms = [
     topics: [
       "Git",
       "GitHub Actions",
-      "Soft Skills",
       "Microsoft Copilot",
       "Python",
       "Software Dev",

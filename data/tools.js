@@ -71,6 +71,17 @@ export const toolCategories = [
           url: "https://developer.chrome.com/docs/devtools/overview",
         },
       },
+      {
+        name: "React DevTools",
+        icon: "⚛️",
+        usage:
+          "Browser extension for debugging React applications — component tree, props, state inspection",
+        docsLink: "https://react.dev/reference/react-dom/components",
+        learnLink: {
+          label: "React DevTools Docs",
+          url: "https://react.dev/docs/react-devtools",
+        },
+      },
     ],
   },
   {
@@ -114,6 +125,31 @@ export const toolCategories = [
         usage:
           "AI-assisted coding, debugging, prompt engineering, and learning within the Replit IDE",
         docsLink: "https://docs.replit.com/getting-started/intro-replit",
+        learnLink: null,
+      },
+    ],
+  },
+  {
+    category: "API Testing",
+    icon: "🔌",
+    tools: [
+      {
+        name: "Postman",
+        icon: "📬",
+        usage:
+          "API client for building, testing, and documenting APIs — collections, environments, automation",
+        docsLink: "https://learning.postman.com/docs",
+        learnLink: {
+          label: "Postman Academy",
+          url: "https://www.postman.com/academy",
+        },
+      },
+      {
+        name: "Thunder Client",
+        icon: "⛈️",
+        usage:
+          "Lightweight REST API client for VS Code — visual testing, collections, environment variables",
+        docsLink: "https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client",
         learnLink: null,
       },
     ],

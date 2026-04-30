@@ -109,6 +109,11 @@ export const languages = [
         label: "code step by step",
         link: "https://www.youtube.com/playlist?list=PL8p2I9GklV463WUKdVzUZ17IDZ3SwoSTu",
       },
+      {
+        type: "learnvern",
+        label: "LearnVern",
+        link: "https://www.learnvern.com/course/reactjs-tutorial",
+      },
       { type: "web", label: "React Official Docs", link: "https://react.dev" },
       {
         type: "web",
@@ -119,6 +124,44 @@ export const languages = [
         type: "w3schools",
         label: "w3schools React",
         link: "https://www.w3schools.com/react/",
+      },
+    ],
+  },
+  {
+    name: "Node.js",
+    icon: "🟢",
+    description:
+      "Server-side JavaScript, npm, Express.js integration, REST API development",
+    learned: true,
+    sources: [
+      {
+        type: "youtube",
+        label: "Complete Coding by Prashant Sir",
+        link: "https://www.youtube.com/playlist?list=PL78RhpUUKSwfeSOOwfE9x6l5jTjn5LbY3",
+      },
+      {
+        type: "web",
+        label: "Node.js Docs",
+        link: "https://nodejs.org/docs/latest/",
+      },
+    ],
+  },
+  {
+    name: "Express.js",
+    icon: "🚀",
+    description:
+      "Web application framework for Node.js, routing, middleware, API creation",
+    learned: true,
+    sources: [
+      {
+        type: "youtube",
+        label: "Complete Coding by Prashant Sir",
+        link: "https://www.youtube.com/playlist?list=PL78RhpUUKSwfeSOOwfE9x6l5jTjn5LbY3",
+      },
+      {
+        type: "web",
+        label: "Express Docs",
+        link: "https://expressjs.com/",
       },
     ],
   },

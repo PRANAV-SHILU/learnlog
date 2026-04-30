@@ -74,25 +74,41 @@ export const roadmap = [
     order: 9,
     targetDate: null,
   },
+  {
+    topic: "Node.js",
+    description:
+      "Backend runtime, package management, building REST APIs, file system",
+    status: "done",
+    order: 10,
+    targetDate: null,
+  },
 
   // ── IN PROGRESS ──
 
   // status: "learning",
   // targetDate: "Q3 2026",
-  {
-    topic: "Node.js",
-    description:
-      "Backend runtime, package management, building REST APIs, middleware, JWT",
-    status: "learning",
-    order: 10,
-    targetDate: null,
-  },
+
   {
     topic: "Express.js",
     description:
-      "Express middleware, routing, request handling, authentication, REST API servers",
+      "Express middleware, routing, controllers, request handling, REST API servers, authentication, JWT",
     status: "learning",
     order: 11,
+    targetDate: null,
+  },
+  {
+    topic: "Prisma",
+    description: "Database ORM, schema design, CRUD operations, migrations",
+    status: "learning",
+    order: 12,
+    targetDate: null,
+  },
+  {
+    topic: "SQL & Database Design",
+    description:
+      "Advanced queries, joins, normalization, stored procedures, MySQL with PHP",
+    status: "learning",
+    order: 13,
     targetDate: null,
   },
 
@@ -103,7 +119,7 @@ export const roadmap = [
     description:
       "NoSQL databases, Mongoose ODM, CRUD operations, schema design",
     status: "planned",
-    order: 12,
+    order: 14,
     targetDate: null,
   },
   {
@@ -111,15 +127,7 @@ export const roadmap = [
     description:
       "Server-side scripting, functions, sessions, cookies, PDO, MySQL integration",
     status: "planned",
-    order: 13,
-    targetDate: null,
-  },
-  {
-    topic: "SQL & Database Design",
-    description:
-      "Advanced queries, joins, normalization, stored procedures, MySQL with PHP",
-    status: "planned",
-    order: 14,
+    order: 15,
     targetDate: null,
   },
   {
@@ -127,7 +135,7 @@ export const roadmap = [
     description:
       "OOP, collections, exception handling, data structures, Spring Boot basics",
     status: "planned",
-    order: 15,
+    order: 16,
     targetDate: null,
   },
 ];

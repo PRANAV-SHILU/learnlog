@@ -9,6 +9,7 @@ export const skillCategories = [
       { name: "CSS3", icon: "🎨" },
       { name: "JavaScript (ES6+)", icon: "⚡" },
       { name: "React.js", icon: "⚛️" },
+      { name: "Redux.js", icon: "🔄" },
       { name: "Bootstrap", icon: "🅱️" },
       { name: "Tailwind CSS", icon: "🌊" },
       { name: "REST API Integration", icon: "🔌" },
@@ -19,6 +20,14 @@ export const skillCategories = [
       { name: "React Hook Form", icon: "📝" },
       { name: "Yup", icon: "🛡️" },
       { name: "Trivule", icon: "✅" },
+    ],
+  },
+  {
+    category: "Backend",
+    icon: "🖥️",
+    skills: [
+      { name: "Node.js", icon: "🟢" },
+      { name: "Express.js", icon: "🚀" },
     ],
   },
   {
@@ -59,6 +68,9 @@ export const skillCategories = [
   {
     category: "Currently Learning",
     icon: "📚",
-    skills: [{ name: "Redux.js", icon: "🔄" }],
+    skills: [
+      { name: "SQL", icon: "🗃️" },
+      { name: "Prisma", icon: "💎" },
+    ],
   },
 ];
