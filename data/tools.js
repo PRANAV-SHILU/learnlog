@@ -34,29 +34,6 @@ export const toolCategories = [
     ],
   },
   {
-    category: "Code Editors & IDEs",
-    icon: "✏️",
-    tools: [
-      {
-        name: "VS Code",
-        icon: "🆚",
-        usage:
-          "Primary code editor — extensions, IntelliSense, live server, debugging",
-        docsLink: "https://code.visualstudio.com/docs",
-        learnLink: null,
-      },
-      {
-        name: "Google Antigravity",
-        icon: "🌍",
-        usage:
-          "An IDE for the web — code, run, and debug in the browser with AI assistance",
-        docsLink:
-          "https://mrdoob.com/projects/chromeexperiments/google-gravity/",
-        learnLink: null,
-      },
-    ],
-  },
-  {
     category: "Browser & DevTools",
     icon: "🌐",
     tools: [
@@ -104,28 +81,6 @@ export const toolCategories = [
         usage: "Zoho Writer, Sheets, Show, Mail, Cliq, Notebook, etc...",
         docsLink: "https://www.zoho.com/docs",
         learnLink: { label: "Zoho Learn", url: "https://learn.zoho.com" },
-      },
-    ],
-  },
-  {
-    category: "AI Tools",
-    icon: "🤖",
-    tools: [
-      {
-        name: "AI Chatbots",
-        icon: "🪟",
-        usage:
-          "AI productivity tools for coding, debugging, research, and content generation",
-        docsLink: null,
-        learnLink: null,
-      },
-      {
-        name: "Replit AI",
-        icon: "🧠",
-        usage:
-          "AI-assisted coding, debugging, prompt engineering, and learning within the Replit IDE",
-        docsLink: "https://docs.replit.com/getting-started/intro-replit",
-        learnLink: null,
       },
     ],
   },
