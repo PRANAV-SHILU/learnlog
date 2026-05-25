@@ -51,7 +51,7 @@ export const roadmap = [
     targetDate: null,
   },
   {
-    topic: "REST API Integration",
+    topic: "REST APIs",
     description:
       "Fetch & Axios, HTTP methods, CRUD operations — applied in SecureAuth project",
     status: "done",
@@ -59,7 +59,7 @@ export const roadmap = [
     targetDate: null,
   },
   {
-    topic: "React.js — Advanced Patterns",
+    topic: "React.js & React Router",
     description:
       "React Router v7 data APIs, loaders, actions, useSearchParams, form state management without prop drilling",
     status: "done",
@@ -67,7 +67,7 @@ export const roadmap = [
     targetDate: null,
   },
   {
-    topic: "Redux.js",
+    topic: "Redux Toolkit",
     description:
       "Global state management, Redux Toolkit, slices, async thunks, and integrating with React",
     status: "done",
@@ -78,7 +78,7 @@ export const roadmap = [
     topic: "Node.js",
     description:
       "Backend runtime, package management, building REST APIs, file system",
-    status: "done",
+    status: "learning",
     order: 10,
     targetDate: null,
   },
@@ -97,16 +97,17 @@ export const roadmap = [
     targetDate: null,
   },
   {
-    topic: "Prisma",
-    description: "Database ORM, schema design, CRUD operations, migrations",
+    topic: "Mongoose",
+    description:
+      "MongoDB object modeling, schemas, validation, relationships, population",
     status: "learning",
     order: 12,
     targetDate: null,
   },
   {
-    topic: "SQL & Database Design",
+    topic: "MongoDB",
     description:
-      "Advanced queries, joins, normalization, stored procedures, MySQL with PHP",
+      "NoSQL databases, Mongoose ODM, CRUD operations, schema design",
     status: "learning",
     order: 13,
     targetDate: null,
@@ -115,11 +116,18 @@ export const roadmap = [
   // ── PLANNED ──
 
   {
-    topic: "MongoDB",
+    topic: "SQL & Database Design",
     description:
-      "NoSQL databases, Mongoose ODM, CRUD operations, schema design",
+      "Advanced queries, joins, normalization, stored procedures, MySQL with PHP",
     status: "planned",
     order: 14,
+    targetDate: null,
+  },
+  {
+    topic: "Prisma",
+    description: "Database ORM, schema design, CRUD operations, migrations",
+    status: "planned",
+    order: 15,
     targetDate: null,
   },
   {
@@ -127,7 +135,7 @@ export const roadmap = [
     description:
       "Server-side scripting, functions, sessions, cookies, PDO, MySQL integration",
     status: "planned",
-    order: 15,
+    order: 16,
     targetDate: null,
   },
   {
@@ -135,7 +143,7 @@ export const roadmap = [
     description:
       "OOP, collections, exception handling, data structures, Spring Boot basics",
     status: "planned",
-    order: 16,
+    order: 17,
     targetDate: null,
   },
 ];
