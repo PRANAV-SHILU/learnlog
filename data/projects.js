@@ -27,14 +27,14 @@ export const projects = [
     githubLink: "https://github.com/PRANAV-SHILU/ELE-X",
     liveLink: "https://pranav-shilu.github.io/ELE-X/HTML/HOME.HTML",
   },
-  {
-    name: "SO-BOLD",
-    description:
-      "React + Vite project showcasing modern frontend architecture — React Router v7, API-based route loaders, nested layouts, dynamic routing, centralized routes, and global error handling.",
-    stack: ["React.js", "React Router v7", "JavaScript", "HTML5", "CSS3"],
-    githubLink: "https://github.com/PRANAV-SHILU/SO-BOLD",
-    liveLink: "https://pranav-shilu.github.io/SO-BOLD/",
-  },
+  // {
+  //   name: "SO-BOLD",
+  //   description:
+  //     "React + Vite project showcasing modern frontend architecture — React Router v7, API-based route loaders, nested layouts, dynamic routing, centralized routes, and global error handling.",
+  //   stack: ["React.js", "React Router v7", "JavaScript", "HTML5", "CSS3"],
+  //   githubLink: "https://github.com/PRANAV-SHILU/SO-BOLD",
+  //   liveLink: "https://pranav-shilu.github.io/SO-BOLD/",
+  // },
   {
     name: "AppLab – App Landing Page",
     description:
@@ -83,12 +83,12 @@ export const projects = [
     githubLink: "https://github.com/PRANAV-SHILU/TODO-LIST",
     liveLink: "https://pranav-shilu.github.io/TODO-LIST/",
   },
-  {
-    name: "LearnLog (This Site)",
-    description:
-      "Personal learning dashboard — tracks every language, course, certificate, tool, and project. Built with vanilla HTML, CSS, and ES6 modules. No framework, no build step.",
-    stack: ["HTML5", "CSS3", "JavaScript", "ES Modules"],
-    githubLink: "https://github.com/pranav-shilu/learnlog",
-    liveLink: null,
-  },
+  // {
+  //   name: "LearnLog (This Site)",
+  //   description:
+  //     "Personal learning dashboard — tracks every language, course, certificate, tool, and project. Built with vanilla HTML, CSS, and ES6 modules. No framework, no build step.",
+  //   stack: ["HTML5", "CSS3", "JavaScript", "ES Modules"],
+  //   githubLink: "https://github.com/pranav-shilu/learnlog",
+  //   liveLink: null,
+  // },
 ];
