@@ -59,6 +59,15 @@ export const webinars = [
     link: "https://www.tops-int.com/webinar-certificate/WUtFdTVBSmpoS0pBV2Fod3dPd01kdz09",
     linkLabel: "Certificate",
   },
+  {
+    type: "webinar",
+    name: "LinkedIn Mastery: The Ultimate Guide to Career & Personal Branding",
+    organizer: "Skillsiya",
+    date: "31 Aug 2025",
+    description: "Mastery of career and personal branding on LinkedIn, networking strategies, and optimizing profiles for better opportunities.",
+    link: "https://www.skillsiya.com/verify-certificate?serialno=EKDO93CH",
+    linkLabel: "Certificate",
+  },
 
   // ════════════════════════════
   // SEMINARS
