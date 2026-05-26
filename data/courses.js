@@ -134,37 +134,6 @@ export const learningItems = [
       },
     ],
   },
-  {
-    type: "course",
-    name: "Prompt Engineering",
-    description:
-      "Prompt engineering techniques for developers — zero-shot, few-shot, chain-of-thought prompting. Also covered Microsoft Copilot prompt writing and AI productivity workflows.",
-    sources: [
-      {
-        type: "web",
-        label: "DeepLearning.AI",
-        link: "https://learn.deeplearning.ai/accomplishments/5cb879ad-c151-4b16-bcd8-bcf86bc2c608?usp=sharing",
-      },
-      {
-        type: "linkedin",
-        label: "Microsoft & LinkedIn",
-        link: "https://www.linkedin.com/learning/certificates/ef510e16c72d30301183fa54f6836cb4d37bdf1534dbcfb7fcca349f74167086",
-      },
-    ],
-  },
-  {
-    type: "course",
-    name: "Vibe Coding with Replit",
-    description:
-      "AI-assisted coding using Replit — rapid prototyping, collaborative coding environments, and vibe-driven development workflows.",
-    sources: [
-      {
-        type: "web",
-        label: "DeepLearning.AI",
-        link: "https://learn.deeplearning.ai/accomplishments/ca1df5de-e69c-46d2-aef7-d9871457b700?usp=sharing",
-      },
-    ],
-  },
 
   // ════════════════════════════
   // CERTIFICATES

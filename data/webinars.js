@@ -3,6 +3,17 @@
 
 export const webinars = [
   // ════════════════════════════
+  // SEMINARS
+  // ════════════════════════════
+  {
+    type: "seminar",
+    name: "Campus to Corporate (C2C) — Add-on Workshop",
+    organizer: "Shree Swaminarayan College of Computer Science, Bhavnagar",
+    date: "01 Mar 2026",
+    description: "An offline workshop by <a href='https://www.linkedin.com/in/bharatmvaghela/' target='_blank'>Dr. Bharat Vaghela</a> covering the mindset shift from campus to corporate culture — resume building, corporate practices, interview tips, and professional readiness. Held at SSCCS and certified by the college.",
+  },
+
+  // ════════════════════════════
   // WEBINARS
   // ════════════════════════════
   {
@@ -68,15 +79,20 @@ export const webinars = [
     link: "https://www.skillsiya.com/verify-certificate?serialno=EKDO93CH",
     linkLabel: "Certificate",
   },
-
-  // ════════════════════════════
-  // SEMINARS
-  // ════════════════════════════
   {
-    type: "seminar",
-    name: "Campus to Corporate (C2C) — Add-on Workshop",
-    organizer: "Shree Swaminarayan College of Computer Science, Bhavnagar",
-    date: "01 Mar 2026",
-    description: "An offline workshop by Dr. Bharat Vaghela covering the mindset shift from campus to corporate culture — resume building, corporate practices, interview tips, and professional readiness. Held at SSCCS and certified by the college.",
+    type: "webinar",
+    name: "Prompt Engineering",
+    organizer: "DeepLearning.AI",
+    description: "Prompt engineering techniques for developers — zero-shot, few-shot, chain-of-thought prompting. Also covered Microsoft Copilot prompt writing and AI productivity workflows.",
+    link: "https://learn.deeplearning.ai/accomplishments/5cb879ad-c151-4b16-bcd8-bcf86bc2c608?usp=sharing",
+    linkLabel: "DeepLearning.AI",
+  },
+  {
+    type: "webinar",
+    name: "Vibe Coding with Replit",
+    organizer: "DeepLearning.AI",
+    description: "AI-assisted coding using Replit — rapid prototyping, collaborative coding environments, and vibe-driven development workflows.",
+    link: "https://learn.deeplearning.ai/accomplishments/ca1df5de-e69c-46d2-aef7-d9871457b700?usp=sharing",
+    linkLabel: "Certificate",
   },
 ];
