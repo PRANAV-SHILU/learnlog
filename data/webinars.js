@@ -63,4 +63,11 @@ export const webinars = [
   // ════════════════════════════
   // SEMINARS
   // ════════════════════════════
+  {
+    type: "seminar",
+    name: "Campus to Corporate (C2C) — Add-on Workshop",
+    organizer: "Shree Swaminarayan College of Computer Science, Bhavnagar",
+    date: "01 Mar 2026",
+    description: "An offline workshop by Dr. Bharat Vaghela covering the mindset shift from campus to corporate culture — resume building, corporate practices, interview tips, and professional readiness. Held at SSCCS and certified by the college.",
+  },
 ];
