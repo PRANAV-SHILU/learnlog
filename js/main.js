@@ -9,6 +9,7 @@ import {
   renderPlatforms,
   renderCourses,
   renderCertificates,
+  renderWebinars,
   renderTools,
   renderRoadmap,
   renderHeroSocial,
@@ -30,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderProjects(document.getElementById("section-projects"));
   renderPlatforms(document.getElementById("section-platforms"));
   renderCourses(document.getElementById("section-courses"));
+  renderWebinars(document.getElementById("section-webinars"));
   renderCertificates(document.getElementById("section-certificates"));
   renderTools(document.getElementById("section-tools"));
   renderRoadmap(document.getElementById("section-roadmap"));

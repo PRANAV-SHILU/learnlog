@@ -9,6 +9,7 @@ import { toolCategories } from "../data/tools.js";
 import { platforms } from "../data/platforms.js";
 import { projects } from "../data/projects.js";
 import { roadmap } from "../data/roadmap.js";
+import { webinars } from "../data/webinars.js";
 
 // ─────────────────────────────────────────────
 // SHARED HELPERS
@@ -260,6 +261,53 @@ export function renderCertificates(targetEl) {
     subtitle: "Certificates earned from completed courses",
     count: certs.length,
     content: `<div class="cert-list">${items}</div>`,
+  });
+}
+
+// ─────────────────────────────────────────────
+// WEBINARS & SEMINARS
+// ─────────────────────────────────────────────
+export function renderWebinars(targetEl) {
+  const typeConfig = {
+    webinar: { label: "Webinar", icon: "fas fa-video", cls: "badge-webinar" },
+    seminar: { label: "Seminar", icon: "fas fa-chalkboard-teacher", cls: "badge-seminar" },
+  };
+
+  const items = webinars
+    .map((ev) => {
+      const cfg = typeConfig[ev.type] || typeConfig.webinar;
+      const linkBtn = ev.link
+        ? `<a href="${ev.link}" target="_blank" rel="noopener" class="platform-link-btn">
+            <i class="fas fa-external-link-alt"></i> View
+          </a>`
+        : "";
+      return `
+    <div class="webinar-card" data-search="${ev.name} ${ev.organizer} ${ev.description} ${ev.type}">
+      <div class="webinar-card-top">
+        <div class="webinar-meta">
+          <span class="event-badge ${cfg.cls}"><i class="${cfg.icon}"></i> ${cfg.label}</span>
+          ${ev.date ? `<span class="webinar-date"><i class="fas fa-calendar-alt"></i> ${ev.date}</span>` : ""}
+        </div>
+        ${linkBtn}
+      </div>
+      <div class="webinar-name">${ev.name}</div>
+      <div class="webinar-organizer"><i class="fas fa-building"></i> ${ev.organizer}</div>
+      ${ev.description ? `<div class="webinar-desc">${ev.description}</div>` : ""}
+    </div>`;
+    })
+    .join("");
+
+  const emptyMsg = webinars.length === 0
+    ? `<div class="webinar-empty"><i class="fas fa-calendar-plus"></i><p>No events logged yet — add your first webinar or seminar!</p></div>`
+    : "";
+
+  targetEl.innerHTML = accordion({
+    id: "webinars",
+    faIcon: "fas fa-chalkboard-teacher",
+    title: "Webinars & Seminars",
+    subtitle: "Events, workshops, and online sessions attended",
+    count: webinars.length,
+    content: `<div class="webinars-grid">${items}${emptyMsg}</div>`,
   });
 }
 
