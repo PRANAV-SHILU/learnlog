@@ -135,9 +135,9 @@ export const languages = [
     learned: true,
     sources: [
       {
-        type: "youtube",
-        label: "Complete Coding by Prashant Sir",
-        link: "https://www.youtube.com/playlist?list=PL78RhpUUKSwfeSOOwfE9x6l5jTjn5LbY3",
+        type: "web",
+        label: "KnowledgeGate",
+        link: "https://www.knowledgegate.ai/courses/COMPLETE-NODEJS-EXPRESSJS-MONGODB",
       },
       {
         type: "web",
@@ -154,9 +154,9 @@ export const languages = [
     learned: true,
     sources: [
       {
-        type: "youtube",
-        label: "Complete Coding by Prashant Sir",
-        link: "https://www.youtube.com/playlist?list=PL78RhpUUKSwfeSOOwfE9x6l5jTjn5LbY3",
+        type: "web",
+        label: "KnowledgeGate",
+        link: "https://www.knowledgegate.ai/courses/COMPLETE-NODEJS-EXPRESSJS-MONGODB",
       },
       {
         type: "web",

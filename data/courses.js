@@ -7,6 +7,57 @@ export const learningItems = [
   // ════════════════════════════
   {
     type: "course",
+    name: "Complete Node.js, Express.js & MongoDB",
+    description:
+      "Full backend development course covering Node.js fundamentals, Express.js server & routing, REST API design, MongoDB with Mongoose ODM, authentication, and real-world project building.",
+    sources: [
+      {
+        type: "web",
+        label: "KnowledgeGate",
+        link: "https://www.knowledgegate.ai/courses/COMPLETE-NODEJS-EXPRESSJS-MONGODB",
+      },
+    ],
+  },
+  {
+    type: "course",
+    name: "Junior Software Developer Course",
+    description:
+      "Hands-on web development training — HTML, CSS, JavaScript and intro to PHP (arrays, functions, sessions, cookies, PDO) applied in real-world project simulations.",
+    sources: [{ type: "college", label: "IT Experts", link: "#" }],
+  },
+  {
+    type: "course",
+    name: "JavaScript - Full Course for Beginners",
+    description:
+      "Complete JavaScript — variables, functions, DOM manipulation, events, ES6+, and async programming.",
+    sources: [
+      {
+        type: "web",
+        label: "IBM SkillsBuild",
+        link: "https://skills.yourlearning.ibm.com/activity/URL-PKZNO7MFNFG",
+      },
+    ],
+  },
+  {
+    type: "course",
+    name: "Git and GitHub",
+    description:
+      "Version control fundamentals — repository handling, commits, branching, merging, and collaborative GitHub workflow.",
+    sources: [
+      {
+        type: "web",
+        label: "IBM SkillsBuild",
+        link: "https://skills.yourlearning.ibm.com/activity/URL-RGOJ5YH7EVK",
+      },
+      {
+        type: "youtube",
+        label: "Apna College",
+        link: "https://www.youtube.com/watch?v=Ez8F0nW6S-w",
+      },
+    ],
+  },
+  {
+    type: "course",
     name: "C Language Basic to Advance",
     description:
       "Full C programming from syntax and pointers to data structures — used for University Competition prep.",
@@ -17,13 +68,6 @@ export const learningItems = [
         link: "https://www.learnvern.com/course/c-programming-tutorial-in-hindi",
       },
     ],
-  },
-  {
-    type: "course",
-    name: "Junior Software Developer Course",
-    description:
-      "Hands-on web development training — HTML, CSS, JavaScript and intro to PHP (arrays, functions, sessions, cookies, PDO) applied in real-world project simulations.",
-    sources: [{ type: "college", label: "IT Experts", link: "#" }],
   },
   {
     type: "course",
@@ -79,32 +123,14 @@ export const learningItems = [
   },
   {
     type: "course",
-    name: "JavaScript - Full Course for Beginners",
+    name: "Soft Skills – Essential to Start Career",
     description:
-      "Complete JavaScript — variables, functions, DOM manipulation, events, ES6+, and async programming.",
+      "Communication, professional conduct, teamwork, and career-readiness essentials for entering the workforce.",
     sources: [
       {
-        type: "web",
-        label: "IBM SkillsBuild",
-        link: "https://skills.yourlearning.ibm.com/activity/URL-PKZNO7MFNFG",
-      },
-    ],
-  },
-  {
-    type: "course",
-    name: "Git and GitHub",
-    description:
-      "Version control fundamentals — repository handling, commits, branching, merging, and collaborative GitHub workflow.",
-    sources: [
-      {
-        type: "web",
-        label: "IBM SkillsBuild",
-        link: "https://skills.yourlearning.ibm.com/activity/URL-RGOJ5YH7EVK",
-      },
-      {
-        type: "youtube",
-        label: "Apna College",
-        link: "https://www.youtube.com/watch?v=Ez8F0nW6S-w",
+        type: "learnvern",
+        label: "LearnVern",
+        link: "https://www.learnvern.com/course/soft-skills-training-in-hindi",
       },
     ],
   },
@@ -123,19 +149,6 @@ export const learningItems = [
         type: "linkedin",
         label: "Microsoft & LinkedIn",
         link: "https://www.linkedin.com/learning/certificates/ef510e16c72d30301183fa54f6836cb4d37bdf1534dbcfb7fcca349f74167086",
-      },
-    ],
-  },
-  {
-    type: "course",
-    name: "Soft Skills – Essential to Start Career",
-    description:
-      "Communication, professional conduct, teamwork, and career-readiness essentials for entering the workforce.",
-    sources: [
-      {
-        type: "learnvern",
-        label: "LearnVern",
-        link: "https://www.learnvern.com/course/soft-skills-training-in-hindi",
       },
     ],
   },
