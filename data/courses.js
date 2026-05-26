@@ -134,7 +134,32 @@ export const learningItems = [
       },
     ],
   },
-
+  {
+    type: "course",
+    name: "Career Essentials in Software Development",
+    description:
+      "3-course Microsoft & LinkedIn Learning path — software development fundamentals, programming foundations, and Python basics. Includes: <a href='https://www.linkedin.com/learning/certificates/b00640d770d837475d07e44a4efa7a763e3a71f9d27f5a89f2a89f3b4f458cf1' target='_blank' style='color: var(--accent); text-decoration: underline;'>Introduction to Career Skills in Software Development</a>, <a href='https://www.linkedin.com/learning/certificates/98e0b917a53e2c6c9d0b93df1f04e7c10ecac3334b60787df6670fca75abe5e6' target='_blank' style='color: var(--accent); text-decoration: underline;'>Programming Foundations: Fundamentals</a>, and <a href='https://www.linkedin.com/learning/certificates/8babf41797f0a6881aaf25cfef8d5c27d72a7ab535125a43505c92cb4f915289' target='_blank' style='color: var(--accent); text-decoration: underline;'>Programming Foundations: Beyond the Fundamentals</a>.",
+    sources: [
+      {
+        type: "linkedin",
+        label: "View Main Course",
+        link: "https://www.linkedin.com/learning/certificates/2e0e42c553731c2fd136c5106a66f988c4b3fb70aab02c157edd73e428e454fa",
+      },
+    ],
+  },
+  {
+    type: "course",
+    name: "Microsoft Copilot for Productivity",
+    description:
+      "7-course Microsoft & LinkedIn Learning path covering Copilot in Word, Excel, PowerPoint, Outlook, Teams, and prompt writing for AI productivity. Includes: <a href='https://www.linkedin.com/learning/certificates/1f145e23d7c81b843e926aca44e266c33e7cb0720883da5129c5ccec0278e2f6' target='_blank' style='color: var(--accent); text-decoration: underline;'>Learning Microsoft 365 Copilot for Work (2024)</a>, <a href='https://www.linkedin.com/learning/certificates/c0a6a4bdd48959ccff8a69f598e7a1050e8a882e2e048fda9157150e71a0d88e' target='_blank' style='color: var(--accent); text-decoration: underline;'>Copilot in Outlook: Maximize Your Workday Efficiency</a>, <a href='https://www.linkedin.com/learning/certificates/8cd145ffc579a06022f8fc3ce85844e370386992b7a453e4533ed00440a58d0e' target='_blank' style='color: var(--accent); text-decoration: underline;'>Copilot in PowerPoint: From Prompt to Presentation</a>, <a href='https://www.linkedin.com/learning/certificates/9887a8b5fce29fabd26ee7cd5f5fdbe592e397069744ca03713062941d7292eb' target='_blank' style='color: var(--accent); text-decoration: underline;'>Copilot in Teams: AI-Powered Collaboration</a>, <a href='https://www.linkedin.com/learning/certificates/b946f58da72d72b2300152a2c1e9ae2599cd14508ddc5846d2b141e1e13cceee' target='_blank' style='color: var(--accent); text-decoration: underline;'>Copilot in Word: Create and Refine Documents with AI</a>, <a href='https://www.linkedin.com/learning/certificates/d14886ac76cc822ee7262422ada2aa8f461095fa03bf67056e5b017d6d611069' target='_blank' style='color: var(--accent); text-decoration: underline;'>Excel with Copilot: AI-Driven Data Analysis</a>, and <a href='https://www.linkedin.com/learning/certificates/ef510e16c72d30301183fa54f6836cb4d37bdf1534dbcfb7fcca349f74167086' target='_blank' style='color: var(--accent); text-decoration: underline;'>Microsoft Copilot: The Art of Prompt Writing</a>.",
+    sources: [
+      {
+        type: "linkedin",
+        label: "View Main Course",
+        link: "https://www.linkedin.com/learning/certificates/33483874b957cbf59f4ae97b3c37fdb568c9f822709d06d4525b9b52c0f2c56b",
+      },
+    ],
+  },
   // ════════════════════════════
   // CERTIFICATES
   // ════════════════════════════
@@ -306,189 +331,8 @@ export const learningItems = [
     ],
   },
 
-  // ── Microsoft & LinkedIn — Career Essentials ──
-  {
-    type: "certificate",
-    name: "Career Essentials in Software Development",
-    description:
-      "3-course Microsoft & LinkedIn Learning path — software development fundamentals, programming foundations, and Python basics.",
-    issuer: "Microsoft & LinkedIn Learning (Sep 2025)",
-    issuerIcon: "🪟",
-    sources: [
-      {
-        type: "linkedin",
-        label: "View Certificate",
-        link: "https://www.linkedin.com/learning/certificates/2e0e42c553731c2fd136c5106a66f988c4b3fb70aab02c157edd73e428e454fa",
-      },
-    ],
-  },
-  {
-    type: "certificate",
-    name: "Introduction to Career Skills in Software Development",
-    description:
-      "Part of Career Essentials path — career readiness, core software development concepts, and professional skills.",
-    issuer: "LinkedIn Learning (Sep 2025)",
-    issuerIcon: "💼",
-    sources: [
-      {
-        type: "linkedin",
-        label: "View Certificate",
-        link: "https://www.linkedin.com/learning/certificates/b00640d770d837475d07e44a4efa7a763e3a71f9d27f5a89f2a89f3b4f458cf1",
-      },
-    ],
-  },
-  {
-    type: "certificate",
-    name: "Programming Foundations: Fundamentals",
-    description:
-      "Core programming concepts — variables, data types, control flow, functions, and foundational problem-solving.",
-    issuer: "LinkedIn Learning (Sep 2025)",
-    issuerIcon: "💼",
-    sources: [
-      {
-        type: "linkedin",
-        label: "View Certificate",
-        link: "https://www.linkedin.com/learning/certificates/98e0b917a53e2c6c9d0b93df1f04e7c10ecac3334b60787df6670fca75abe5e6",
-      },
-    ],
-  },
-  {
-    type: "certificate",
-    name: "Programming Foundations: Beyond the Fundamentals",
-    description:
-      "Advanced programming foundations — OOP principles, algorithms, data structures, and software design thinking.",
-    issuer: "LinkedIn Learning (Sep 2025)",
-    issuerIcon: "💼",
-    sources: [
-      {
-        type: "linkedin",
-        label: "View Certificate",
-        link: "https://www.linkedin.com/learning/certificates/8babf41797f0a6881aaf25cfef8d5c27d72a7ab535125a43505c92cb4f915289",
-      },
-    ],
-  },
 
-  // ── Microsoft & LinkedIn — Copilot Productivity ──
-  {
-    type: "certificate",
-    name: "Microsoft Copilot for Productivity (7 courses)",
-    description:
-      "7-course Microsoft & LinkedIn Learning path covering Copilot in Word, Excel, PowerPoint, Outlook, Teams, and prompt writing for AI productivity.",
-    issuer: "Microsoft & LinkedIn Learning (Sep 2025)",
-    issuerIcon: "🪟",
-    sources: [
-      {
-        type: "linkedin",
-        label: "View Certificate",
-        link: "https://www.linkedin.com/learning/certificates/33483874b957cbf59f4ae97b3c37fdb568c9f822709d06d4525b9b52c0f2c56b",
-      },
-    ],
-  },
-  {
-    type: "certificate",
-    name: "Microsoft Copilot: The Art of Prompt Writing",
-    description:
-      "Writing effective prompts for Microsoft Copilot — practical prompt strategies for real-world productivity workflows.",
-    issuer: "LinkedIn Learning (Aug 2025)",
-    issuerIcon: "💼",
-    sources: [
-      {
-        type: "linkedin",
-        label: "View Certificate",
-        link: "https://www.linkedin.com/learning/certificates/ef510e16c72d30301183fa54f6836cb4d37bdf1534dbcfb7fcca349f74167086",
-      },
-    ],
-  },
-  {
-    type: "certificate",
-    name: "Learning Microsoft 365 Copilot for Work (2024)",
-    description:
-      "Using Microsoft 365 Copilot across Word, Excel, Teams, and Outlook to boost workplace productivity.",
-    issuer: "LinkedIn Learning",
-    issuerIcon: "💼",
-    sources: [
-      {
-        type: "linkedin",
-        label: "View Certificate",
-        link: "https://www.linkedin.com/learning/certificates/1f145e23d7c81b843e926aca44e266c33e7cb0720883da5129c5ccec0278e2f6",
-      },
-    ],
-  },
-  {
-    type: "certificate",
-    name: "Copilot in Outlook: Maximize Your Workday Efficiency",
-    description:
-      "Using Microsoft Copilot inside Outlook to draft emails, summarise threads, and manage scheduling efficiently.",
-    issuer: "LinkedIn Learning",
-    issuerIcon: "💼",
-    sources: [
-      {
-        type: "linkedin",
-        label: "View Certificate",
-        link: "https://www.linkedin.com/learning/certificates/c0a6a4bdd48959ccff8a69f598e7a1050e8a882e2e048fda9157150e71a0d88e",
-      },
-    ],
-  },
-  {
-    type: "certificate",
-    name: "Copilot in PowerPoint: From Prompt to Presentation",
-    description:
-      "Building presentations from prompts using Microsoft Copilot — slide generation, design suggestions, and speaker notes.",
-    issuer: "LinkedIn Learning",
-    issuerIcon: "💼",
-    sources: [
-      {
-        type: "linkedin",
-        label: "View Certificate",
-        link: "https://www.linkedin.com/learning/certificates/8cd145ffc579a06022f8fc3ce85844e370386992b7a453e4533ed00440a58d0e",
-      },
-    ],
-  },
-  {
-    type: "certificate",
-    name: "Copilot in Teams: AI-Powered Collaboration",
-    description:
-      "Leveraging Microsoft Copilot in Teams for meeting summaries, action items, and AI-assisted collaboration.",
-    issuer: "LinkedIn Learning",
-    issuerIcon: "💼",
-    sources: [
-      {
-        type: "linkedin",
-        label: "View Certificate",
-        link: "https://www.linkedin.com/learning/certificates/9887a8b5fce29fabd26ee7cd5f5fdbe592e397069744ca03713062941d7292eb",
-      },
-    ],
-  },
-  {
-    type: "certificate",
-    name: "Copilot in Word: Create and Refine Documents with AI",
-    description:
-      "Using Microsoft Copilot in Word to generate drafts, refine writing, and accelerate document creation.",
-    issuer: "LinkedIn Learning",
-    issuerIcon: "💼",
-    sources: [
-      {
-        type: "linkedin",
-        label: "View Certificate",
-        link: "https://www.linkedin.com/learning/certificates/b946f58da72d72b2300152a2c1e9ae2599cd14508ddc5846d2b141e1e13cceee",
-      },
-    ],
-  },
-  {
-    type: "certificate",
-    name: "Excel with Copilot: AI-Driven Data Analysis",
-    description:
-      "Using Microsoft Copilot in Excel for data insights, formula generation, charts, and AI-assisted spreadsheet analysis.",
-    issuer: "LinkedIn Learning",
-    issuerIcon: "💼",
-    sources: [
-      {
-        type: "linkedin",
-        label: "View Certificate",
-        link: "https://www.linkedin.com/learning/certificates/d14886ac76cc822ee7262422ada2aa8f461095fa03bf67056e5b017d6d611069",
-      },
-    ],
-  },
+
 
   // ── GitHub Actions ──
   {
