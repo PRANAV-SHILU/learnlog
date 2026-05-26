@@ -31,6 +31,16 @@ export const skillCategories = [
     ],
   },
   {
+    category: "Database",
+    icon: "🗄️",
+    skills: [
+      // { name: "MongoDB", icon: "🍃" },
+      // { name: "Mongoose", icon: "🔗" },
+      // { name: "SQL", icon: "🗃️" },
+      // { name: "Prisma", icon: "💎" },
+    ],
+  },
+  {
     category: "Core Concepts",
     icon: "🧠",
     skills: [
@@ -67,8 +77,8 @@ export const skillCategories = [
     category: "Currently Learning",
     icon: "📚",
     skills: [
-      { name: "SQL", icon: "🗃️" },
-      { name: "Prisma", icon: "💎" },
+      { name: "MongoDB", icon: "🍃" },
+      { name: "Express.js + REST APIs", icon: "🚀" },
     ],
   },
 ];
