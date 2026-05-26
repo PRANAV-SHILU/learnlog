@@ -278,7 +278,7 @@ export function renderWebinars(targetEl) {
       const cfg = typeConfig[ev.type] || typeConfig.webinar;
       const linkBtn = ev.link
         ? `<a href="${ev.link}" target="_blank" rel="noopener" class="platform-link-btn">
-            <i class="fas fa-external-link-alt"></i> View
+            <i class="fas fa-external-link-alt"></i> ${ev.linkLabel || "View"}
           </a>`
         : "";
       return `
