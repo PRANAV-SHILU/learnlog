@@ -503,7 +503,7 @@ export function renderRoadmap(targetEl) {
   targetEl.innerHTML = accordion({
     id: "roadmap",
     faIcon: "fas fa-map",
-    title: "Future Roadmap",
+    title: "Roadmap",
     subtitle: "Kanban view of my learning journey — past, present & future",
     count: roadmap.length,
     content: `<div class="roadmap-wrapper"><div class="roadmap-columns">${columnsHtml}</div></div>`,

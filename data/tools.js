@@ -109,4 +109,31 @@ export const toolCategories = [
       },
     ],
   },
+  {
+    category: "AI & Productivity",
+    icon: "🤖",
+    tools: [
+      {
+        name: "Prompt Engineering",
+        icon: "✍️",
+        usage: "Writing effective zero-shot, few-shot, and chain-of-thought prompts for AI models",
+        docsLink: "https://platform.openai.com/docs/guides/prompt-engineering",
+        learnLink: null,
+      },
+      {
+        name: "AI Chatbots",
+        icon: "🤖",
+        usage: "Using ChatGPT, Copilot, and Claude for coding, writing, and daily productivity tasks",
+        docsLink: null,
+        learnLink: null,
+      },
+      {
+        name: "AI Tools",
+        icon: "🧠",
+        usage: "Leveraging various AI platforms to accelerate software development and problem solving",
+        docsLink: null,
+        learnLink: null,
+      },
+    ],
+  },
 ];

@@ -46,39 +46,9 @@ export const skillCategories = [
     skills: [
       { name: "Object-Oriented Programming", icon: "🧩" },
       { name: "Data Structures & Algorithms", icon: "📦" },
-      { name: "Active Learning", level: "advanced", icon: "🎯" },
-      { name: "Quick Learner", level: "advanced", icon: "⚡" },
       { name: "Problem Solving", icon: "🔍" },
-      { name: "Software Development", icon: "💡" },
+      { name: "Web Development", icon: "💡" },
     ],
   },
-  {
-    category: "Developer Workflow",
-    icon: "⚙️",
-    skills: [
-      { name: "Git", icon: "🌿" },
-      { name: "GitHub", icon: "🐙" },
-      { name: "GitHub Desktop", icon: "🖥️" },
-      { name: "DevTools", icon: "🔧" },
-    ],
-  },
-  {
-    category: "AI & Productivity",
-    icon: "🤖",
-    skills: [
-      { name: "Prompt Engineering", icon: "✍️" },
-      { name: "AI Prompting", icon: "💬" },
-      { name: "Microsoft Copilot", icon: "🪟" },
-      { name: "AI Tools", icon: "🧠" },
-      { name: "AI Productivity", icon: "🚀" },
-    ],
-  },
-  {
-    category: "Currently Learning",
-    icon: "📚",
-    skills: [
-      { name: "MongoDB", icon: "🍃" },
-      { name: "Express.js + REST APIs", icon: "🚀" },
-    ],
-  },
+
 ];
