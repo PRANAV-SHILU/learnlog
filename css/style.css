@@ -1710,6 +1710,89 @@ mark {
   flex-wrap: wrap;
   gap: 5px;
 }
+                                                                    
+/* ══════════════════════════════
+   FRAMEWORKS (inline with languages)
+══════════════════════════════ */
+.frameworks-inline {
+  padding-top: 14px;
+}
+
+.frameworks-inline h4 {
+  margin: 10px 0 8px;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.frameworks-grid-inline {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.framework-inline-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+}
+
+.framework-inline-item:hover {
+  border-color: var(--accent-border);
+  background: var(--bg-elevated);
+}
+
+.fw-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.fw-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  flex: 1;
+}
+
+.fw-checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 2px solid var(--accent);
+  background: var(--accent-glow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  font-size: 0.65rem;
+}
+
+.fw-icon {
+  font-size: 1.25rem;
+}
+
+.fw-info {
+  min-width: 0;
+}
+
+.fw-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.fw-desc {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
 
 /* ══════════════════════════════
    CERTIFICATES SECTION

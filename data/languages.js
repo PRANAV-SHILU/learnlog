@@ -38,46 +38,6 @@ export const languages = [
     ],
   },
   {
-    name: "HTML5",
-    icon: "🌐",
-    description:
-      "Semantic markup, forms, accessibility, SEO basics — university + OJT training",
-    learned: true,
-    sources: [
-      {
-        type: "learnvern",
-        label: "LearnVern",
-        link: "https://www.learnvern.com/course/html5-tutorial-in-hindi",
-      },
-
-      {
-        type: "web",
-        label: "W3Schools",
-        link: "https://www.w3schools.com/html/",
-      },
-      { type: "college", label: "SSCCS College", link: "#" },
-    ],
-  },
-  {
-    name: "CSS3",
-    icon: "🎨",
-    description: "Flexbox, Grid, responsive design, custom properties",
-    learned: true,
-    sources: [
-      {
-        type: "learnvern",
-        label: "LearnVern",
-        link: "https://www.learnvern.com/course/css3-tutorial-in-hindi",
-      },
-      {
-        type: "web",
-        label: "W3Schools CSS",
-        link: "https://www.w3schools.com/css/",
-      },
-      { type: "college", label: "SSCCS College", link: "#" },
-    ],
-  },
-  {
     name: "JavaScript",
     icon: "⚡",
     description:
@@ -98,10 +58,49 @@ export const languages = [
     ],
   },
   {
+    name: "Python",
+    icon: "🐍",
+    description: "Basic syntax, data structures and OOP",
+    learned: false,
+    sources: [],
+  },
+];
+
+export const frameworks = [
+  {
+    name: "HTML5",
+    icon: "🌐",
+    description: "Semantic markup, structure and accessibility (HTML5)",
+    learned: true,
+    sources: [
+      {
+        type: "learnvern",
+        label: "LearnVern",
+        link: "https://www.learnvern.com/course/html5-tutorial-in-hindi",
+      },
+      { type: "web", label: "W3Schools", link: "https://www.w3schools.com/html/" },
+      { type: "college", label: "SSCCS College", link: "#" },
+    ],
+  },
+  {
+    name: "CSS3",
+    icon: "🎨",
+    description: "Styling, layouts, Flexbox, Grid, responsive design",
+    learned: true,
+    sources: [
+      {
+        type: "learnvern",
+        label: "LearnVern",
+        link: "https://www.learnvern.com/course/css3-tutorial-in-hindi",
+      },
+      { type: "web", label: "W3Schools CSS", link: "https://www.w3schools.com/css/" },
+      { type: "college", label: "SSCCS College", link: "#" },
+    ],
+  },
+  {
     name: "React.js",
     icon: "⚛️",
-    description:
-      "Components, hooks, React Router v7, REST API, form handling, Redux, etc...",
+    description: "UI library for building component-based interfaces",
     learned: true,
     sources: [
       {
@@ -109,60 +108,31 @@ export const languages = [
         label: "code step by step",
         link: "https://www.youtube.com/playlist?list=PL8p2I9GklV463WUKdVzUZ17IDZ3SwoSTu",
       },
-      {
-        type: "learnvern",
-        label: "LearnVern",
-        link: "https://www.learnvern.com/course/reactjs-tutorial",
-      },
+      { type: "learnvern", label: "LearnVern", link: "https://www.learnvern.com/course/reactjs-tutorial" },
       { type: "web", label: "React Official Docs", link: "https://react.dev" },
-      {
-        type: "web",
-        label: "React Router Docs",
-        link: "https://reactrouter.com",
-      },
-      {
-        type: "w3schools",
-        label: "w3schools React",
-        link: "https://www.w3schools.com/react/",
-      },
+      { type: "web", label: "w3schools React", link: "https://www.w3schools.com/react/" },
     ],
   },
   {
     name: "Node.js",
     icon: "🟢",
-    description:
-      "Server-side JavaScript, npm, Express.js integration, REST API development",
+    description: "JavaScript runtime for server-side applications",
     learned: true,
     sources: [
-      {
-        type: "web",
-        label: "KnowledgeGate",
-        link: "https://www.knowledgegate.ai/courses/COMPLETE-NODEJS-EXPRESSJS-MONGODB",
-      },
-      {
-        type: "web",
-        label: "Node.js Docs",
-        link: "https://nodejs.org/docs/latest/",
-      },
+      { type: "web", label: "KnowledgeGate", link: "https://www.knowledgegate.ai/courses/COMPLETE-NODEJS-EXPRESSJS-MONGODB" },
+      { type: "web", label: "Node.js Docs", link: "https://nodejs.org/docs/latest/" },
     ],
   },
   {
     name: "Express.js",
     icon: "🚀",
-    description:
-      "Web application framework for Node.js, routing, middleware, API creation",
+    description: "Minimal web framework for Node.js",
     learned: true,
     sources: [
-      {
-        type: "web",
-        label: "KnowledgeGate",
-        link: "https://www.knowledgegate.ai/courses/COMPLETE-NODEJS-EXPRESSJS-MONGODB",
-      },
-      {
-        type: "web",
-        label: "Express Docs",
-        link: "https://expressjs.com/",
-      },
+      { type: "web", label: "KnowledgeGate", link: "https://www.knowledgegate.ai/courses/COMPLETE-NODEJS-EXPRESSJS-MONGODB" },
+      { type: "web", label: "Express Docs", link: "https://expressjs.com/" },
     ],
   },
 ];
+
+// `libraries` moved/removed — keep frameworks inside languages module only

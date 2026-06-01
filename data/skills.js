@@ -47,7 +47,6 @@ export const skillCategories = [
       { name: "Object-Oriented Programming", icon: "🧩" },
       { name: "Data Structures & Algorithms", icon: "📦" },
       { name: "Problem Solving", icon: "🔍" },
-      { name: "Web Development", icon: "💡" },
     ],
   },
 

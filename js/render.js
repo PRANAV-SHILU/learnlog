@@ -3,7 +3,7 @@
 
 import { about } from "../data/about.js";
 import { skillCategories } from "../data/skills.js";
-import { languages } from "../data/languages.js";
+import { languages, frameworks } from "../data/languages.js";
 import { learningItems } from "../data/courses.js";
 import { toolCategories } from "../data/tools.js";
 import { platforms } from "../data/platforms.js";
@@ -166,7 +166,7 @@ export function renderSkills(targetEl) {
 // PROGRAMMING LANGUAGES
 // ─────────────────────────────────────────────
 export function renderLanguages(targetEl) {
-  const items = languages
+  const langItems = languages
     .map(
       (lang) => `
     <div class="language-item" data-search="${lang.name} ${lang.description} ${lang.sources.map((s) => s.label).join(" ")}">
@@ -191,15 +191,51 @@ export function renderLanguages(targetEl) {
     )
     .join("");
 
+  const fwItems = frameworks
+    .map(
+      (fw) => `
+    <div class="framework-inline-item" data-search="${fw.name} ${fw.description} ${fw.sources ? fw.sources.map((s) => s.label).join(' ') : ''}">
+      <div class="fw-top">
+        <div class="fw-left">
+          <div class="fw-checkbox">${fw.learned ? '<i class="fas fa-check"></i>' : ''}</div>
+          <span class="fw-icon">${fw.icon}</span>
+          <div class="fw-info">
+            <div class="fw-name">${fw.name}</div>
+            <div class="fw-desc">${fw.description}</div>
+          </div>
+        </div>
+        ${!fw.learned ? '<span class="learning-tag"><i class="fas fa-spinner fa-spin"></i> Learning</span>' : ''}
+      </div>
+      <div class="lang-sources">
+        <span class="lang-sources-label"><i class="fas fa-graduation-cap"></i> Learned from:</span>
+        <div class="lang-sources-chips">${sourcesHtml(fw.sources || [])}</div>
+      </div>
+    </div>`,
+    )
+    .join("");
+
+  const combined = `
+    <div class="language-grid">${langItems}</div>
+    <hr class="section-sep" />
+    <div class="frameworks-inline">
+      <h4>Frameworks & Related</h4>
+      <div class="frameworks-grid-inline">${fwItems}</div>
+    </div>`;
+
   targetEl.innerHTML = accordion({
     id: "languages",
     faIcon: "fas fa-code",
-    title: "Programming Languages",
-    subtitle: "Languages learned with their learning sources",
-    count: languages.length,
-    content: `<div class="language-grid">${items}</div>`,
+    title: "Programming Languages & Frameworks",
+    subtitle: "Languages and their associated frameworks / runtimes",
+    count: languages.length + frameworks.length,
+    content: combined,
   });
 }
+
+// ─────────────────────────────────────────────
+// FRAMEWORKS
+// ─────────────────────────────────────────────
+// removed separate frameworks & libraries renderers; frameworks are displayed inside languages
 
 // ─────────────────────────────────────────────
 // COURSES (type="course" only)
