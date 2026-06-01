@@ -5,7 +5,46 @@ export const learningItems = [
   // ════════════════════════════
   // COURSES
   // ════════════════════════════
-  
+
+  {
+    type: "course",
+    name: "NodeJs + ExpressJs + MongoDB",
+    description:
+      "KnowledgeGate course focused on backend development with Node.js, Express.js, REST APIs, MongoDB, and MERN stack integration.",
+    sources: [
+      {
+        type: "web",
+        label: "KnowledgeGate",
+        link: "https://www.knowledgegate.ai/certificate/D2A90573",
+      },
+    ],
+  },
+  {
+    type: "course",
+    name: "React and Redux",
+    description:
+      "React and Redux course from KnowledgeGate — component architecture, Redux state flow, hooks, and dynamic UI development.",
+    sources: [
+      {
+        type: "web",
+        label: "KnowledgeGate",
+        link: "https://www.knowledgegate.ai/certificate/6E255448",
+      },
+    ],
+  },
+  {
+    type: "course",
+    name: "Junior Software Developer (NSQF Level 3)",
+    description:
+      "Certified under Skill India / NSDC initiative. Covers HTML, CSS, JavaScript, GitHub, PHP (functions, PDO, sessions, cookies).",
+    sources: [
+      {
+        type: "college",
+        label: "Skill India Certificate",
+        link: "https://www.linkedin.com/in/pranavshilu/details/certifications/1756357702489/single-media-viewer/?profileId=ACoAAEQdfM4Bjz9XMUrIjuqYXlAjrmXxwAXTjE4",
+      },
+    ],
+  },
   {
     type: "course",
     name: "JavaScript - Full Course for Beginners",
@@ -16,6 +55,19 @@ export const learningItems = [
         type: "web",
         label: "IBM SkillsBuild",
         link: "https://skills.yourlearning.ibm.com/activity/URL-PKZNO7MFNFG",
+      },
+    ],
+  },
+  {
+    type: "course",
+    name: "C Language Basic to Advance",
+    description:
+      "Full C programming from syntax and pointers to data structures — used for University Competition prep.",
+    sources: [
+      {
+        type: "learnvern",
+        label: "LearnVern",
+        link: "https://www.learnvern.com/course/c-programming-tutorial-in-hindi",
       },
     ],
   },
@@ -34,19 +86,6 @@ export const learningItems = [
         type: "youtube",
         label: "Apna College",
         link: "https://www.youtube.com/watch?v=Ez8F0nW6S-w",
-      },
-    ],
-  },
-  {
-    type: "course",
-    name: "C Language Basic to Advance",
-    description:
-      "Full C programming from syntax and pointers to data structures — used for University Competition prep.",
-    sources: [
-      {
-        type: "learnvern",
-        label: "LearnVern",
-        link: "https://www.learnvern.com/course/c-programming-tutorial-in-hindi",
       },
     ],
   },
@@ -89,19 +128,7 @@ export const learningItems = [
       },
     ],
   },
-  {
-    type: "course",
-    name: "Soft Skills – Essential to Start Career",
-    description:
-      "Communication, professional conduct, teamwork, and career-readiness essentials for entering the workforce.",
-    sources: [
-      {
-        type: "learnvern",
-        label: "LearnVern",
-        link: "https://www.learnvern.com/course/soft-skills-training-in-hindi",
-      },
-    ],
-  },
+
   {
     type: "course",
     name: "Career Essentials in Software Development",
@@ -130,40 +157,14 @@ export const learningItems = [
   },
   {
     type: "course",
-    name: "React and Redux",
+    name: "Soft Skills – Essential to Start Career",
     description:
-      "React and Redux course from KnowledgeGate — component architecture, Redux state flow, hooks, and dynamic UI development.",
+      "Communication, professional conduct, teamwork, and career-readiness essentials for entering the workforce.",
     sources: [
       {
-        type: "web",
-        label: "KnowledgeGate",
-        link: "https://www.knowledgegate.ai/certificate/6E255448",
-      },
-    ],
-  },
-  {
-    type: "course",
-    name: "NodeJs + ExpressJs + MongoDB",
-    description:
-      "KnowledgeGate course focused on backend development with Node.js, Express.js, REST APIs, MongoDB, and MERN stack integration.",
-    sources: [
-      {
-        type: "web",
-        label: "KnowledgeGate",
-        link: "https://www.knowledgegate.ai/certificate/D2A90573",
-      },
-    ],
-  },
-  {
-    type: "course",
-    name: "Junior Software Developer (NSQF Level 3)",
-    description:
-      "Certified under Skill India / NSDC initiative. Covers HTML, CSS, JavaScript, GitHub, PHP (functions, PDO, sessions, cookies).",
-    sources: [
-      {
-        type: "college",
-        label: "Skill India Certificate",
-        link: "https://www.linkedin.com/in/pranavshilu/details/certifications/1756357702489/single-media-viewer/?profileId=ACoAAEQdfM4Bjz9XMUrIjuqYXlAjrmXxwAXTjE4",
+        type: "learnvern",
+        label: "LearnVern",
+        link: "https://www.learnvern.com/course/soft-skills-training-in-hindi",
       },
     ],
   },
@@ -180,11 +181,11 @@ export const learningItems = [
       },
     ],
   },
+
   // ════════════════════════════
   // CERTIFICATES
   // ════════════════════════════
 
-  // ── Competitions ──
   {
     type: "certificate",
     name: "University-Level C Programming Competition – 1st Rank",
@@ -200,13 +201,36 @@ export const learningItems = [
       },
     ],
   },
-
-  // ── Government / Skill India ──
-
-
-  // ── IBM ──
-
-  // ── OJT ──
+  {
+    type: "certificate",
+    name: "PhonePe Unstop Challenge",
+    description:
+      "Participation and credential from Unstop PhonePe challenge — competitive coding and problem-solving event.",
+    issuer: "Unstop",
+    issuerIcon: "🏅",
+    sources: [
+      {
+        type: "web",
+        label: "View Credential",
+        link: "https://unstop.com/certificate-preview/cfc2ddd9-6db3-4bdf-9b5f-8895f0ab9f19?utm_campaign=site-emails",
+      },
+    ],
+  },
+  {
+    type: "certificate",
+    name: "Practical GitHub Actions",
+    description:
+      "Hands-on GitHub Actions — workflows, CI/CD pipelines, automation triggers, and deploying projects with GitHub Actions.",
+    issuer: "LinkedIn Learning",
+    issuerIcon: "💼",
+    sources: [
+      {
+        type: "linkedin",
+        label: "View Certificate",
+        link: "https://www.linkedin.com/learning/certificates/9bb7f2baa131331b5c418b673437e7d6b8a695620acb530d7887191db3e80b11",
+      },
+    ],
+  },
   {
     type: "certificate",
     name: "Junior Software Developer – OJT (10 days)",
@@ -237,8 +261,6 @@ export const learningItems = [
       },
     ],
   },
-
-  // ── DeepLearning.AI ──
   {
     type: "certificate",
     name: "ChatGPT Prompt Engineering for Developers",
@@ -254,64 +276,6 @@ export const learningItems = [
       },
     ],
   },
-
-  // ── LearnVern ──
-
-
-  // ── Unstop ──
-  {
-    type: "certificate",
-    name: "PhonePe Unstop Challenge",
-    description:
-      "Participation and credential from Unstop PhonePe challenge — competitive coding and problem-solving event.",
-    issuer: "Unstop",
-    issuerIcon: "🏅",
-    sources: [
-      {
-        type: "web",
-        label: "View Credential",
-        link: "https://unstop.com/certificate-preview/cfc2ddd9-6db3-4bdf-9b5f-8895f0ab9f19?utm_campaign=site-emails",
-      },
-    ],
-  },
-
-
-
-
-  // ── GitHub Actions ──
-  {
-    type: "certificate",
-    name: "Practical GitHub Actions",
-    description:
-      "Hands-on GitHub Actions — workflows, CI/CD pipelines, automation triggers, and deploying projects with GitHub Actions.",
-    issuer: "LinkedIn Learning",
-    issuerIcon: "💼",
-    sources: [
-      {
-        type: "linkedin",
-        label: "View Certificate",
-        link: "https://www.linkedin.com/learning/certificates/9bb7f2baa131331b5c418b673437e7d6b8a695620acb530d7887191db3e80b11",
-      },
-    ],
-  },
-
-  {
-    type: "certificate",
-    name: "Vibe Coding with Replit",
-    description:
-      "AI-assisted rapid prototyping and collaborative coding using Replit — vibe-driven development workflows.",
-    issuer: "DeepLearning.AI",
-    issuerIcon: "🧠",
-    sources: [
-      {
-        type: "web",
-        label: "View Credential",
-        link: "https://learn.deeplearning.ai/accomplishments/ca1df5de-e69c-46d2-aef7-d9871457b700?usp=sharing",
-      },
-    ],
-  },
-
-  // ── Skillsiya ──
   {
     type: "certificate",
     name: "LinkedIn Mastery: The Ultimate Guide to Career & Personal Branding",
@@ -324,6 +288,21 @@ export const learningItems = [
         type: "web",
         label: "Verify Certificate",
         link: "https://www.skillsiya.com/verify-certificate?serialno=EKDO93CH",
+      },
+    ],
+  },
+  {
+    type: "certificate",
+    name: "Vibe Coding with Replit",
+    description:
+      "AI-assisted rapid prototyping and collaborative coding using Replit — vibe-driven development workflows.",
+    issuer: "DeepLearning.AI",
+    issuerIcon: "🧠",
+    sources: [
+      {
+        type: "web",
+        label: "View Credential",
+        link: "https://learn.deeplearning.ai/accomplishments/ca1df5de-e69c-46d2-aef7-d9871457b700?usp=sharing",
       },
     ],
   },
