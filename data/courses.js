@@ -7,19 +7,6 @@ export const learningItems = [
   // ════════════════════════════
   {
     type: "course",
-    name: "Complete Node.js, Express.js & MongoDB",
-    description:
-      "Full backend development course covering Node.js fundamentals, Express.js server & routing, REST API design, MongoDB with Mongoose ODM, authentication, and real-world project building.",
-    sources: [
-      {
-        type: "web",
-        label: "KnowledgeGate",
-        link: "https://www.knowledgegate.ai/courses/COMPLETE-NODEJS-EXPRESSJS-MONGODB",
-      },
-    ],
-  },
-  {
-    type: "course",
     name: "Junior Software Developer Course",
     description:
       "Hands-on web development training — HTML, CSS, JavaScript and intro to PHP (arrays, functions, sessions, cookies, PDO) applied in real-world project simulations.",
@@ -163,6 +150,37 @@ export const learningItems = [
   // ════════════════════════════
   // CERTIFICATES
   // ════════════════════════════
+
+  {
+    type: "certificate",
+    name: "React and Redux",
+    description:
+      "React and Redux certification from KnowledgeGate — component architecture, Redux state flow, hooks, and dynamic UI development. Score: 98%, Certificate ID: CERT-1778141414539-BF592137.",
+    issuer: "KnowledgeGate",
+    issuerIcon: "⚛️",
+    sources: [
+      {
+        type: "web",
+        label: "Verify Certificate",
+        link: "https://www.knowledgegate.ai/certificate/6E255448",
+      },
+    ],
+  },
+  {
+    type: "certificate",
+    name: "NodeJs + ExpressJs + MongoDB",
+    description:
+      "KnowledgeGate certification for NodeJs + ExpressJs + MongoDB — backend server development, REST APIs, database integration, Mongoose ODM, MySql and MERN Stack practices. Certificate ID: CERT-1778481676151-67D6F7C8.",
+    issuer: "KnowledgeGate",
+    issuerIcon: "🟢",
+    sources: [
+      {
+        type: "web",
+        label: "Verify Certificate",
+        link: "https://www.knowledgegate.ai/certificate/D2A90573",
+      },
+    ],
+  },
 
   // ── Competitions ──
   {
