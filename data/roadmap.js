@@ -53,33 +53,25 @@ export const roadmap = [
   {
     topic: "REST APIs",
     description:
-      "Fetch & Axios, HTTP methods, CRUD operations — applied in SecureAuth project",
+      "Fetch & Axios, HTTP methods, CRUD operations and status codes.",
     status: "done",
     order: 7,
     targetDate: null,
   },
   {
-    topic: "React.js & React Router",
+    topic: "React.js, React Router & Redux Toolkit",
     description:
-      "React Router v7 data APIs, loaders, actions, useSearchParams, form state management without prop drilling",
+      "React Router v7 data APIs, loaders, actions, useSearchParams, form state management without prop drilling; plus Redux Toolkit global state management, slices, async thunks, and integrating with React.",
     status: "done",
     order: 8,
     targetDate: null,
   },
   {
-    topic: "Redux Toolkit",
+    topic: "Node.js & Express.js",
     description:
-      "Global state management, Redux Toolkit, slices, async thunks, and integrating with React",
+      "Backend runtime, package management, building REST APIs, file system, Express middleware, routing, controllers, request handling, authentication, and integration with databases.",
     status: "done",
     order: 9,
-    targetDate: null,
-  },
-  {
-    topic: "Node.js",
-    description:
-      "Backend runtime, package management, building REST APIs, file system",
-    status: "learning",
-    order: 10,
     targetDate: null,
   },
 
@@ -87,21 +79,12 @@ export const roadmap = [
 
   // status: "learning",
   // targetDate: "Q3 2026",
-
-  {
-    topic: "Express.js",
-    description:
-      "Express middleware, routing, controllers, request handling, REST API servers, authentication, JWT",
-    status: "learning",
-    order: 11,
-    targetDate: null,
-  },
   {
     topic: "Mongoose",
     description:
       "MongoDB object modeling, schemas, validation, relationships, population",
     status: "learning",
-    order: 12,
+    order: 10,
     targetDate: null,
   },
   {
@@ -109,7 +92,7 @@ export const roadmap = [
     description:
       "NoSQL databases, Mongoose ODM, CRUD operations, schema design",
     status: "learning",
-    order: 13,
+    order: 11,
     targetDate: null,
   },
 
@@ -120,14 +103,14 @@ export const roadmap = [
     description:
       "Advanced queries, joins, normalization, stored procedures, MySQL with PHP",
     status: "planned",
-    order: 14,
+    order: 12,
     targetDate: null,
   },
   {
     topic: "Prisma",
     description: "Database ORM, schema design, CRUD operations, migrations",
     status: "planned",
-    order: 15,
+    order: 13,
     targetDate: null,
   },
   {
@@ -135,7 +118,7 @@ export const roadmap = [
     description:
       "Server-side scripting, functions, sessions, cookies, PDO, MySQL integration",
     status: "planned",
-    order: 16,
+    order: 14,
     targetDate: null,
   },
   {
@@ -143,7 +126,7 @@ export const roadmap = [
     description:
       "OOP, collections, exception handling, data structures, Spring Boot basics",
     status: "planned",
-    order: 17,
+    order: 15,
     targetDate: null,
   },
 ];
