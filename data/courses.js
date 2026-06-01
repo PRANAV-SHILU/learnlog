@@ -5,13 +5,7 @@ export const learningItems = [
   // ════════════════════════════
   // COURSES
   // ════════════════════════════
-  {
-    type: "course",
-    name: "Junior Software Developer Course",
-    description:
-      "Hands-on web development training — HTML, CSS, JavaScript and intro to PHP (arrays, functions, sessions, cookies, PDO) applied in real-world project simulations.",
-    sources: [{ type: "college", label: "IT Experts", link: "#" }],
-  },
+  
   {
     type: "course",
     name: "JavaScript - Full Course for Beginners",
@@ -27,7 +21,7 @@ export const learningItems = [
   },
   {
     type: "course",
-    name: "Git and GitHub",
+    name: "Git and GitHub crash course for beginners",
     description:
       "Version control fundamentals — repository handling, commits, branching, merging, and collaborative GitHub workflow.",
     sources: [
@@ -53,19 +47,6 @@ export const learningItems = [
         type: "learnvern",
         label: "LearnVern",
         link: "https://www.learnvern.com/course/c-programming-tutorial-in-hindi",
-      },
-    ],
-  },
-  {
-    type: "course",
-    name: "Bootstrap – On-the-Job Training (30 days OJT)",
-    description:
-      "Practical front-end web design using Bootstrap — responsive grids, UI components (forms, navbars, modals, carousels), and Bootstrap utilities integrated with HTML, CSS, and JS.",
-    sources: [
-      {
-        type: "college",
-        label: "The Easylearn Academy",
-        link: "https://www.linkedin.com/in/pranavshilu/details/certifications/1756394899459/single-media-viewer/?profileId=ACoAAEQdfM4Bjz9XMUrIjuqYXlAjrmXxwAXTjE4",
       },
     ],
   },
@@ -147,40 +128,61 @@ export const learningItems = [
       },
     ],
   },
-  // ════════════════════════════
-  // CERTIFICATES
-  // ════════════════════════════
-
   {
-    type: "certificate",
+    type: "course",
     name: "React and Redux",
     description:
-      "React and Redux certification from KnowledgeGate — component architecture, Redux state flow, hooks, and dynamic UI development. Score: 98%, Certificate ID: CERT-1778141414539-BF592137.",
-    issuer: "KnowledgeGate",
-    issuerIcon: "⚛️",
+      "React and Redux course from KnowledgeGate — component architecture, Redux state flow, hooks, and dynamic UI development.",
     sources: [
       {
         type: "web",
-        label: "Verify Certificate",
+        label: "KnowledgeGate",
         link: "https://www.knowledgegate.ai/certificate/6E255448",
       },
     ],
   },
   {
-    type: "certificate",
+    type: "course",
     name: "NodeJs + ExpressJs + MongoDB",
     description:
-      "KnowledgeGate certification for NodeJs + ExpressJs + MongoDB — backend server development, REST APIs, database integration, Mongoose ODM, MySql and MERN Stack practices. Certificate ID: CERT-1778481676151-67D6F7C8.",
-    issuer: "KnowledgeGate",
-    issuerIcon: "🟢",
+      "KnowledgeGate course focused on backend development with Node.js, Express.js, REST APIs, MongoDB, and MERN stack integration.",
     sources: [
       {
         type: "web",
-        label: "Verify Certificate",
+        label: "KnowledgeGate",
         link: "https://www.knowledgegate.ai/certificate/D2A90573",
       },
     ],
   },
+  {
+    type: "course",
+    name: "Junior Software Developer (NSQF Level 3)",
+    description:
+      "Certified under Skill India / NSDC initiative. Covers HTML, CSS, JavaScript, GitHub, PHP (functions, PDO, sessions, cookies).",
+    sources: [
+      {
+        type: "college",
+        label: "Skill India Certificate",
+        link: "https://www.linkedin.com/in/pranavshilu/details/certifications/1756357702489/single-media-viewer/?profileId=ACoAAEQdfM4Bjz9XMUrIjuqYXlAjrmXxwAXTjE4",
+      },
+    ],
+  },
+  {
+    type: "course",
+    name: "Spoken English",
+    description:
+      "Completed Spoken English course jointly certified by LearnVern & GTU. Also certified by Sir Bhavsinhji Polytechnic Institute, Bhavnagar.",
+    sources: [
+      {
+        type: "learnvern",
+        label: "LearnVern",
+        link: "https://www.learnvern.com",
+      },
+    ],
+  },
+  // ════════════════════════════
+  // CERTIFICATES
+  // ════════════════════════════
 
   // ── Competitions ──
   {
@@ -200,71 +202,9 @@ export const learningItems = [
   },
 
   // ── Government / Skill India ──
-  {
-    type: "certificate",
-    name: "Junior Software Developer (NSQF Level 3)",
-    description:
-      "Certified under Skill India / NSDC initiative. Covers HTML, CSS, JavaScript, GitHub, PHP (functions, PDO, sessions, cookies).",
-    issuer:
-      "Ministry of Skill Development & Entrepreneurship, India (Jul 2025)",
-    issuerIcon: "🇮🇳",
-    sources: [
-      {
-        type: "college",
-        label: "Skill India Certificate",
-        link: "https://www.linkedin.com/in/pranavshilu/details/certifications/1756357702489/single-media-viewer/?profileId=ACoAAEQdfM4Bjz9XMUrIjuqYXlAjrmXxwAXTjE4",
-      },
-    ],
-  },
+
 
   // ── IBM ──
-  {
-    type: "certificate",
-    name: "Web Development Fundamentals",
-    description:
-      "Completed IBM course covering HTML, CSS, JavaScript, responsive design principles, and basics of version control with GitHub.",
-    issuer: "IBM (Aug 2025)",
-    issuerIcon: "🔵",
-    sources: [
-      {
-        type: "web",
-        label: "View on Credly",
-        link: "https://www.credly.com/badges/cd49a9a0-1c0e-4e37-a8ef-7faa701d6fa9/linked_in_profile",
-      },
-    ],
-  },
-  {
-    type: "certificate",
-    name: "Git and GitHub for Beginners – Crash Course",
-    description:
-      "Version control, repository handling, commits, branching, merging, and collaborative workflow using GitHub.",
-    issuer: "freeCodeCamp & IBM (Jul 2025)",
-    issuerIcon: "🔵",
-    sources: [
-      {
-        type: "web",
-        label: "IBM Certificate",
-        link: "https://skills.yourlearning.ibm.com/certificate/URL-RGOJ5YH7EVK",
-      },
-    ],
-  },
-
-  // ── freeCodeCamp ──
-  {
-    type: "certificate",
-    name: "JavaScript – Full Course for Beginners",
-    description:
-      "Complete JavaScript course certificate from freeCodeCamp — ES6+, DOM, async, functions, and project-based learning.",
-    issuer: "freeCodeCamp & IBM (Dec 2025)",
-    issuerIcon: "🔥",
-    sources: [
-      {
-        type: "web",
-        label: "freeCodeCamp Certificate",
-        link: "https://skills.yourlearning.ibm.com/certificate/URL-PKZNO7MFNFG",
-      },
-    ],
-  },
 
   // ── OJT ──
   {
@@ -316,21 +256,7 @@ export const learningItems = [
   },
 
   // ── LearnVern ──
-  {
-    type: "certificate",
-    name: "Spoken English",
-    description:
-      "Completed Spoken English course jointly certified by LearnVern & GTU. Also certified by Sir Bhavsinhji Polytechnic Institute, Bhavnagar.",
-    issuer: "LearnVern & GTU (Apr 2024)",
-    issuerIcon: "📚",
-    sources: [
-      {
-        type: "learnvern",
-        label: "LearnVern Certificate",
-        link: "https://www.learnvern.com",
-      },
-    ],
-  },
+
 
   // ── Unstop ──
   {
