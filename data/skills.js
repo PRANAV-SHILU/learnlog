@@ -23,20 +23,24 @@ export const skillCategories = [
       { name: "Tailwind CSS", icon: "🌊" },
       { name: "REST APIs", icon: "🔌" },
       { name: "React Router v7", icon: "🗺️" },
-      { name: "React Hook Form", icon: "📝" },
-      { name: "Yup", icon: "🛡️" },
-      { name: "Trivule form", icon: "✅" },
-      { name: "CRUD Operations", icon: "🗂️" },
       { name: "Responsive Web Design", icon: "📱" },
       { name: "DOM Manipulation", icon: "🌳" },
     ],
   },
+
   {
     category: "Backend",
     icon: "⚙️",
     skills: [
       { name: "Node.js", icon: "🟢" },
       { name: "Express.js", icon: "🚀" },
+    ],
+  },
+  {
+    category: "Database",
+    icon: "🛢️",
+    skills: [
+      { name: "MongoDB", icon: "🍃" },
     ],
   },
   {
@@ -48,10 +52,29 @@ export const skillCategories = [
       { name: "GitHub Desktop", icon: "🖥️" },
     ],
   },
+
+  {
+    category: "Library",
+    icon: "📚",
+    skills: [
+      { name: "React Hook Form", icon: "📝" },
+      { name: "Yup", icon: "🛡️" },
+      { name: "Trivule form", icon: "✅" },
+    ],
+  },
+  {
+    category: "API Testing",
+    icon: "🧪",
+    skills: [
+      { name: "Postman", icon: "📮" },
+      { name: "Thunder Client", icon: "⚡" },
+    ],
+  },
   {
     category: "Core Concepts",
     icon: "🧠",
     skills: [
+      { name: "CRUD Operations", icon: "🗂️" },
       { name: "Object-Oriented Programming", icon: "🧩" },
       { name: "Data Structures & Algorithms", icon: "📦" },
       { name: "Problem Solving", icon: "🔍" },
@@ -64,14 +87,6 @@ export const skillCategories = [
     skills: [
       { name: "MS Office Suite", icon: "📄" },
       { name: "Zoho Suite", icon: "🟠" },
-    ],
-  },
-  {
-    category: "API Testing",
-    icon: "🧪",
-    skills: [
-      { name: "Postman", icon: "📮" },
-      { name: "Thunder Client", icon: "⚡" },
     ],
   },
 ];
