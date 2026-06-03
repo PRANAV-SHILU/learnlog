@@ -3,6 +3,7 @@
 
 import { about } from "../data/about.js";
 import { experiences } from "../data/experience.js";
+import { educationEntries } from "../data/education.js";
 import { skillCategories } from "../data/skills.js";
 import { languages, frameworks } from "../data/languages.js";
 import { learningItems } from "../data/courses.js";
@@ -175,6 +176,66 @@ export function renderExperience(targetEl) {
     subtitle: "Professional experience and internships",
     count: experiences.length,
     content: `<div class="experience-list">${expItems}</div>`,
+  });
+}
+
+// ─────────────────────────────────────────────
+// EDUCATION
+// ─────────────────────────────────────────────
+export function renderEducation(targetEl) {
+  const items = educationEntries
+    .map((edu) => {
+      const skillsHtml = edu.skills.length
+        ? `<div class="edu-skills">
+            <div class="edu-skills-label">Skills &amp; Topics:</div>
+            <div class="edu-skills-list">${edu.skills
+              .map((s) => `<span class="edu-skill-tag">${s}</span>`)
+              .join("")}</div>
+          </div>`
+        : "";
+
+      const statusBadge =
+        edu.status === "current"
+          ? `<span class="edu-status-badge current"><i class="fas fa-circle"></i> Pursuing</span>`
+          : `<span class="edu-status-badge completed"><i class="fas fa-check-circle"></i> Completed</span>`;
+
+      return `
+    <div class="edu-card" data-search="${edu.institution} ${edu.degree} ${edu.field} ${edu.skills.join(" ")}">
+      <div class="edu-card-left">
+        <div class="edu-logo-wrap" style="--edu-color:${edu.logoColor}">
+          <i class="${edu.logoIcon}"></i>
+        </div>
+        <div class="edu-timeline-line"></div>
+      </div>
+      <div class="edu-card-body">
+        <div class="edu-header">
+          <div class="edu-header-top">
+            <div>
+              <div class="edu-institution">${edu.institution}</div>
+              <div class="edu-degree">${edu.degree}</div>
+              <div class="edu-field">${edu.field}</div>
+            </div>
+            ${statusBadge}
+          </div>
+          <div class="edu-meta">
+            <span class="edu-date"><i class="fas fa-calendar-alt"></i> ${edu.startDate} &ndash; ${edu.endDate}</span>
+            <span class="edu-grade"><i class="fas fa-award"></i> ${edu.gradeLabel}: <strong>${edu.grade}</strong></span>
+          </div>
+        </div>
+        <p class="edu-description">${edu.description}</p>
+        ${skillsHtml}
+      </div>
+    </div>`;
+    })
+    .join("");
+
+  targetEl.innerHTML = accordion({
+    id: "education",
+    faIcon: "fas fa-graduation-cap",
+    title: "Education",
+    subtitle: "Academic background and qualifications",
+    count: educationEntries.length,
+    content: `<div class="edu-list">${items}</div>`,
   });
 }
 

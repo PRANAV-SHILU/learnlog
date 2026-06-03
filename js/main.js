@@ -4,6 +4,7 @@
 import {
   renderAbout,
   renderExperience,
+  renderEducation,
   renderSkills,
   renderLanguages,
   renderProjects,
@@ -28,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 1. Render all sections in order
   renderAbout(document.getElementById("section-about"));
   renderExperience(document.getElementById("section-experience"));
+  renderEducation(document.getElementById("section-education"));
   renderSkills(document.getElementById("section-skills"));
   renderLanguages(document.getElementById("section-languages"));
   renderProjects(document.getElementById("section-projects"));

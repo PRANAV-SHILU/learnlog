@@ -2295,3 +2295,233 @@ mark {
   transform: translateY(-2px);
   box-shadow: var(--shadow-accent);
 }
+
+/* ══════════════════════════════
+   EDUCATION
+══════════════════════════════ */
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-top: 18px;
+}
+
+.edu-card {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 0 16px;
+  position: relative;
+}
+
+/* Last card hides the timeline connector */
+.edu-card:last-child .edu-timeline-line {
+  display: none;
+}
+
+/* Left column: icon + vertical line */
+.edu-card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edu-logo-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--edu-color) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--edu-color) 40%, transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: var(--edu-color);
+  flex-shrink: 0;
+  box-shadow: 0 0 14px color-mix(in srgb, var(--edu-color) 10%, transparent);
+  transition: box-shadow var(--transition);
+}
+
+.edu-card:hover .edu-logo-wrap {
+  box-shadow: 0 0 22px color-mix(in srgb, var(--edu-color) 22%, transparent);
+}
+
+.edu-timeline-line {
+  flex: 1;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--border), transparent);
+  margin-top: 6px;
+  min-height: 32px;
+}
+
+/* Right column: content */
+.edu-card-body {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  margin-bottom: 16px;
+  transition: all var(--transition);
+}
+
+.edu-card:hover .edu-card-body {
+  border-color: var(--accent-border);
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow-md);
+}
+
+.edu-header {
+  margin-bottom: 10px;
+}
+
+.edu-header-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.edu-institution {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 3px;
+  line-height: 1.3;
+}
+
+.edu-degree {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 2px;
+}
+
+.edu-field {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.edu-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 99px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.edu-status-badge.current {
+  background: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  color: #22c55e;
+}
+
+.edu-status-badge.current i {
+  font-size: 0.55rem;
+  animation: pulse-dot 1.8s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+
+.edu-status-badge.completed {
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: var(--accent);
+}
+
+.edu-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.edu-date,
+.edu-grade {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.edu-date i,
+.edu-grade i {
+  color: var(--accent);
+  font-size: 0.72rem;
+}
+
+.edu-grade strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.edu-description {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 12px;
+}
+
+/* Skills row */
+.edu-skills {
+  margin-top: 4px;
+}
+
+.edu-skills-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.edu-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.edu-skill-tag {
+  font-size: 0.72rem;
+  padding: 3px 10px;
+  border-radius: 99px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  transition: all var(--transition);
+  cursor: default;
+}
+
+.edu-skill-tag:hover {
+  background: var(--accent-glow);
+  border-color: var(--accent-border);
+  color: var(--accent);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .edu-card {
+    grid-template-columns: 38px 1fr;
+    gap: 0 10px;
+  }
+
+  .edu-logo-wrap {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  .edu-institution {
+    font-size: 0.85rem;
+  }
+}
