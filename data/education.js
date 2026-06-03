@@ -10,11 +10,11 @@ export const educationEntries = [
     field: "Computer Software and Web Applications",
     startDate: "Jul 2024",
     endDate: "Jul 2027",
-    grade: "A",
-    gradeLabel: "Grade",
+    grade: "85.09% (Sem 1-4)",
+    gradeLabel: "Score",
     status: "current",
     description:
-      "I am pursuing BCA at Shree Swaminarayan College of Computer Science (SSCCS), gathering Theoretical and practical knowledge of fundamentals of software & web Development.",
+      "I am pursuing BCA at Shree Swaminarayan College of Computer Science (SSCCS), gathering theoretical and practical knowledge of fundamentals of software & web development.<br><br><strong>Semester breakdown (Max marks 550):</strong><br>• <strong>Semester 1:</strong> 472/550 (85.82%)<br>• <strong>Semester 2:</strong> 439/550 (79.82%)<br>• <strong>Semester 3:</strong> 481/550 (87.45%)<br>• <strong>Semester 4:</strong> 480/550 (87.27%)",
     skills: [
       "Microsoft Office Suite",
       "Cascading Style Sheets (CSS)",
