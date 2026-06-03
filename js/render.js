@@ -74,13 +74,6 @@ function sourcesHtml(sources) {
     .join("");
 }
 
-/** Star rating */
-function stars(n) {
-  let s = "";
-  for (let i = 1; i <= 5; i++)
-    s += `<i class="fa${i <= n ? "s" : "r"} fa-star"></i>`;
-  return s;
-}
 
 // ─────────────────────────────────────────────
 // ABOUT
@@ -425,7 +418,6 @@ export function renderPlatforms(targetEl) {
           <i class="fas fa-external-link-alt"></i> Visit
         </a>
       </div>
-      <div class="platform-rating">${stars(p.rating)}</div>
     </div>`;
     })
     .join("");

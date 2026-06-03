@@ -1,5 +1,5 @@
 // ── data/platforms.js ──
-// rating: 1–5  |  type: youtube | linkedin | learnvern | web
+// type: youtube | linkedin | learnvern | web
 
 export const platforms = [
   {
@@ -11,7 +11,6 @@ export const platforms = [
     topics: ["JavaScript", "Python", "Web Development"],
     notes:
       "Hindi-based programming tutorials — best for beginners. Clear explanations with real-world examples.",
-    rating: 5,
   },
   {
     name: "Apna College",
@@ -22,7 +21,6 @@ export const platforms = [
     topics: ["Java", "C++", "DSA", "JavaScript", "Web Development"],
     notes:
       "Best for DSA and placement prep. Structured roadmap approach — very popular among Indian CS students.",
-    rating: 5,
   },
   {
     name: "Code Step By Step",
@@ -41,7 +39,6 @@ export const platforms = [
     ],
     notes:
       "Practice platform with step-by-step programming problems. Great for strengthening DSA fundamentals.",
-    rating: 4,
   },
   {
     name: "Complete Coding By Prashant Sir",
@@ -59,8 +56,7 @@ export const platforms = [
       "HTML",
     ],
     notes:
-      "Hindi programming tutorials covering  Backend, Database, Node.js, Express.js, C, Java, HTML.",
-    rating: 3,
+      "Hindi programming tutorials covering Backend, Database, Node.js, Express.js, C, Java, HTML.",
   },
   {
     name: "LearnVern",
@@ -69,7 +65,7 @@ export const platforms = [
     channel: "LearnVern Platform",
     link: "https://www.learnvern.com",
     topics: [
-      "All Strctured Courses",
+      "All Structured Courses",
       "Spoken English",
       "Soft Skills",
       "Personal Development",
@@ -82,7 +78,6 @@ export const platforms = [
     ],
     notes:
       "Free courses in Hindi/English with many other languages jointly certified with GTU. Good for structured learning with a local language focus.",
-    rating: 4,
   },
   {
     name: "LinkedIn Learning",
@@ -99,7 +94,6 @@ export const platforms = [
     ],
     notes:
       "Used heavily for Microsoft & LinkedIn learning paths — Career Essentials and Copilot Productivity series.",
-    rating: 4,
   },
   {
     name: "W3Schools",
@@ -110,7 +104,6 @@ export const platforms = [
     topics: ["All Courses", "HTML", "CSS", "JavaScript", "SQL", "C", "C++"],
     notes:
       "Quick reference and try-it editor. Good for fast syntax lookups and language references.",
-    rating: 4,
   },
   {
     name: "freeCodeCamp",
@@ -121,7 +114,6 @@ export const platforms = [
     topics: ["JavaScript", "Algorithms", "Responsive Web Design", "Python"],
     notes:
       "Completely free structured learning with project-based certifications. Used for the full JavaScript course.",
-    rating: 4,
   },
   {
     name: "DeepLearning.AI",
@@ -138,7 +130,6 @@ export const platforms = [
     ],
     notes:
       "Industry-leading AI courses. Completed ChatGPT Prompt Engineering for Developers and Vibe Coding with Replit.",
-    rating: 3,
   },
   {
     name: "IBM SkillsBuild",
@@ -156,6 +147,5 @@ export const platforms = [
     ],
     notes:
       "IBM's free learning platform. Completed Web Development Fundamentals and Git crash course here.",
-    rating: 3,
   },
 ];

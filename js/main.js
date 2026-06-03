@@ -27,14 +27,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // 1. Render all sections in order
   renderAbout(document.getElementById("section-about"));
   renderExperience(document.getElementById("section-experience"));
-  renderEducation(document.getElementById("section-education"));
   renderSkills(document.getElementById("section-skills"));
-  renderProjects(document.getElementById("section-projects"));
-  renderPlatforms(document.getElementById("section-platforms"));
   renderCourses(document.getElementById("section-courses"));
-  renderWebinars(document.getElementById("section-webinars"));
   renderCertificates(document.getElementById("section-certificates"));
+  renderWebinars(document.getElementById("section-webinars"));
+  renderEducation(document.getElementById("section-education"));
+  renderProjects(document.getElementById("section-projects"));
   renderRoadmap(document.getElementById("section-roadmap"));
+  renderPlatforms(document.getElementById("section-platforms"));
 
   // 2. Hero
   renderHeroSocial();
