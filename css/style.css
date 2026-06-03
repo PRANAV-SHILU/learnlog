@@ -1585,16 +1585,30 @@ mark {
   flex: 1;
 }
 
-/* .skill-level {
+.skill-learning-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   font-size: 0.65rem;
   font-weight: 600;
-  padding: 2px 9px;
+  padding: 2px 8px;
   border-radius: 99px;
-  border: 1px solid;
-  text-transform: capitalize;
+  background: rgba(20, 184, 166, 0.1);
+  border: 1px solid rgba(20, 184, 166, 0.35);
+  color: var(--teal);
   white-space: nowrap;
   flex-shrink: 0;
-} */
+  animation: pulse-badge 2s ease-in-out infinite;
+}
+
+.skill-learning-badge i {
+  font-size: 0.6rem;
+}
+
+@keyframes pulse-badge {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.6; }
+}
 
 /* ══════════════════════════════
    LANGUAGE SOURCES

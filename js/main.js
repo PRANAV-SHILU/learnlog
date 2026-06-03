@@ -6,13 +6,11 @@ import {
   renderExperience,
   renderEducation,
   renderSkills,
-  renderLanguages,
   renderProjects,
   renderPlatforms,
   renderCourses,
   renderWebinars,
   renderCertificates,
-  renderTools,
   renderRoadmap,
   renderHeroSocial,
   renderStats,
@@ -31,13 +29,11 @@ document.addEventListener("DOMContentLoaded", () => {
   renderExperience(document.getElementById("section-experience"));
   renderEducation(document.getElementById("section-education"));
   renderSkills(document.getElementById("section-skills"));
-  renderLanguages(document.getElementById("section-languages"));
   renderProjects(document.getElementById("section-projects"));
   renderPlatforms(document.getElementById("section-platforms"));
   renderCourses(document.getElementById("section-courses"));
   renderWebinars(document.getElementById("section-webinars"));
   renderCertificates(document.getElementById("section-certificates"));
-  renderTools(document.getElementById("section-tools"));
   renderRoadmap(document.getElementById("section-roadmap"));
 
   // 2. Hero

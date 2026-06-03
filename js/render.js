@@ -5,9 +5,7 @@ import { about } from "../data/about.js";
 import { experiences } from "../data/experience.js";
 import { educationEntries } from "../data/education.js";
 import { skillCategories } from "../data/skills.js";
-import { languages, frameworks } from "../data/languages.js";
 import { learningItems } from "../data/courses.js";
-import { toolCategories } from "../data/tools.js";
 import { platforms } from "../data/platforms.js";
 import { projects } from "../data/projects.js";
 import { roadmap } from "../data/roadmap.js";
@@ -252,10 +250,14 @@ export function renderSkills(targetEl) {
     .map((cat) => {
       const skillsHtml = cat.skills
         .map((skill) => {
+          const learningBadge = skill.learning
+            ? `<span class="skill-learning-badge"><i class="fas fa-spinner fa-spin"></i> Learning</span>`
+            : "";
           return `
-        <div class="skill-item" data-search="${skill.name} ${skill.level} ${cat.category}">
+        <div class="skill-item" data-search="${skill.name} ${cat.category}">
           <span class="skill-icon">${skill.icon}</span>
           <span class="skill-name">${skill.name}</span>
+          ${learningBadge}
         </div>`;
         })
         .join("");
@@ -272,86 +274,13 @@ export function renderSkills(targetEl) {
     id: "skills",
     faIcon: "fas fa-star",
     title: "Skills",
-    subtitle: "Frameworks, concepts & developer workflow",
+    subtitle: "Languages, frameworks, concepts & developer workflow",
     count: totalSkills,
     content: `<div class="skills-wrapper">${catHtml}</div>`,
   });
 }
 
-// ─────────────────────────────────────────────
-// PROGRAMMING LANGUAGES
-// ─────────────────────────────────────────────
-export function renderLanguages(targetEl) {
-  const langItems = languages
-    .map(
-      (lang) => `
-    <div class="language-item" data-search="${lang.name} ${lang.description} ${lang.sources.map((s) => s.label).join(" ")}">
-      <div class="lang-top">
-        <div class="lang-left">
-          <div class="lang-checkbox">
-            ${lang.learned ? '<i class="fas fa-check"></i>' : ""}
-          </div>
-          <span class="lang-icon">${lang.icon}</span>
-          <div class="lang-info">
-            <div class="lang-name">${lang.name}</div>
-            <div class="lang-desc">${lang.description}</div>
-          </div>
-        </div>
-        ${!lang.learned ? '<span class="learning-tag"><i class="fas fa-spinner fa-spin"></i> Learning</span>' : ""}
-      </div>
-      <div class="lang-sources">
-        <span class="lang-sources-label"><i class="fas fa-graduation-cap"></i> Learned from:</span>
-        <div class="lang-sources-chips">${sourcesHtml(lang.sources)}</div>
-      </div>
-    </div>`,
-    )
-    .join("");
-
-  const fwItems = frameworks
-    .map(
-      (fw) => `
-    <div class="framework-inline-item" data-search="${fw.name} ${fw.description} ${fw.sources ? fw.sources.map((s) => s.label).join(' ') : ''}">
-      <div class="fw-top">
-        <div class="fw-left">
-          <div class="fw-checkbox">${fw.learned ? '<i class="fas fa-check"></i>' : ''}</div>
-          <span class="fw-icon">${fw.icon}</span>
-          <div class="fw-info">
-            <div class="fw-name">${fw.name}</div>
-            <div class="fw-desc">${fw.description}</div>
-          </div>
-        </div>
-        ${!fw.learned ? '<span class="learning-tag"><i class="fas fa-spinner fa-spin"></i> Learning</span>' : ''}
-      </div>
-      <div class="lang-sources">
-        <span class="lang-sources-label"><i class="fas fa-graduation-cap"></i> Learned from:</span>
-        <div class="lang-sources-chips">${sourcesHtml(fw.sources || [])}</div>
-      </div>
-    </div>`,
-    )
-    .join("");
-
-  const combined = `
-    <div class="language-grid">${langItems}</div>
-    <hr class="section-sep" />
-    <div class="frameworks-inline">
-      <h4>Frameworks & Related</h4>
-      <div class="frameworks-grid-inline">${fwItems}</div>
-    </div>`;
-
-  targetEl.innerHTML = accordion({
-    id: "languages",
-    faIcon: "fas fa-code",
-    title: "Programming Languages & Frameworks",
-    subtitle: "Languages and their associated frameworks / runtimes",
-    count: languages.length + frameworks.length,
-    content: combined,
-  });
-}
-
-// ─────────────────────────────────────────────
-// FRAMEWORKS
-// ─────────────────────────────────────────────
-// removed separate frameworks & libraries renderers; frameworks are displayed inside languages
+// (Programming Languages section removed — languages & frameworks are now listed under Skills)
 
 // ─────────────────────────────────────────────
 // COURSES (type="course" only)
@@ -463,67 +392,6 @@ export function renderWebinars(targetEl) {
   });
 }
 
-// ─────────────────────────────────────────────
-// TOOLS & TECHNICAL EXPOSURE
-// ─────────────────────────────────────────────
-export function renderTools(targetEl) {
-  const totalTools = toolCategories.reduce(
-    (acc, cat) => acc + cat.tools.length,
-    0,
-  );
-
-  const categoriesHtml = toolCategories
-    .map((cat) => {
-      const toolsHtml = cat.tools
-        .map(
-          (tool) => `
-      <div class="tool-card" data-search="${tool.name} ${tool.usage} ${cat.category}">
-        <div class="tool-card-top">
-          <span class="tool-icon">${tool.icon}</span>
-          <div>
-            <div class="tool-name">${tool.name}</div>
-            <div class="tool-usage">${tool.usage}</div>
-          </div>
-        </div>
-        <div class="tool-links">
-        ${
-          tool.docsLink
-            ? `<a href="${tool.docsLink}" target="_blank" rel="noopener" class="tool-link">
-            <i class="fas fa-book"></i> Official Docs
-          </a>`
-            : ""
-        }
-         
-          ${
-            tool.learnLink
-              ? `<a href="${tool.learnLink.url}" target="_blank" rel="noopener" class="tool-link">
-            <i class="fas fa-graduation-cap"></i> ${tool.learnLink.label}
-          </a>`
-              : ""
-          }
-          
-        </div>
-      </div>`,
-        )
-        .join("");
-
-      return `
-      <div>
-        <div class="tool-category-label">${cat.icon} ${cat.category}</div>
-        <div class="tools-grid">${toolsHtml}</div>
-      </div>`;
-    })
-    .join("");
-
-  targetEl.innerHTML = accordion({
-    id: "tools",
-    faIcon: "fas fa-wrench",
-    title: "Tools & Technical Exposure",
-    subtitle: "Dev tools, editors, and utilities — grouped by category",
-    count: totalTools,
-    content: `<div class="tools-categories">${categoriesHtml}</div>`,
-  });
-}
 
 // ─────────────────────────────────────────────
 // LEARNING PLATFORMS
@@ -685,25 +553,21 @@ export function renderStats() {
   const statsEl = document.getElementById("heroStats");
   if (!statsEl) return;
 
-  const learnedLangs = languages.filter((l) => l.learned).length;
   const certs = learningItems.filter((i) => i.type === "certificate").length;
   const coursesCount = learningItems.filter((i) => i.type === "course").length;
-  const totalTools = toolCategories.reduce(
-    (acc, cat) => acc + cat.tools.length,
-    0,
-  );
   const doneRoadmap = roadmap.filter((r) => r.status === "done").length;
   const totalSkills = skillCategories.reduce(
     (acc, cat) => acc + cat.skills.length,
     0,
   );
+  const langCat = skillCategories.find((c) => c.category === "Languages");
+  const langCount = langCat ? langCat.skills.filter((s) => !s.learning).length : 0;
 
   const stats = [
-    { num: learnedLangs, label: "Languages", icon: "fas fa-code" },
+    { num: langCount, label: "Languages", icon: "fas fa-code" },
     { num: totalSkills, label: "Skills", icon: "fas fa-star" },
     { num: coursesCount, label: "Courses", icon: "fas fa-book-open" },
     { num: certs, label: "Certificates", icon: "fas fa-certificate" },
-    { num: totalTools, label: "Tools", icon: "fas fa-wrench" },
     { num: projects.length, label: "Projects", icon: "fas fa-folder-open" },
     { num: doneRoadmap, label: "Topics Done", icon: "fas fa-check-circle" },
   ];
