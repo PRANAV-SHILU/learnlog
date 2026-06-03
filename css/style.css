@@ -1169,13 +1169,6 @@ a:hover {
   margin-top: 2px;
 }
 
-.roadmap-target {
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  color: var(--accent);
-  margin-top: 4px;
-}
-
 /* ══════════════════════════════
    SEARCH HIGHLIGHT + HIDE
 ══════════════════════════════ */

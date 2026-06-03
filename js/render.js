@@ -492,7 +492,6 @@ export function renderRoadmap(targetEl) {
         <div class="roadmap-item-content">
           <div class="roadmap-topic">${r.topic}</div>
           <div class="roadmap-desc">${r.description}</div>
-          ${r.targetDate ? `<div class="roadmap-target"><i class="fas fa-calendar-alt"></i> ${r.targetDate}</div>` : ""}
         </div>
       </div>`,
         )

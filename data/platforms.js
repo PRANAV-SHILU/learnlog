@@ -20,7 +20,7 @@ export const platforms = [
     link: "https://www.youtube.com/@ApnaCollegeOfficial",
     topics: ["Java", "C++", "DSA", "JavaScript", "Web Development"],
     notes:
-      "Best for DSA and placement prep. Structured roadmap approach — very popular among Indian CS students.",
+      "Best for DSA and placement prepration. Structured roadmap approach — very popular among Indian CS students.",
   },
   {
     name: "Code Step By Step",
@@ -38,7 +38,7 @@ export const platforms = [
       "JavaScript",
     ],
     notes:
-      "Practice platform with step-by-step programming problems. Great for strengthening DSA fundamentals.",
+      "Easy step by step learning platfrom for Web Development technologies.",
   },
   {
     name: "Complete Coding By Prashant Sir",
@@ -56,7 +56,7 @@ export const platforms = [
       "HTML",
     ],
     notes:
-      "Hindi programming tutorials covering Backend, Database, Node.js, Express.js, C, Java, HTML.",
+      "Comprehensive programming tutorials covering Frontned, Backend, Database, C, Java, HTML.",
   },
   {
     name: "LearnVern",
@@ -93,7 +93,7 @@ export const platforms = [
       "Software Dev",
     ],
     notes:
-      "Used heavily for Microsoft & LinkedIn learning paths — Career Essentials and Copilot Productivity series.",
+      "Used heavily for Microsoft & LinkedIn learning paths — detailed software devlopment courses.",
   },
   {
     name: "W3Schools",
@@ -103,7 +103,7 @@ export const platforms = [
     link: "https://www.w3schools.com",
     topics: ["All Courses", "HTML", "CSS", "JavaScript", "SQL", "C", "C++"],
     notes:
-      "Quick reference and try-it editor. Good for fast syntax lookups and language references.",
+      "Quick reference and in-built coding editor. Good for fast syntax lookups and language references.",
   },
   {
     name: "freeCodeCamp",
@@ -113,7 +113,7 @@ export const platforms = [
     link: "https://www.freecodecamp.org",
     topics: ["JavaScript", "Algorithms", "Responsive Web Design", "Python"],
     notes:
-      "Completely free structured learning with project-based certifications. Used for the full JavaScript course.",
+      "Completely free, structured and industry led learnings with certificates.",
   },
   {
     name: "DeepLearning.AI",
@@ -129,7 +129,7 @@ export const platforms = [
       "Vibe Coding",
     ],
     notes:
-      "Industry-leading AI courses. Completed ChatGPT Prompt Engineering for Developers and Vibe Coding with Replit.",
+      "Industry-leading Artificial Intelligence (AI) and machine learning (ML) courses.",
   },
   {
     name: "IBM SkillsBuild",
@@ -146,6 +146,6 @@ export const platforms = [
       "Responsive Design",
     ],
     notes:
-      "IBM's free learning platform. Completed Web Development Fundamentals and Git crash course here.",
+      "IBM's free learning platform for web development and version control.",
   },
 ];

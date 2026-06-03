@@ -6,34 +6,30 @@ export const roadmap = [
   {
     topic: "C & C++ Programming",
     description:
-      "Pointers, memory management, OOP, STL — 1st Rank in University C Competition",
+      "Pointers, memory management, POP, OOP, — 1st Rank in University C Competition",
     status: "done",
     order: 1,
-    targetDate: null,
   },
   {
     topic: "HTML & CSS Foundations",
     description:
-      "Semantic HTML5, CSS3, Flexbox, Grid, animations, responsive layouts, custom properties",
+      "Semantic HTML5, CSS3, Flexbox, Grid, animations, responsive layouts, custom properties, etc.",
     status: "done",
     order: 2,
-    targetDate: null,
   },
   {
     topic: "JavaScript Fundamentals",
     description:
-      "ES6+, DOM manipulation, events, async/await, fetch API, localStorage",
+      "ES6+, DOM manipulation, events, async/await, Promises, fetch API, localStorage, etc.",
     status: "done",
     order: 3,
-    targetDate: null,
   },
   {
     topic: "Bootstrap & Tailwind CSS",
     description:
-      "Responsive grid, UI components, utility classes — 30-day OJT + VeyondTech work",
+      "Responsive grid, UI components, utility classes, etc.",
     status: "done",
     order: 4,
-    targetDate: null,
   },
   {
     topic: "Git & GitHub",
@@ -41,92 +37,76 @@ export const roadmap = [
       "Version control, branching, pull requests, GitHub Pages, GitHub Actions basics",
     status: "done",
     order: 5,
-    targetDate: null,
-  },
-  {
-    topic: "Prompt Engineering & AI Tools",
-    description: "Zero-shot, few-shot, chain-of-thought prompting. AI for dev",
-    status: "done",
-    order: 6,
-    targetDate: null,
-  },
-  {
-    topic: "REST APIs",
-    description:
-      "Fetch & Axios, HTTP methods, CRUD operations and status codes.",
-    status: "done",
-    order: 7,
-    targetDate: null,
   },
   {
     topic: "React.js, React Router & Redux Toolkit",
     description:
-      "React Router v7 data APIs, loaders, actions, useSearchParams, form state management without prop drilling; plus Redux Toolkit global state management, slices, async thunks, and integrating with React.",
+      "React Router v7 data APIs, loaders, actions, useSearchParams, form state management without prop drilling plus Redux Toolkit global state management, slices, async thunks, and integrating with React.",
     status: "done",
-    order: 8,
-    targetDate: null,
+    order: 6,
   },
   {
     topic: "Node.js & Express.js",
     description:
       "Backend runtime, package management, building REST APIs, file system, Express middleware, routing, controllers, request handling, authentication, and integration with databases.",
     status: "done",
-    order: 9,
-    targetDate: null,
+    order: 7,
+  },
+  {
+    topic: "REST APIs",
+    description:
+      "Fetch & Axios, HTTP methods, CRUD operations and status codes.",
+    status: "done",
+    order: 8,
   },
 
   // ── IN PROGRESS ──
 
   // status: "learning",
-  // targetDate: "Q3 2026",
+  
+  
+  {
+    topic: "MongoDB",
+    description:
+      "NoSQL databases, Collections, Documents, MongoDB Atlas, Compass, CRUD operations, schema design.",
+    status: "learning",
+    order: 9,
+  },
   {
     topic: "Mongoose",
     description:
       "MongoDB object modeling, schemas, validation, relationships, population",
     status: "learning",
     order: 10,
-    targetDate: null,
   },
   {
-    topic: "MongoDB",
+    topic: "SQL & Database Design",
     description:
-      "NoSQL databases, Mongoose ODM, CRUD operations, schema design",
+      "Advanced queries, joins, normalization, stored procedures, MySQL, etc.",
     status: "learning",
     order: 11,
-    targetDate: null,
+  },
+  {
+    topic: "Prisma",
+    description: "Database ORM, schema design, CRUD operations, seeding, etc.",
+    status: "learning",
+    order: 12,
   },
 
   // ── PLANNED ──
 
   {
-    topic: "SQL & Database Design",
-    description:
-      "Advanced queries, joins, normalization, stored procedures, MySQL with PHP",
-    status: "planned",
-    order: 12,
-    targetDate: null,
-  },
-  {
-    topic: "Prisma",
-    description: "Database ORM, schema design, CRUD operations, migrations",
-    status: "planned",
-    order: 13,
-    targetDate: null,
-  },
-  {
     topic: "PHP",
     description:
-      "Server-side scripting, functions, sessions, cookies, PDO, MySQL integration",
+      "Server-side scripting, functions, sessions, cookies, PDO, etc.",
     status: "planned",
-    order: 14,
-    targetDate: null,
+    order: 13,
   },
   {
     topic: "Java",
     description:
-      "OOP, collections, exception handling, data structures, Spring Boot basics",
+      "OOP, collections, exception handling, data structures, etc.",
     status: "planned",
-    order: 15,
-    targetDate: null,
+    order: 14,
   },
 ];
