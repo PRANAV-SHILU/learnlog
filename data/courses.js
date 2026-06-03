@@ -23,7 +23,7 @@ export const learningItems = [
     type: "course",
     name: "React and Redux",
     description:
-      "React and Redux course from KnowledgeGate — component architecture, Redux state flow, hooks, and dynamic UI development.",
+      "React and Redux Toolkit course from KnowledgeGate — component architecture, Redux state flow, hooks, and dynamic UI development.",
     sources: [
       {
         type: "web",
@@ -36,7 +36,7 @@ export const learningItems = [
     type: "course",
     name: "Junior Software Developer (NSQF Level 3)",
     description:
-      "Certified under Skill India / NSDC initiative. Covers HTML, CSS, JavaScript, GitHub, PHP (functions, PDO, sessions, cookies).",
+      "Certified under Skill India & NSDC initiative. Covers HTML, CSS, JavaScript, GitHub and basic PHP.",
     sources: [
       {
         type: "college",
@@ -49,7 +49,7 @@ export const learningItems = [
     type: "course",
     name: "JavaScript - Full Course for Beginners",
     description:
-      "Complete JavaScript — variables, functions, DOM manipulation, events, ES6+, and async programming.",
+      "Complete JavaScript — variables, functions, DOM manipulation, events, ES6+, and async and promise based programming.",
     sources: [
       {
         type: "web",
@@ -62,7 +62,7 @@ export const learningItems = [
     type: "course",
     name: "C Language Basic to Advance",
     description:
-      "Full C programming from syntax and pointers to data structures — used for University Competition prep.",
+      "Full C programming from syntax to pointers and data structures.",
     sources: [
       {
         type: "learnvern",
@@ -93,7 +93,7 @@ export const learningItems = [
     type: "course",
     name: "Web Development Fundamentals",
     description:
-      "Foundations of HTML, CSS, JavaScript, responsive design principles, and basics of version control with GitHub.",
+      "Foundations of HTML, CSS, JavaScript and responsive design principles.",
     sources: [
       {
         type: "web",
@@ -106,7 +106,7 @@ export const learningItems = [
     type: "course",
     name: "Web Design & Development",
     description:
-      "Combined HTML, CSS and JavaScript for building complete web pages with styling and interactivity.",
+      "Combined HTML, CSS and basic JavaScript for building complete web pages with styling and interactivity.",
     sources: [
       {
         type: "web",
@@ -119,7 +119,7 @@ export const learningItems = [
     type: "course",
     name: "Web Designing with HTML and HTML5",
     description:
-      "Foundations of web page structure — semantic HTML, forms, tables, media elements, and HTML5 features.",
+      "Foundations of web page structure — semantic HTML, forms, tables, lists, media elements, and HTML5 features.",
     sources: [
       {
         type: "learnvern",
@@ -172,7 +172,7 @@ export const learningItems = [
     type: "course",
     name: "Spoken English",
     description:
-      "Completed Spoken English course jointly certified by LearnVern & GTU. Also certified by Sir Bhavsinhji Polytechnic Institute, Bhavnagar.",
+      "Completed Spoken English course jointly certified by LearnVern & GTU. Also certified by Sir Bhavsinhji Polytechnic Institute, Bhavnagar for offline course.",
     sources: [
       {
         type: "learnvern",
@@ -205,7 +205,7 @@ export const learningItems = [
     type: "certificate",
     name: "PhonePe Unstop Challenge",
     description:
-      "Participation and credential from Unstop PhonePe challenge — competitive coding and problem-solving event.",
+      "Participated in Unstop PhonePe challenge — competitive coding for frontend webpage design.",
     issuer: "Unstop",
     issuerIcon: "🏅",
     sources: [
@@ -220,7 +220,7 @@ export const learningItems = [
     type: "certificate",
     name: "Practical GitHub Actions",
     description:
-      "Hands-on GitHub Actions — workflows, CI/CD pipelines, automation triggers, and deploying projects with GitHub Actions.",
+      "Learned basics of GitHub Actions — workflows, automation triggers, and deploying projects with GitHub pages.",
     issuer: "LinkedIn Learning",
     issuerIcon: "💼",
     sources: [
@@ -250,7 +250,7 @@ export const learningItems = [
     type: "certificate",
     name: "Bootstrap – On-the-Job Training (30 days OJT)",
     description:
-      "Practical front-end training — responsive grid layouts, Bootstrap UI components, and integration with HTML, CSS, and JS.",
+      "Practical front-end training using Bootstrap — responsive grid layouts, Bootstrap UI components, and integration with HTML, CSS, and JS.",
     issuer: "The Easylearn Academy (Jun 2025)",
     issuerIcon: "🎓",
     sources: [
@@ -265,7 +265,7 @@ export const learningItems = [
     type: "certificate",
     name: "ChatGPT Prompt Engineering for Developers",
     description:
-      "Prompt engineering techniques for developers — zero-shot, few-shot, chain-of-thought prompting, and building LLM-powered apps.",
+      "Prompt engineering techniques for developers — zero-shot, few-shot, chain-of-thought prompting.",
     issuer: "DeepLearning.AI",
     issuerIcon: "🧠",
     sources: [
@@ -273,21 +273,6 @@ export const learningItems = [
         type: "web",
         label: "View Credential",
         link: "https://learn.deeplearning.ai/accomplishments/5cb879ad-c151-4b16-bcd8-bcf86bc2c608?usp=sharing",
-      },
-    ],
-  },
-  {
-    type: "certificate",
-    name: "LinkedIn Mastery: The Ultimate Guide to Career & Personal Branding",
-    description:
-      "Comprehensive LinkedIn strategy — profile optimisation, personal branding, networking, and career growth techniques.",
-    issuer: "Skillsiya",
-    issuerIcon: "🎯",
-    sources: [
-      {
-        type: "web",
-        label: "Verify Certificate",
-        link: "https://www.skillsiya.com/verify-certificate?serialno=EKDO93CH",
       },
     ],
   },
@@ -303,6 +288,22 @@ export const learningItems = [
         type: "web",
         label: "View Credential",
         link: "https://learn.deeplearning.ai/accomplishments/ca1df5de-e69c-46d2-aef7-d9871457b700?usp=sharing",
+      },
+    ],
+  },
+
+  {
+    type: "certificate",
+    name: "LinkedIn Mastery: The Ultimate Guide to Career & Personal Branding",
+    description:
+      "Comprehensive LinkedIn strategy — profile optimisation, personal branding, networking, and career growth techniques.",
+    issuer: "Skillsiya",
+    issuerIcon: "🎯",
+    sources: [
+      {
+        type: "web",
+        label: "Verify Certificate",
+        link: "https://www.skillsiya.com/verify-certificate?serialno=EKDO93CH",
       },
     ],
   },
