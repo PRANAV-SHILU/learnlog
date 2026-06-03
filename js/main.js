@@ -3,13 +3,14 @@
 
 import {
   renderAbout,
+  renderExperience,
   renderSkills,
   renderLanguages,
   renderProjects,
   renderPlatforms,
   renderCourses,
-  renderCertificates,
   renderWebinars,
+  renderCertificates,
   renderTools,
   renderRoadmap,
   renderHeroSocial,
@@ -26,6 +27,7 @@ document.getElementById("closeAllBtn")?.addEventListener("click", closeAll);
 document.addEventListener("DOMContentLoaded", () => {
   // 1. Render all sections in order
   renderAbout(document.getElementById("section-about"));
+  renderExperience(document.getElementById("section-experience"));
   renderSkills(document.getElementById("section-skills"));
   renderLanguages(document.getElementById("section-languages"));
   renderProjects(document.getElementById("section-projects"));

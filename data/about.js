@@ -31,5 +31,11 @@ With a strong logical thinking and a problem-solving mindset along with quick an
       url: "mailto:pranavshilu@zohomail.in",
       color: "#f59e0b",
     },
+    {
+      label: "Phone",
+      icon: "fas fa-phone",
+      url: "tel:+919033823598",
+      color: "#14b8a6",
+    },
   ],
 };

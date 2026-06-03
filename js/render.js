@@ -2,6 +2,7 @@
 // All render functions — builds HTML from data and injects into the DOM.
 
 import { about } from "../data/about.js";
+import { experiences } from "../data/experience.js";
 import { skillCategories } from "../data/skills.js";
 import { languages, frameworks } from "../data/languages.js";
 import { learningItems } from "../data/courses.js";
@@ -120,6 +121,60 @@ export function renderAbout(targetEl) {
     count: 0,
     countLabel: "intro",
     content,
+  });
+}
+
+// ─────────────────────────────────────────────
+// EXPERIENCE
+// ─────────────────────────────────────────────
+export function renderExperience(targetEl) {
+  const expItems = experiences
+    .map((exp) => {
+      const skillsHtml = exp.skills
+        .map((skill) => `<span class="exp-skill-tag">${skill.icon} ${skill.name}</span>`)
+        .join("");
+      const highlightsHtml = exp.highlights
+        .map((h) => `<li class="exp-highlight">${h}</li>`)
+        .join("");
+      
+      return `
+    <div class="experience-card" data-search="${exp.role} ${exp.company} ${exp.description} ${exp.skills.map(s => s.name).join(" ")}">
+      <div class="exp-header">
+        <div class="exp-info">
+          <h3 class="exp-role">${exp.role}</h3>
+          <div class="exp-company-row">
+            <a href="${exp.companyUrl}" target="_blank" rel="noopener" class="exp-company">${exp.company}</a>
+            <span class="exp-type">${exp.type}</span>
+          </div>
+        </div>
+        <div class="exp-dates">
+          <div class="exp-date"><i class="fas fa-calendar-alt"></i> ${new Date(exp.startDate).toLocaleDateString("en-US", { month: "short", year: "numeric" })} — ${new Date(exp.endDate).toLocaleDateString("en-US", { month: "short", year: "numeric" })}</div>
+          <div class="exp-duration"><i class="fas fa-hourglass-end"></i> ${exp.duration}</div>
+        </div>
+      </div>
+      
+      <p class="exp-description">${exp.description}</p>
+      
+      <div class="exp-highlights">
+        <div class="exp-highlights-label">Key Highlights:</div>
+        <ul>${highlightsHtml}</ul>
+      </div>
+      
+      <div class="exp-skills">
+        <div class="exp-skills-label">Skills Used:</div>
+        <div class="exp-skills-list">${skillsHtml}</div>
+      </div>
+    </div>`;
+    })
+    .join("");
+
+  targetEl.innerHTML = accordion({
+    id: "experience",
+    faIcon: "fas fa-briefcase",
+    title: "Experience",
+    subtitle: "Professional experience and internships",
+    count: experiences.length,
+    content: `<div class="experience-list">${expItems}</div>`,
   });
 }
 

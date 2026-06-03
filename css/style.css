@@ -1827,6 +1827,223 @@ mark {
   background: linear-gradient(180deg, var(--accent), var(--accent-dim));
 }
 
+/* ══════════════════════════════
+   EXPERIENCE SECTION
+══════════════════════════════ */
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 12px;
+}
+
+.experience-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  transition: all var(--transition);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.experience-card:hover {
+  border-color: var(--border-accent);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.experience-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-dim));
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.exp-info {
+  flex: 1;
+}
+
+.exp-role {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 6px 0;
+}
+
+.exp-company-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.exp-company {
+  font-size: 14px;
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.exp-company:hover {
+  color: #fbbf24;
+}
+
+.exp-type {
+  font-size: 11px;
+  background: var(--accent-glow);
+  color: var(--accent);
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+  border: 1px solid var(--border-accent);
+}
+
+.exp-dates {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: right;
+  font-size: 12px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.exp-date,
+.exp-duration {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: flex-end;
+}
+
+.exp-description {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+  padding: 12px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.exp-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.exp-highlights-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.exp-highlights ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.exp-highlight {
+  font-size: 13px;
+  color: var(--text-secondary);
+  padding-left: 20px;
+  position: relative;
+}
+
+.exp-highlight::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.exp-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.exp-skills-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.exp-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.exp-skill-tag {
+  font-size: 12px;
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+
+.exp-skill-tag:hover {
+  background: var(--bg-card);
+  border-color: var(--border-accent);
+  color: var(--accent);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .exp-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .exp-dates {
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .exp-date,
+  .exp-duration {
+    justify-content: flex-start;
+  }
+
+  .experience-card {
+    padding: 16px;
+  }
+
+  .exp-role {
+    font-size: 16px;
+  }
+}
+
 .cert-card:hover {
   border-color: var(--accent-border);
   box-shadow: var(--shadow-accent);
