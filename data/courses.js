@@ -157,6 +157,19 @@ export const learningItems = [
   },
   {
     type: "course",
+    name: "ChatGPT Prompt Engineering for Developers",
+    description:
+      "Prompt engineering techniques for developers — zero-shot, few-shot, chain-of-thought prompting.",
+    sources: [
+      {
+        type: "web",
+        label: "DeepLearning.AI",
+        link: "https://learn.deeplearning.ai/accomplishments/5cb879ad-c151-4b16-bcd8-bcf86bc2c608?usp=sharing",
+      },
+    ],
+  },
+  {
+    type: "course",
     name: "Soft Skills – Essential to Start Career",
     description:
       "Communication, professional conduct, teamwork, and career-readiness essentials for entering the workforce.",
@@ -261,21 +274,7 @@ export const learningItems = [
       },
     ],
   },
-  {
-    type: "certificate",
-    name: "ChatGPT Prompt Engineering for Developers",
-    description:
-      "Prompt engineering techniques for developers — zero-shot, few-shot, chain-of-thought prompting.",
-    issuer: "DeepLearning.AI",
-    issuerIcon: "🧠",
-    sources: [
-      {
-        type: "web",
-        label: "View Credential",
-        link: "https://learn.deeplearning.ai/accomplishments/5cb879ad-c151-4b16-bcd8-bcf86bc2c608?usp=sharing",
-      },
-    ],
-  },
+
   {
     type: "certificate",
     name: "Vibe Coding with Replit",
@@ -288,22 +287,6 @@ export const learningItems = [
         type: "web",
         label: "View Credential",
         link: "https://learn.deeplearning.ai/accomplishments/ca1df5de-e69c-46d2-aef7-d9871457b700?usp=sharing",
-      },
-    ],
-  },
-
-  {
-    type: "certificate",
-    name: "LinkedIn Mastery: The Ultimate Guide to Career & Personal Branding",
-    description:
-      "Comprehensive LinkedIn strategy — profile optimisation, personal branding, networking, and career growth techniques.",
-    issuer: "Skillsiya",
-    issuerIcon: "🎯",
-    sources: [
-      {
-        type: "web",
-        label: "Verify Certificate",
-        link: "https://www.skillsiya.com/verify-certificate?serialno=EKDO93CH",
       },
     ],
   },
