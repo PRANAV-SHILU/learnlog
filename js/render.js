@@ -62,12 +62,20 @@ const sourceMap = {
   college: { icon: "fas fa-university", cls: "college" },
 };
 
+/** Helper to generate link attributes, avoiding target="_blank" for internal/empty/hash links */
+function getLinkAttrs(url) {
+  if (!url || url.startsWith("#")) {
+    return `href="${url || "#"}"`;
+  }
+  return `href="${url}" target="_blank" rel="noopener"`;
+}
+
 /** Build source chips HTML */
 function sourcesHtml(sources) {
   return sources
     .map((src) => {
       const def = sourceMap[src.type] || sourceMap.web;
-      return `<a href="${src.link}" target="_blank" rel="noopener" class="source-chip ${def.cls}">
+      return `<a ${getLinkAttrs(src.link)} class="source-chip ${def.cls}">
       <i class="${def.icon}"></i> ${src.label}
     </a>`;
     })
@@ -96,7 +104,7 @@ export function renderAbout(targetEl) {
         ${about.social
           .map(
             (s) => `
-          <a href="${s.url}" target="_blank" rel="noopener" class="social-btn" style="--sc:${s.color}">
+          <a ${getLinkAttrs(s.url)} class="social-btn" style="--sc:${s.color}">
             <i class="${s.icon}"></i>
             <span>${s.label}</span>
           </a>`,
@@ -135,7 +143,7 @@ export function renderExperience(targetEl) {
         <div class="exp-info">
           <h3 class="exp-role">${exp.role}</h3>
           <div class="exp-company-row">
-            <a href="${exp.companyUrl}" target="_blank" rel="noopener" class="exp-company">${exp.company}</a>
+            <a ${getLinkAttrs(exp.companyUrl)} class="exp-company">${exp.company}</a>
             <span class="exp-type">${exp.type}</span>
           </div>
         </div>
@@ -351,7 +359,7 @@ export function renderWebinars(targetEl) {
     .map((ev) => {
       const cfg = typeConfig[ev.type] || typeConfig.webinar;
       const linkBtn = ev.link
-        ? `<a href="${ev.link}" target="_blank" rel="noopener" class="platform-link-btn">
+        ? `<a ${getLinkAttrs(ev.link)} class="platform-link-btn">
             <i class="fas fa-external-link-alt"></i> ${ev.linkLabel || "View"}
           </a>`
         : "";
@@ -414,7 +422,7 @@ export function renderPlatforms(targetEl) {
         <div class="platform-channel">${p.channel}</div>
         <div class="platform-topics">${topicsHtml}</div>
         <div class="platform-notes">"${p.notes}"</div>
-        <a href="${p.link}" target="_blank" rel="noopener" class="platform-link-btn">
+        <a ${getLinkAttrs(p.link)} class="platform-link-btn">
           <i class="fas fa-external-link-alt"></i> Visit
         </a>
       </div>
@@ -442,10 +450,10 @@ export function renderProjects(targetEl) {
         .map((t) => `<span class="stack-tag">${t}</span>`)
         .join("");
       const ghBtn = proj.githubLink
-        ? `<a href="${proj.githubLink}" target="_blank" rel="noopener" class="project-link-btn github"><i class="fab fa-github"></i> GitHub</a>`
+        ? `<a ${getLinkAttrs(proj.githubLink)} class="project-link-btn github"><i class="fab fa-github"></i> GitHub</a>`
         : "";
       const liveBtn = proj.liveLink
-        ? `<a href="${proj.liveLink}" target="_blank" rel="noopener" class="project-link-btn live"><i class="fas fa-external-link-alt"></i> Live Demo</a>`
+        ? `<a ${getLinkAttrs(proj.liveLink)} class="project-link-btn live"><i class="fas fa-external-link-alt"></i> Live Demo</a>`
         : "";
 
       return `
@@ -530,7 +538,7 @@ export function renderHeroSocial() {
   el.innerHTML = about.social
     .map(
       (s) => `
-    <a href="${s.url}" target="_blank" rel="noopener" class="hero-social-btn" style="--sc:${s.color}">
+    <a ${getLinkAttrs(s.url)} class="hero-social-btn" style="--sc:${s.color}">
       <i class="${s.icon}"></i> ${s.label}
     </a>`,
     )
