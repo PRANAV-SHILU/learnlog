@@ -11,15 +11,15 @@ export const experiences = [
     location: "On-site",
     type: "Part Time Job",
     description:
-      "Full-Stack Developer gathering professional experience and learning through various projects including Learning Management Systems(LMS) and Employment Portals as well as Founders Networking & Collaboration Platform. Building scalable applications with modern MERN stack technologies.",
+      "Gathering professional experience and learning through various projects and Building scalable applications with modern technologies.",
     highlights: [
-      "Worked on full-stack web applications,",
-      "worked on Learning Management Systems(LMS) with responsive UI and Backend APIs,",
-      "worked on online Employment Portal for peoples and recuruters specific applications with complex frontend logics,",
-      "worked on Founders Networking & Collaboration Platform,",
+      "Working on full-stack web applications",
+      "Working on websites like Learning Management Systems (LMS) with responsive UI and Backend APIs",
+      "Working on online Employment & Recruiter Portal with complex frontend logic",
+      "Working on Founders Networking & Collaboration Platform",
       "Implemented RESTful APIs using Express.js and Node.js",
       "Used Redux Toolkit for efficient state management in React applications",
-      "Collaborated with team using GitHub for version control and code collaboration",
+      "Collaborating with the team using GitHub for version control and code collaboration",
     ],
     skills: [
       { name: "Node.js", icon: "🟢" },
@@ -50,12 +50,12 @@ export const experiences = [
     location: "On-site",
     type: "Internship",
     description:
-      "Learnt about full-stack web development projects, building responsive and modern web applications using React.js, JavaScript, and Tailwind CSS.",
+      "Learnt about full-stack web development, building responsive and modern web applications using Various technologies, framworks and libraries.",
     highlights: [
-      "Learnt to develop responsive web interfaces using css, Bootstrap and Tailwind CSS",
       "Implemented front-end features with JavaScript (ES6+)",
-      "Worked with modern CSS frameworks and responsive design principles",
-      "Learnt best code practices for development with large teams",
+      "Learnt and applied responsive design principles",
+      "Worked with modern CSS frameworks such as Bootstrap and Tailwind CSS",
+      "Learnt best code practices for development with teams",
     ],
     skills: [
       { name: "Tailwind CSS", icon: "🌊" },
