@@ -14,7 +14,7 @@ export const educationEntries = [
     gradeLabel: "Score",
     status: "current",
     description:
-      "I am pursuing BCA at Shree Swaminarayan College of Computer Science (SSCCS), gathering theoretical and practical knowledge of fundamentals of software & web development.<br><br><strong>Semester breakdown (Max marks 550):</strong><br>• <strong>Semester 1:</strong> 472/550 (85.82%)<br>• <strong>Semester 2:</strong> 439/550 (79.82%)<br>• <strong>Semester 3:</strong> 481/550 (87.45%)<br>• <strong>Semester 4:</strong> 480/550 (87.27%)",
+      "I am pursuing BCA at Shree Swaminarayan College of Computer Science (SSCCS), gathering theoretical and practical knowledge of fundamentals of software & web development.<br><br><strong>Semester breakdown (Max marks 550):</strong><br>• <strong>Semester 1:</strong> 472/550 (85.82%) — 8.55 SGPA<br>• <strong>Semester 2:</strong> 439/550 (79.82%) — 7.91 SGPA<br>• <strong>Semester 3:</strong> 481/550 (87.45%) — 8.73 SGPA<br>• <strong>Semester 4:</strong> 480/550 (87.27%) — 8.68 SGPA",
     skills: [
       "Microsoft Office Suite",
       "Cascading Style Sheets (CSS)",
