@@ -59,19 +59,18 @@ export const roadmap = [
     status: "done",
     order: 8,
   },
+  {
+    topic: "MongoDB",
+    description:
+      "NoSQL databases, Collections, Documents, MongoDB Atlas, Compass, CRUD operations, schema design.",
+    status: "done",
+    order: 9,
+  },
 
   // ── IN PROGRESS ──
 
   // status: "learning",
   
-  
-  {
-    topic: "MongoDB",
-    description:
-      "NoSQL databases, Collections, Documents, MongoDB Atlas, Compass, CRUD operations, schema design.",
-    status: "learning",
-    order: 9,
-  },
   {
     topic: "Mongoose",
     description:
