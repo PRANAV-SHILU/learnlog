@@ -60,9 +60,9 @@ export const roadmap = [
     order: 8,
   },
   {
-    topic: "MongoDB",
+    topic: "MongoDB & Mongoose",
     description:
-      "NoSQL databases, Collections, Documents, MongoDB Atlas, Compass, CRUD operations, schema design.",
+      "NoSQL databases, Collections, Documents, MongoDB Atlas, Compass, CRUD operations, schema design, object modeling, validation, and relationships.",
     status: "done",
     order: 9,
   },
@@ -71,13 +71,7 @@ export const roadmap = [
 
   // status: "learning",
   
-  {
-    topic: "Mongoose",
-    description:
-      "MongoDB object modeling, schemas, validation, relationships, population",
-    status: "learning",
-    order: 10,
-  },
+
   {
     topic: "SQL & Database Design",
     description:
@@ -86,25 +80,25 @@ export const roadmap = [
     order: 11,
   },
   {
-    topic: "Prisma",
-    description: "Database ORM, schema design, CRUD operations, seeding, etc.",
-    status: "learning",
-    order: 12,
-  },
-
-  // ── PLANNED ──
-
-  {
     topic: "PHP",
     description:
       "Server-side scripting, functions, sessions, cookies, PDO, etc.",
-    status: "planned",
-    order: 13,
+    status: "learning",
+    order: 12,
   },
   {
     topic: "Java",
     description:
       "OOP, collections, exception handling, data structures, etc.",
+    status: "learning",
+    order: 13,
+  },
+
+  // ── PLANNED ──
+
+  {
+    topic: "Prisma",
+    description: "Database ORM, schema design, CRUD operations, seeding, etc.",
     status: "planned",
     order: 14,
   },

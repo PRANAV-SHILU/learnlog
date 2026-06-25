@@ -8,7 +8,8 @@ export const skillCategories = [
       { name: "C", icon: "🔧" },
       { name: "C++", icon: "⚙️" },
       { name: "JavaScript (ES6+)", icon: "⚡" },
-      { name: "Python", icon: "🐍", learning: true },
+      { name: "Java", icon: "☕", learning: true },
+      { name: "PHP", icon: "🐘", learning: true },
     ],
   },
   {

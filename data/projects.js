@@ -2,22 +2,23 @@
 
 export const projects = [
   {
-    name: "SecureAuth – Frontend Auth System",
+    name: "LookSphere – Full-Stack Social Media Platform",
     description:
-      "Lightweight client-side authentication system built with React and React Router DOM using a JSON Server–based self-made API. Features - registration, login, logout, protected routes, schema validation with React Hook Form + Yup, and toast notifications.",
+      "High-performance, privacy-first social networking app built with the MERN stack. Features secure stateless JWT authentication, Cloudinary media optimization, and a fluid dark/light UI with advanced mobile GPU rendering optimizations.",
     stack: [
       "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "Tailwind CSS",
       "React Router DOM",
-      "JSON Server",
-      "React Hook Form",
-      "Yup",
-      "RHF + Yup",
-      "REST API",
-      "HTML5",
-      "CSS3",
+      "Multer",
+      "JWT",
+      "Cloudinary"
     ],
-    githubLink: "https://github.com/PRANAV-SHILU/SecureAuth",
-    liveLink: "https://pranav-shilu.github.io/SecureAuth/",
+    githubLink: "https://github.com/PRANAV-SHILU/LookSphere",
+    liveLink: "https://looksphere.vercel.app",
   },
   {
     name: "ELE-X – E-Commerce Frontend",
