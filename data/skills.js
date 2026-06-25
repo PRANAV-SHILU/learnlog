@@ -42,6 +42,7 @@ export const skillCategories = [
     icon: "🛢️",
     skills: [
       { name: "MongoDB", icon: "🍃" },
+      { name: "Mongoose", icon: "🦦" },
     ],
   },
   {
@@ -61,6 +62,14 @@ export const skillCategories = [
       { name: "React Hook Form", icon: "📝" },
       { name: "Yup", icon: "🛡️" },
       { name: "Trivule form", icon: "✅" },
+      { name: "Express Validator", icon: "✔️" },
+      { name: "JWT", icon: "🔑" },
+      { name: "Multer", icon: "📁" },
+      { name: "Cloudinary", icon: "☁️" },
+      { name: "Bcrypt", icon: "🔒" },
+      { name: "Dotenv", icon: "🌍" },
+      { name: "CORS", icon: "🚦" },
+      { name: "React Toastify", icon: "🍞" },
     ],
   },
   {
