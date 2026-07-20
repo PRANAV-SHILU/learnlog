@@ -17,15 +17,14 @@ export const webinars = [
   // ════════════════════════════
   // WEBINARS
   // ════════════════════════════
+  
   {
     type: "webinar",
-    name: "React JS with AI",
+    name: "Building a Full Stack Application from Scratch",
     organizer: "TOPS Technologies",
-    date: "10 Jan 2026, 11:00 AM",
+    date: "20 Sep 2025, 11:00 AM",
     description:
-      "A live webinar exploring how to build web apps with AI capabilities using React JS.",
-    link: "https://www.tops-int.com/webinar-certificate/VXJVSW5xaGYyQ3dIM0JFcWVyOUtOQT09",
-    linkLabel: "Certificate",
+      "A live webinar on building a complete full stack application — covering frontend, backend, database integration, and deployment from the ground up.",
   },
   {
     type: "webinar",
@@ -34,18 +33,22 @@ export const webinars = [
     date: "09 May 2026, 11:00 AM",
     description:
       "A live webinar on building intelligent web applications using the MERN stack along with AI features in Express, React, and Node.js.",
-    link: "https://www.tops-int.com/webinar-certificate/TjVBRHF5Y1p3aXdvcFkwZVlvMlBBZz09",
-    linkLabel: "Certificate",
   },
   {
     type: "webinar",
-    name: "Building a Full Stack Application from Scratch",
+    name: "React JS with AI",
     organizer: "TOPS Technologies",
-    date: "20 Sep 2025, 11:00 AM",
+    date: "10 Jan 2026, 11:00 AM",
     description:
-      "A live webinar on building a complete full stack application — covering frontend, backend, database integration, and deployment from the ground up.",
-    link: "https://www.tops-int.com/webinar-certificate/emVPVUN0RmM1T2YyTFZBdUtRVjNsQT09",
-    linkLabel: "Certificate",
+      "A live webinar exploring how to build web apps with AI capabilities using React JS.",
+  },
+  {
+    type: "webinar",
+    name: "Three Layers of Authentication Every Developer Should Know",
+    organizer: "TOPS Technologies",
+    date: "",
+    description:
+      "A live webinar covering authentication best practices for developers — understanding and implementing multi-factor authentication, OAuth, JWT, and securing applications with layered authentication strategies.",
   },
   {
     type: "webinar",
@@ -54,8 +57,6 @@ export const webinars = [
     date: "14 Sep 2025, 11:00 AM",
     description:
       "A 1-Hour live webinar covering Python fundamentals — syntax, data types, control flow, and beginner-friendly use cases.",
-    link: "https://www.tops-int.com/webinar-certificate/bDg0eTVRbHBjSEcwY3p0bE43Wm84QT09",
-    linkLabel: "Certificate",
   },
   {
     type: "webinar",
@@ -64,8 +65,6 @@ export const webinars = [
     date: "21 Sep 2025, 1:00 PM",
     description:
       "A live webinar on navigating career opportunities in the IT industry — covering job roles, skills in demand, interview tips, and growth paths for aspiring developers.",
-    link: "https://www.tops-int.com/webinar-certificate/S0hrcnR4QzFCNkJBSWtpdXFHVE91QT09",
-    linkLabel: "Certificate",
   },
   {
     type: "webinar",
@@ -74,8 +73,6 @@ export const webinars = [
     date: "31 Aug 2025",
     description:
       "Mastery of career and personal branding on LinkedIn, networking strategies, and optimizing profiles for better opportunities.",
-    link: "https://www.skillsiya.com/verify-certificate?serialno=EKDO93CH",
-    linkLabel: "Certificate",
   },
   {
     type: "webinar",
@@ -84,7 +81,13 @@ export const webinars = [
     date: "13 Sep 2025, 4:00 PM",
     description:
       "A live webinar on practical cybersecurity — protecting devices from hackers, safe browsing habits, password management, and securing personal data on mobile and laptops.",
-    link: "https://www.tops-int.com/webinar-certificate/WUtFdTVBSmpoS0pBV2Fod3dPd01kdz09",
-    linkLabel: "Certificate",
+  },
+  {
+    type: "webinar",
+    name: "AI Ready Marketing Leader",
+    organizer: "TOPS Technologies",
+    date: "",
+    description:
+      "A live webinar on leveraging AI tools and strategies for modern marketing leaders — exploring AI-driven marketing solutions, automation, data analytics, and building AI-ready marketing teams.",
   },
 ];
