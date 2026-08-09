@@ -47,6 +47,32 @@ export const learningItems = [
   },
   {
     type: "course",
+    name: "Junior Software Developer – OJT (10 days)",
+    description:
+      "Hands-on web development training — HTML, CSS, JavaScript, PHP basics, MySQL, and real-world project simulations.",
+    sources: [
+      {
+        type: "web",
+        label: "Easylearn Certificate",
+        link: "https://www.linkedin.com/in/pranavshilu/details/certifications/1756394601797/single-media-viewer/?profileId=ACoAAEQdfM4Bjz9XMUrIjuqYXlAjrmXxwAXTjE4",
+      },
+    ],
+  },
+  {
+    type: "course",
+    name: "Bootstrap – On-the-Job Training (30 days OJT)",
+    description:
+      "Practical front-end training using Bootstrap — responsive grid layouts, Bootstrap UI components, and integration with HTML, CSS, and JS.",
+    sources: [
+      {
+        type: "web",
+        label: "Easylearn Certificate",
+        link: "https://www.linkedin.com/in/pranavshilu/details/certifications/1756394899459/single-media-viewer/?profileId=ACoAAEQdfM4Bjz9XMUrIjuqYXlAjrmXxwAXTjE4",
+      },
+    ],
+  },
+  {
+    type: "course",
     name: "JavaScript - Full Course for Beginners",
     description:
       "Complete JavaScript — variables, functions, DOM manipulation, events, ES6+, and async and promise based programming.",
@@ -157,19 +183,6 @@ export const learningItems = [
   },
   {
     type: "course",
-    name: "ChatGPT Prompt Engineering for Developers",
-    description:
-      "Prompt engineering techniques for developers — zero-shot, few-shot, chain-of-thought prompting.",
-    sources: [
-      {
-        type: "web",
-        label: "DeepLearning.AI",
-        link: "https://learn.deeplearning.ai/accomplishments/5cb879ad-c151-4b16-bcd8-bcf86bc2c608?usp=sharing",
-      },
-    ],
-  },
-  {
-    type: "course",
     name: "Soft Skills – Essential to Start Career",
     description:
       "Communication, professional conduct, teamwork, and career-readiness essentials for entering the workforce.",
@@ -191,6 +204,19 @@ export const learningItems = [
         type: "learnvern",
         label: "LearnVern",
         link: "https://www.learnvern.com",
+      },
+    ],
+  },
+  {
+    type: "course",
+    name: "ChatGPT Prompt Engineering for Developers",
+    description:
+      "Prompt engineering techniques for developers — zero-shot, few-shot, chain-of-thought prompting.",
+    sources: [
+      {
+        type: "web",
+        label: "DeepLearning.AI",
+        link: "https://learn.deeplearning.ai/accomplishments/5cb879ad-c151-4b16-bcd8-bcf86bc2c608?usp=sharing",
       },
     ],
   },
@@ -244,36 +270,7 @@ export const learningItems = [
       },
     ],
   },
-  {
-    type: "certificate",
-    name: "Junior Software Developer – OJT (10 days)",
-    description:
-      "Hands-on web development training — HTML, CSS, JavaScript, PHP basics, MySQL, and real-world project simulations.",
-    issuer: "The Easylearn Academy (Jun 2025)",
-    issuerIcon: "🎓",
-    sources: [
-      {
-        type: "web",
-        label: "Easylearn Certificate",
-        link: "https://www.linkedin.com/in/pranavshilu/details/certifications/1756394601797/single-media-viewer/?profileId=ACoAAEQdfM4Bjz9XMUrIjuqYXlAjrmXxwAXTjE4",
-      },
-    ],
-  },
-  {
-    type: "certificate",
-    name: "Bootstrap – On-the-Job Training (30 days OJT)",
-    description:
-      "Practical front-end training using Bootstrap — responsive grid layouts, Bootstrap UI components, and integration with HTML, CSS, and JS.",
-    issuer: "The Easylearn Academy (Jun 2025)",
-    issuerIcon: "🎓",
-    sources: [
-      {
-        type: "web",
-        label: "Easylearn Certificate",
-        link: "https://www.linkedin.com/in/pranavshilu/details/certifications/1756394899459/single-media-viewer/?profileId=ACoAAEQdfM4Bjz9XMUrIjuqYXlAjrmXxwAXTjE4",
-      },
-    ],
-  },
+  
 
   {
     type: "certificate",

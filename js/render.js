@@ -70,6 +70,20 @@ function getLinkAttrs(url) {
   return `href="${url}" target="_blank" rel="noopener"`;
 }
 
+/** Format a date string or Date object; return raw string if non-ISO like "Present" */
+function formatDate(value) {
+  if (!value && value !== 0) return "";
+  if (typeof value === "string") {
+    // If it's a recognizable date string, parse it; otherwise return as-is (e.g., "Present")
+    const parsed = Date.parse(value);
+    if (isNaN(parsed)) return value;
+    value = new Date(parsed);
+  }
+  const d = value instanceof Date ? value : new Date(value);
+  if (isNaN(d.getTime())) return "";
+  return d.toLocaleDateString("en-US", { month: "short", year: "numeric" });
+}
+
 /** Build source chips HTML */
 function sourcesHtml(sources) {
   return sources
@@ -148,7 +162,7 @@ export function renderExperience(targetEl) {
           </div>
         </div>
         <div class="exp-dates">
-          <div class="exp-date"><i class="fas fa-calendar-alt"></i> ${new Date(exp.startDate).toLocaleDateString("en-US", { month: "short", year: "numeric" })} — ${new Date(exp.endDate).toLocaleDateString("en-US", { month: "short", year: "numeric" })}</div>
+          <div class="exp-date"><i class="fas fa-calendar-alt"></i> ${formatDate(exp.startDate)} — ${formatDate(exp.endDate)}</div>
           <div class="exp-duration"><i class="fas fa-hourglass-end"></i> ${exp.duration}</div>
         </div>
       </div>

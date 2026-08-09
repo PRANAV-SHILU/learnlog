@@ -6,10 +6,17 @@ export const experiences = [
     company: "VeyondTech",
     companyUrl: "https://www.veyondtech.com/",
     startDate: "2026-03-01",
-    endDate: new Date().toISOString().split("T")[0],
-    duration: "Ongoing",
+    endDate: "Present",
+    duration: (() => {
+      const start = new Date("2026-03-01");
+      const now = new Date();
+      let months = (now.getFullYear() - start.getFullYear()) * 12 + (now.getMonth() - start.getMonth()) + 1; // inclusive count
+      if (now.getDate() < start.getDate()) months -= 1;
+      if (months < 0) months = 0;
+      return months === 1 ? "1 month" : `${months} months`;
+    })(),
     location: "On-site",
-    type: "Part Time Job",
+    type: "Job",
     description:
       "Gathering professional experience and learning through various projects and Building scalable applications with modern technologies.",
     highlights: [
