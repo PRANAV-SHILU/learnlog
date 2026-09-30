@@ -75,8 +75,8 @@ export const roadmap = [
   {
     topic: "SQL & Database Design",
     description:
-      "Advanced queries, joins, normalization, stored procedures, MySQL, etc.",
-    status: "learning",
+      "SQL fundamentals, advanced queries, joins, subqueries, aggregations, indexing, transactions and MySQL.",
+    status: "done",
     order: 11,
   },
   {
@@ -93,6 +93,12 @@ export const roadmap = [
     status: "learning",
     order: 13,
   },
+  {
+    topic: "Sequelize",
+    description: "SQL ORM, model definitions, associations, migrations, and CRUD operations.",
+    status: "learning",
+    order: 14,
+  },
 
   // ── PLANNED ──
 
@@ -100,6 +106,18 @@ export const roadmap = [
     topic: "Prisma",
     description: "Database ORM, schema design, CRUD operations, seeding, etc.",
     status: "planned",
-    order: 14,
+    order: 15,
+  },
+  {
+    topic: "System Design",
+    description: "Scalable architecture, system components, APIs, databases, caching, and distributed systems fundamentals.",
+    status: "planned",
+    order: 16,
+  },
+  {
+    topic: "DevOps",
+    description: "CI/CD, Docker, deployment, cloud platforms, monitoring, and infrastructure fundamentals.",
+    status: "planned",
+    order: 17,
   },
 ];

@@ -41,15 +41,18 @@ export const skillCategories = [
     category: "Database",
     icon: "🛢️",
     skills: [
+      { name: "SQL", icon: "🗃️" },
       { name: "MongoDB", icon: "🍃" },
       { name: "Mongoose", icon: "🦦" },
+      { name: "Sequelize", icon: "🧬", learning: true },
+      { name: "Prisma", icon: "🔷", learning: true },
     ],
   },
   {
     category: "Version Control",
     icon: "🔀",
     skills: [
-      { name: "Git", icon: "🔧" },
+      { name: "Git", icon: "🌿" },
       { name: "GitHub", icon: "🐙" },
       { name: "GitHub Desktop", icon: "🖥️" },
     ],
@@ -59,13 +62,14 @@ export const skillCategories = [
     category: "Library",
     icon: "📚",
     skills: [
+      { name: "Cloudinary", icon: "☁️" },
       { name: "React Hook Form", icon: "📝" },
       { name: "Yup", icon: "🛡️" },
       { name: "Trivule form", icon: "✅" },
       { name: "Express Validator", icon: "✔️" },
       { name: "JWT", icon: "🔑" },
       { name: "Multer", icon: "📁" },
-      { name: "Cloudinary", icon: "☁️" },
+      { name: "Busboy", icon: "📦" },
       { name: "Bcrypt", icon: "🔒" },
       { name: "Dotenv", icon: "🌍" },
       { name: "CORS", icon: "🚦" },
@@ -77,18 +81,28 @@ export const skillCategories = [
     icon: "🧪",
     skills: [
       { name: "Postman", icon: "📮" },
-      { name: "Thunder Client", icon: "⚡" },
+      { name: "Thunder Client", icon: "💥" },
     ],
   },
   {
     category: "Core Concepts",
     icon: "🧠",
     skills: [
+      { name: "System Design", icon: "🏛️", learning: true },
       { name: "CRUD Operations", icon: "🗂️" },
       { name: "Object-Oriented Programming", icon: "🧩" },
-      { name: "Data Structures & Algorithms", icon: "📦" },
-      { name: "Problem Solving", icon: "🔍" },
+      { name: "Data Structures & Algorithms", icon: "🧮" },
       { name: "Prompt Engineering", icon: "🤖" },
+    ],
+  },
+  {
+    category: "Learning & Growth",
+    icon: "📈",
+    skills: [
+      { name: "Active Learning", icon: "📖" },
+      { name: "Quick Learning", icon: "🏃" },
+      { name: "Continuous Upskilling", icon: "📚" },
+      { name: "Problem Solving", icon: "🔍" },
     ],
   },
   {
