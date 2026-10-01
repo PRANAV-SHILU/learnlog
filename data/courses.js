@@ -14,7 +14,7 @@ export const learningItems = [
     sources: [
       {
         type: "web",
-        label: "KnowledgeGate",
+        label: "KnowledgeGate Certificate",
         link: "https://www.knowledgegate.ai/certificate/D2A90573",
       },
     ],
@@ -27,7 +27,7 @@ export const learningItems = [
     sources: [
       {
         type: "web",
-        label: "KnowledgeGate",
+        label: "KnowledgeGate Certificate",
         link: "https://www.knowledgegate.ai/certificate/6E255448",
       },
     ],
@@ -123,7 +123,7 @@ export const learningItems = [
     sources: [
       {
         type: "web",
-        label: "IBM SkillsBuild",
+        label: "IBM SkillsBuild Certificate",
         link: "https://www.credly.com/badges/cd49a9a0-1c0e-4e37-a8ef-7faa701d6fa9/linked_in_profile",
       },
     ],
@@ -163,7 +163,7 @@ export const learningItems = [
     sources: [
       {
         type: "linkedin",
-        label: "View Main Course",
+        label: "LinkedIn Learning Main Certificate",
         link: "https://www.linkedin.com/learning/certificates/2e0e42c553731c2fd136c5106a66f988c4b3fb70aab02c157edd73e428e454fa",
       },
     ],
@@ -176,7 +176,7 @@ export const learningItems = [
     sources: [
       {
         type: "linkedin",
-        label: "View Main Course",
+        label: "LinkedIn Learning Main Certificate",
         link: "https://www.linkedin.com/learning/certificates/33483874b957cbf59f4ae97b3c37fdb568c9f822709d06d4525b9b52c0f2c56b",
       },
     ],
@@ -215,7 +215,7 @@ export const learningItems = [
     sources: [
       {
         type: "web",
-        label: "DeepLearning.AI",
+        label: "DeepLearning.AI Certificate",
         link: "https://learn.deeplearning.ai/accomplishments/5cb879ad-c151-4b16-bcd8-bcf86bc2c608?usp=sharing",
       },
     ],

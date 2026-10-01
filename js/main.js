@@ -16,7 +16,7 @@ import {
   renderStats,
 } from "./render.js";
 
-import { initAccordions, openAll, closeAll } from "./accordion.js";
+import { initAccordions, openAccordion, openAll, closeAll } from "./accordion.js";
 import { initSearch } from "./search.js";
 
 // open all / close all accordians
@@ -61,7 +61,21 @@ document.addEventListener("DOMContentLoaded", () => {
     navLinks?.classList.toggle("open"),
   );
   navLinks?.querySelectorAll(".nav-link").forEach((link) => {
-    link.addEventListener("click", () => navLinks.classList.remove("open"));
+    link.addEventListener("click", (event) => {
+      const targetId = link.getAttribute("href")?.slice(1);
+      const sectionAnchor = targetId ? document.getElementById(targetId) : null;
+      const accordionId = targetId?.replace("section-", "acc-");
+      const accordion = accordionId ? document.getElementById(accordionId) : null;
+
+      if (accordion) {
+        event.preventDefault();
+        closeAll();
+        openAccordion(accordion);
+        sectionAnchor.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+
+      navLinks.classList.remove("open");
+    });
   });
 
   // 6. Active nav link on scroll
