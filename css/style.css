@@ -1360,11 +1360,12 @@ mark {
   /* About */
   .about-bio-block {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
   .about-social-row {
     justify-content: center;
+  }
+  .about-tagline-text{
+    text-align: center;
   }
 
   /* Language sources: stack vertically */
@@ -1459,7 +1460,7 @@ mark {
 
 .about-name {
   font-family: var(--font-mono);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 4px;
@@ -2193,8 +2194,8 @@ mark {
     width: 64px;
     height: 64px;
   }
-  .about-name {
-    font-size: 1.1rem;
+  .about-tagline-text {
+    font-size: 0.7rem;
   }
   .about-social-row {
     flex-direction: column;

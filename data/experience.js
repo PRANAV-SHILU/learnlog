@@ -18,16 +18,8 @@ export const experiences = [
     location: "On-site",
     type: "Job",
     description:
-      "Gathering professional experience and learning through various projects and Building scalable applications with modern technologies.",
-    highlights: [
-      "Working on full-stack web applications",
-      "Working on websites like Learning Management Systems (LMS) with responsive UI and Backend APIs",
-      "Working on online Employment & Recruiter Portal with complex frontend logic",
-      "Working on Founders Networking & Collaboration Platform",
-      "Implemented RESTful APIs using Express.js and Node.js",
-      "Used Redux Toolkit for efficient state management in React applications",
-      "Collaborating with the team using GitHub for version control and code collaboration",
-    ],
+      "Working across the full stack on multiple production projects — building UIs in React, writing backend APIs in Node.js and Express, and managing data with SQL. Collaborating with the team and taking ownership of features end to end.",
+    highlights: [],
     skills: [
       { name: "Node.js", icon: "🟢" },
       { name: "Express.js", icon: "🚀" },
@@ -37,6 +29,8 @@ export const experiences = [
       { name: "MERN Stack", icon: "🏗️" },
       { name: "REST APIs", icon: "🔌" },
       { name: "MySQL", icon: "🗄️" },
+      { name: "MongoDB", icon: "🍃" },
+      { name: "Third-Party Integrations", icon: "🔗" },
       { name: "GitHub", icon: "🐙" },
       { name: "Tailwind CSS", icon: "🌊" },
       { name: "CSS", icon: "🎨" },

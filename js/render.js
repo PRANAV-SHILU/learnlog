@@ -96,7 +96,6 @@ function sourcesHtml(sources) {
     .join("");
 }
 
-
 // ─────────────────────────────────────────────
 // ABOUT
 // ─────────────────────────────────────────────
@@ -145,14 +144,18 @@ export function renderExperience(targetEl) {
   const expItems = experiences
     .map((exp) => {
       const skillsHtml = exp.skills
-        .map((skill) => `<span class="exp-skill-tag">${skill.icon} ${skill.name}</span>`)
+        .map(
+          (skill) =>
+            `<span class="exp-skill-tag">${skill.icon} ${skill.name}</span>`,
+        )
         .join("");
-      const highlightsHtml = exp.highlights
+      const highlights = Array.isArray(exp.highlights) ? exp.highlights : [];
+      const highlightsHtml = highlights
         .map((h) => `<li class="exp-highlight">${h}</li>`)
         .join("");
-      
+
       return `
-    <div class="experience-card" data-search="${exp.role} ${exp.company} ${exp.description} ${exp.skills.map(s => s.name).join(" ")}">
+    <div class="experience-card" data-search="${exp.role} ${exp.company} ${exp.description} ${exp.skills.map((s) => s.name).join(" ")}">
       <div class="exp-header">
         <div class="exp-info">
           <h3 class="exp-role">${exp.role}</h3>
@@ -169,10 +172,14 @@ export function renderExperience(targetEl) {
       
       <p class="exp-description">${exp.description}</p>
       
-      <div class="exp-highlights">
-        <div class="exp-highlights-label">Key Highlights:</div>
-        <ul>${highlightsHtml}</ul>
-      </div>
+      ${highlightsHtml.length > 0 ? (`
+          <div class="exp-highlights">
+            <div class="exp-highlights-label">Key Highlights:</div>
+            <ul>${highlightsHtml}</ul>
+          </div>`
+        ) : (``)
+      }
+     
       
       <div class="exp-skills">
         <div class="exp-skills-label">Skills Used:</div>
@@ -366,7 +373,11 @@ export function renderCertificates(targetEl) {
 export function renderWebinars(targetEl) {
   const typeConfig = {
     webinar: { label: "Webinar", icon: "fas fa-video", cls: "badge-webinar" },
-    seminar: { label: "Seminar", icon: "fas fa-chalkboard-teacher", cls: "badge-seminar" },
+    seminar: {
+      label: "Seminar",
+      icon: "fas fa-chalkboard-teacher",
+      cls: "badge-seminar",
+    },
   };
 
   const items = webinars
@@ -393,9 +404,10 @@ export function renderWebinars(targetEl) {
     })
     .join("");
 
-  const emptyMsg = webinars.length === 0
-    ? `<div class="webinar-empty"><i class="fas fa-calendar-plus"></i><p>No events logged yet — add your first webinar or seminar!</p></div>`
-    : "";
+  const emptyMsg =
+    webinars.length === 0
+      ? `<div class="webinar-empty"><i class="fas fa-calendar-plus"></i><p>No events logged yet — add your first webinar or seminar!</p></div>`
+      : "";
 
   targetEl.innerHTML = accordion({
     id: "webinars",
@@ -406,7 +418,6 @@ export function renderWebinars(targetEl) {
     content: `<div class="webinars-grid">${items}${emptyMsg}</div>`,
   });
 }
-
 
 // ─────────────────────────────────────────────
 // LEARNING PLATFORMS
@@ -574,7 +585,9 @@ export function renderStats() {
     0,
   );
   const langCat = skillCategories.find((c) => c.category === "Languages");
-  const langCount = langCat ? langCat.skills.filter((s) => !s.learning).length : 0;
+  const langCount = langCat
+    ? langCat.skills.filter((s) => !s.learning).length
+    : 0;
 
   const stats = [
     { num: langCount, label: "Languages", icon: "fas fa-code" },
