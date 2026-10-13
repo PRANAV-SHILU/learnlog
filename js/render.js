@@ -103,11 +103,14 @@ export function renderAbout(targetEl) {
   const content = `
     <div class="about-inner" data-search="${about.name} ${about.tagline} ${about.bio}">
       <div class="about-bio-block">
+      <div style="display:flex;align-items:center;gap:18px">
         <div class="about-avatar">
           <i class="fas fa-user-circle"></i>
         </div>
+         <h2 class="about-name-mobile">${about.name}</h2>
+        </div>
         <div class="about-text">
-          <h2 class="about-name">${about.name}</h2>
+          <h2 class="about-name-desktop">${about.name}</h2>
           <p class="about-tagline-text">${about.tagline}</p>
           <p class="about-bio">${about.bio.replace(/\n/g, "<br>")}</p>
         </div>
@@ -130,7 +133,7 @@ export function renderAbout(targetEl) {
     id: "about",
     faIcon: "fas fa-user",
     title: "About",
-    subtitle: `${about.name} — ${about.tagline}`,
+    subtitle: `${about.name} — Full Stack Developer`,
     count: 0,
     countLabel: "intro",
     content,
@@ -272,14 +275,18 @@ export function renderSkills(targetEl) {
     .map((cat) => {
       const skillsHtml = cat.skills
         .map((skill) => {
-          const learningBadge = skill.learning
-            ? `<span class="skill-learning-badge"><i class="fas fa-spinner fa-spin"></i> Learning</span>`
-            : "";
+          const skillBadge = skill.beginner
+            ? `<span class="skill-learning-badge"><i class="fas fa-seedling"></i> Beginner</span>`
+            : skill.learning
+              ? `<span class="skill-learning-badge"><i class="fas fa-spinner fa-spin"></i> Learning</span>`
+              : "";
           return `
         <div class="skill-item" data-search="${skill.name} ${cat.category}">
-          <span class="skill-icon">${skill.icon}</span>
+         <div style="display:flex;align-items:center;gap:6px">
+        <span class="skill-icon">${skill.icon}</span>
           <span class="skill-name">${skill.name}</span>
-          ${learningBadge}
+          </div>
+          ${skillBadge}
         </div>`;
         })
         .join("");

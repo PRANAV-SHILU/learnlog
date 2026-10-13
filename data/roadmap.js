@@ -73,51 +73,73 @@ export const roadmap = [
   
 
   {
+    topic: "TypeScript",
+    description:
+      "Static typing, interfaces, generics, type narrowing, and TypeScript with modern JavaScript applications.",
+    status: "learning",
+    order: 10,
+  },
+  {
+    topic: "Next.js",
+    description:
+      "File-based routing, server-side rendering, static generation, API routes, SEO and full-stack React applications.",
+    status: "learning",
+    order: 11,
+  },
+  {
     topic: "SQL & Database Design",
     description:
       "SQL fundamentals, advanced queries, joins, subqueries, aggregations, indexing, transactions and MySQL.",
     status: "done",
-    order: 11,
+    order: 12,
   },
   {
     topic: "PHP",
     description:
       "Server-side scripting, functions, sessions, cookies, PDO, etc.",
     status: "learning",
-    order: 12,
+    order: 13,
   },
   {
     topic: "Java",
     description:
       "OOP, collections, exception handling, data structures, etc.",
     status: "learning",
-    order: 13,
+    order: 14,
   },
   {
     topic: "Sequelize",
     description: "SQL ORM, model definitions, associations, migrations, and CRUD operations.",
     status: "learning",
-    order: 14,
+    order: 15,
+  },
+
+  {
+    topic: "System Design",
+    description: "Scalable architecture, system components, APIs, databases, caching, and distributed systems fundamentals.",
+    status: "learning",
+    order: 16,
   },
 
   // ── PLANNED ──
 
   {
+    topic: "Python",
+    description:
+      "Python syntax, data structures, object-oriented programming, automation, and practical scripting.",
+    status: "planned",
+    order: 19,
+  },
+  {
     topic: "Prisma",
     description: "Database ORM, schema design, CRUD operations, seeding, etc.",
     status: "planned",
-    order: 15,
-  },
-  {
-    topic: "System Design",
-    description: "Scalable architecture, system components, APIs, databases, caching, and distributed systems fundamentals.",
-    status: "planned",
-    order: 16,
+    order: 17,
   },
   {
     topic: "DevOps",
     description: "CI/CD, Docker, deployment, cloud platforms, monitoring, and infrastructure fundamentals.",
     status: "planned",
-    order: 17,
+    order: 18,
   },
 ];

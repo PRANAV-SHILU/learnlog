@@ -349,7 +349,7 @@ a:hover {
    CONTAINER & SECTIONS
 ══════════════════════════════ */
 .container {
-  max-width: 960px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 32px 24px 64px;
   display: flex;
@@ -930,7 +930,7 @@ a:hover {
 ══════════════════════════════ */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
   gap: 14px;
   padding-top: 18px;
 }
@@ -1255,145 +1255,6 @@ mark {
 }
 
 /* ══════════════════════════════
-   RESPONSIVE — Full Breakpoints
-   1024px → tablet landscape
-   768px  → tablet portrait
-   480px  → mobile
-   360px  → small phone
-══════════════════════════════ */
-
-/* ── 1024px: Nav starts overflowing with 9 links ── */
-@media (max-width: 1024px) {
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: var(--nav-height);
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    background: var(--bg-surface);
-    border-bottom: 1px solid var(--border);
-    padding: 12px;
-    gap: 4px;
-    z-index: 999;
-  }
-  .nav-links.open {
-    display: flex;
-  }
-  .nav-hamburger {
-    display: block;
-  }
-  .nav-search {
-    max-width: 280px;
-  }
-}
-
-/* ── 768px: Tablet portrait ── */
-@media (max-width: 768px) {
-  /* Navbar */
-  .nav-search {
-    max-width: 220px;
-  }
-
-  /* Hero */
-  .hero {
-    padding: 48px 16px 36px;
-  }
-  .hero-tagline {
-    font-size: 0.9rem;
-  }
-
-  /* Container */
-  .container {
-    padding: 16px 12px 48px;
-    gap: 12px;
-  }
-
-  /* Accordion header — prevent overflow */
-  .accordion-header {
-    padding: 14px 16px;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-  .accordion-title {
-    font-size: 0.9rem;
-  }
-  .accordion-subtitle {
-    font-size: 0.72rem;
-  }
-  .accordion-count {
-    font-size: 0.68rem;
-    padding: 2px 8px;
-  }
-  .accordion-body-inner {
-    padding: 0 14px 16px;
-  }
-
-  /* Roadmap: single column on tablet */
-  .roadmap-columns {
-    grid-template-columns: 1fr;
-  }
-
-  /* Projects: single column */
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-  /* Tools: single column */
-  .tools-grid {
-    grid-template-columns: 1fr;
-  }
-
-  /* Platforms: hide star rating, adjust grid */
-  .platform-card {
-    grid-template-columns: auto 1fr;
-  }
-  .platform-rating {
-    display: none;
-  }
-
-  /* Skills: 2 columns */
-  .skill-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  /* About */
-  .about-bio-block {
-    flex-direction: column;
-  }
-  .about-social-row {
-    justify-content: center;
-  }
-  .about-tagline-text{
-    text-align: center;
-  }
-
-  /* Language sources: stack vertically */
-  .lang-sources {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  /* Cert card: keep horizontal but tighten */
-  .cert-card {
-    padding: 14px 14px 14px 18px;
-    gap: 10px;
-  }
-  .cert-icon-col {
-    display: none;
-  }
-
-  /* Footer links: wrap nicely */
-  .footer-links {
-    gap: 6px;
-  }
-  .footer-links a {
-    font-size: 0.72rem;
-    padding: 3px 8px;
-  }
-}
-
-/* ══════════════════════════════
    HERO SOCIAL LINKS
 ══════════════════════════════ */
 .hero-social {
@@ -1429,6 +1290,9 @@ mark {
 /* ══════════════════════════════
    ABOUT SECTION
 ══════════════════════════════ */
+.about-name-mobile{
+  display: none;
+}
 .about-inner {
   padding-top: 18px;
 }
@@ -1539,18 +1403,20 @@ mark {
 
 .skill-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 8px;
 }
 
 .skill-item {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 10px;
+  min-width: 0;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  padding: 10px 14px;
+  padding: 8px;
   transition: all var(--transition);
 }
 
@@ -1570,6 +1436,7 @@ mark {
   font-weight: 500;
   color: var(--text-primary);
   flex: 1;
+  min-width: 0;
 }
 
 .skill-learning-badge {
@@ -1584,7 +1451,11 @@ mark {
   border: 1px solid rgba(20, 184, 166, 0.35);
   color: var(--teal);
   white-space: nowrap;
-  flex-shrink: 0;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 1;
   animation: pulse-badge 2s ease-in-out infinite;
 }
 
@@ -2019,31 +1890,6 @@ mark {
   color: var(--accent);
 }
 
-/* ── Responsive ── */
-@media (max-width: 768px) {
-  .exp-header {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .exp-dates {
-    text-align: left;
-    justify-content: flex-start;
-  }
-
-  .exp-date,
-  .exp-duration {
-    justify-content: flex-start;
-  }
-
-  .experience-card {
-    padding: 16px;
-  }
-
-  .exp-role {
-    font-size: 16px;
-  }
-}
 
 .cert-card:hover {
   border-color: var(--accent-border);
@@ -2110,160 +1956,13 @@ mark {
   background: var(--accent-glow);
 }
 
-/* ── 480px: Mobile ── */
-@media (max-width: 480px) {
-  /* Nav */
-  .nav-search {
-    max-width: 100%;
-    flex: 1;
-  }
-  .nav-brand .nav-title {
-    display: none;
-  } /* show just <LL> logo */
-  .navbar {
-    gap: 10px;
-    padding: 0 14px;
-  }
-
-  /* Hero */
-  .hero {
-    padding: 36px 14px 28px;
-  }
-  .hero-social-btn {
-    justify-content: center;
-  }
-  .hero-stats {
-    justify-content: center;
-    gap: 8px;
-  }
-  .stat-chip {
-    font-size: 0.75rem;
-    padding: 6px 12px;
-  }
-
-  /* Accordion */
-  .accordion-icon-wrap {
-    width: 32px;
-    height: 32px;
-    font-size: 0.85rem;
-  }
-  .accordion-header-left {
-    gap: 8px;
-  }
-
-  /* Language items */
-  .lang-icon {
-    font-size: 1.1rem;
-  }
-  .lang-name {
-    font-size: 0.85rem;
-  }
-
-  /* Skills: single column */
-  .skill-grid {
-    grid-template-columns: 1fr;
-  }
-  .skill-item {
-    padding: 8px 12px;
-  }
-
-  /* Projects */
-  .project-card {
-    padding: 14px;
-  }
-  .project-links {
-    flex-wrap: wrap;
-  }
-  .project-link-btn {
-    flex: 1;
-    justify-content: center;
-  }
-
-  /* Platforms */
-  .platform-card {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .platform-link-btn {
-    width: fit-content;
-  }
-
-  /* About */
-  .about-avatar {
-    width: 64px;
-    height: 64px;
-  }
-  .about-tagline-text {
-    font-size: 0.7rem;
-  }
-  .about-social-row {
-    flex-direction: column;
-    align-items: center;
-  }
-  .social-btn {
-    width: 100%;
-    max-width: 240px;
-    justify-content: center;
-  }
-
-  /* Certs */
-  .cert-card {
-    flex-direction: column;
-    gap: 8px;
-  }
-  .cert-card-left {
-    display: none;
-  }
-
-  /* Tools */
-  .tool-links {
-    flex-wrap: wrap;
-  }
-
-  /* Roadmap */
-  .roadmap-col-header {
-    font-size: 0.7rem;
-  }
-  .roadmap-topic {
-    font-size: 0.8rem;
-  }
-
-  /* Footer */
-  .footer {
-    padding: 20px 14px;
-  }
-  .footer-quote {
-    font-size: 0.78rem;
-  }
-}
-
-/* ── 360px: Small phones ── */
-@media (max-width: 360px) {
-  .accordion-header {
-    padding: 12px;
-  }
-  .accordion-title {
-    font-size: 0.82rem;
-  }
-  .accordion-count {
-    display: none;
-  }
-  .container {
-    padding: 12px 10px 40px;
-  }
-  .hero-title {
-    font-size: 1.6rem;
-  }
-}
-
 /* accordian open all and close all buttons */
 
 .accordion-controls {
   display: flex;
   justify-content: center;
   gap: 10px;
-  padding: 10px 24px;
+  padding: 14px 24px;
   background: rgba(20, 20, 20, 0.88);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -2508,20 +2207,3 @@ mark {
   color: var(--accent);
 }
 
-/* Responsive */
-@media (max-width: 480px) {
-  .edu-card {
-    grid-template-columns: 38px 1fr;
-    gap: 0 10px;
-  }
-
-  .edu-logo-wrap {
-    width: 36px;
-    height: 36px;
-    font-size: 1rem;
-  }
-
-  .edu-institution {
-    font-size: 0.85rem;
-  }
-}

@@ -16,7 +16,6 @@ learnlog/
 │   ├── courses.js          ← Courses and certificates
 │   ├── education.js        ← Education/academic record details
 │   ├── experience.js       ← Professional experience and internships
-│   ├── languages.js        ← Programming languages list (for reference)
 │   ├── platforms.js        ← Learning platforms (YouTube, LearnVern, etc.)
 │   ├── projects.js         ← Projects built
 │   ├── roadmap.js          ← Kanban learning roadmap

@@ -60,23 +60,29 @@ document.addEventListener("DOMContentLoaded", () => {
   hamburger?.addEventListener("click", () =>
     navLinks?.classList.toggle("open"),
   );
-  navLinks?.querySelectorAll(".nav-link").forEach((link) => {
-    link.addEventListener("click", (event) => {
-      const targetId = link.getAttribute("href")?.slice(1);
-      const sectionAnchor = targetId ? document.getElementById(targetId) : null;
-      const accordionId = targetId?.replace("section-", "acc-");
-      const accordion = accordionId ? document.getElementById(accordionId) : null;
+  document
+    .querySelectorAll(".nav-link, .footer-links a")
+    .forEach((link) => {
+      link.addEventListener("click", (event) => {
+        const targetId = link.getAttribute("href")?.slice(1);
+        const sectionAnchor = targetId
+          ? document.getElementById(targetId)
+          : null;
+        const accordionId = targetId?.replace("section-", "acc-");
+        const accordion = accordionId
+          ? document.getElementById(accordionId)
+          : null;
 
-      if (accordion) {
-        event.preventDefault();
-        closeAll();
-        openAccordion(accordion);
-        sectionAnchor.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
+        if (accordion) {
+          event.preventDefault();
+          closeAll();
+          openAccordion(accordion);
+          sectionAnchor.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
 
-      navLinks.classList.remove("open");
+        navLinks.classList.remove("open");
+      });
     });
-  });
 
   // 6. Active nav link on scroll
   const sections = document.querySelectorAll(".section-anchor");
